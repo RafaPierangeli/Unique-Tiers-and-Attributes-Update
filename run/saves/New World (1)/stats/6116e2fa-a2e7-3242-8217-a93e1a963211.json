@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_helmet": 4
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 4,
+      "minecraft:talked_to_villager": 6,
+      "minecraft:time_since_rest": 5308,
+      "minecraft:walk_one_cm": 2291,
+      "minecraft:total_world_time": 5374,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 5308,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 5308,
+      "minecraft:drop": 4
+    },
+    "minecraft:dropped": {
+      "minecraft:chainmail_boots": 1,
+      "minecraft:diamond_helmet": 3
+    }
+  },
+  "DataVersion": 4671
+}

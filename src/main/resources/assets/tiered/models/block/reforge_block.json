@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/anvil",
+  "textures": {
+    "top": "tiered:block/reforge_block_top",
+    "body": "tiered:block/reforge_block",
+    "down": "tiered:block/reforge_block",
+    "particle": "tiered:block/reforge_block"
+  }
+}
+
+

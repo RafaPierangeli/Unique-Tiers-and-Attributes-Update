@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "functional",
+  "pattern": [
+    "DAD",
+    "BVB",
+    "NNN"
+  ],
+  "key": {
+    "D": "minecraft:diamond",
+    "A": "minecraft:amethyst_shard",
+    "N": "minecraft:netherite_ingot",
+    "B": "minecraft:iron_block",
+    "V": "minecraft:anvil"
+  },
+  "result": {
+    "id": "tiered:reforge_block",
+    "count": 1
+  }
+}

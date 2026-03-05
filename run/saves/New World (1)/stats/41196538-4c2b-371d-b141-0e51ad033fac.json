@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_axe": 1,
+      "minecraft:diamond_helmet": 2
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 3,
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:sprint_one_cm": 619,
+      "minecraft:talked_to_villager": 3,
+      "minecraft:time_since_rest": 1998,
+      "minecraft:walk_one_cm": 3868,
+      "minecraft:total_world_time": 2019,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 101,
+      "minecraft:play_time": 1998,
+      "minecraft:jump": 2,
+      "minecraft:time_since_death": 1998
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:warden_spawn_egg": 1,
+      "minecraft:netherite_sword": 46
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1007,
+      "minecraft:walk_one_cm": 1450,
+      "minecraft:total_world_time": 1094,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 1007,
+      "minecraft:damage_dealt": 3680,
+      "minecraft:time_since_death": 1007
+    }
+  },
+  "DataVersion": 4671
+}

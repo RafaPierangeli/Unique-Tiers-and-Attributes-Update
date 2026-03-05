@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:iron_boots": 3
+    },
+    "minecraft:dropped": {
+      "minecraft:iron_helmet": 3,
+      "minecraft:iron_chestplate": 4,
+      "minecraft:amethyst_shard": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 2069,
+      "minecraft:walk_one_cm": 652,
+      "minecraft:total_world_time": 2114,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 2069,
+      "minecraft:time_since_death": 2069,
+      "minecraft:drop": 8
+    }
+  },
+  "DataVersion": 4671
+}

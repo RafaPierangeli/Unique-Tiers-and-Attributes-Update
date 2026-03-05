@@ -1,0 +1,49 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:chainmail_helmet": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:carrot": 1,
+      "minecraft:coal": 30,
+      "minecraft:golden_sword": 1,
+      "minecraft:stone_sword": 1,
+      "minecraft:bone": 35,
+      "minecraft:gold_nugget": 12,
+      "minecraft:rotten_flesh": 101
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 1,
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 9329,
+      "minecraft:walk_one_cm": 19118,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 57,
+      "minecraft:damage_dealt": 11356,
+      "minecraft:play_time": 9329,
+      "minecraft:jump": 38,
+      "minecraft:time_since_death": 9329,
+      "minecraft:sprint_one_cm": 7478,
+      "minecraft:total_world_time": 11766,
+      "minecraft:fly_one_cm": 22683,
+      "minecraft:crouch_one_cm": 131,
+      "minecraft:sneak_time": 42
+    },
+    "minecraft:killed": {
+      "minecraft:zombified_piglin": 11,
+      "minecraft:zombie": 31,
+      "minecraft:wither_skeleton": 14,
+      "minecraft:piglin": 1
+    },
+    "minecraft:used": {
+      "minecraft:spruce_fence": 2,
+      "minecraft:netherrack": 2,
+      "minecraft:flint_and_steel": 1,
+      "minecraft:netherite_sword": 109,
+      "minecraft:zombie_spawn_egg": 14,
+      "minecraft:wither_skeleton_spawn_egg": 14,
+      "minecraft:obsidian": 13
+    }
+  },
+  "DataVersion": 4671
+}

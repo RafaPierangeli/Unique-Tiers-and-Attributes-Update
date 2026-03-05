@@ -1,0 +1,39 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:iron_boots": 2
+    },
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 28
+    },
+    "minecraft:picked_up": {
+      "minecraft:iron_boots": 2,
+      "minecraft:coal": 40,
+      "minecraft:stone_sword": 3,
+      "minecraft:bone": 84
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 3105,
+      "minecraft:walk_one_cm": 4879,
+      "minecraft:total_world_time": 3149,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 57,
+      "minecraft:mob_kills": 28,
+      "minecraft:play_time": 3105,
+      "minecraft:damage_dealt": 5600,
+      "minecraft:jump": 4,
+      "minecraft:time_since_death": 3105,
+      "minecraft:drop": 2
+    },
+    "minecraft:used": {
+      "minecraft:spruce_fence": 2,
+      "minecraft:netherite_sword": 33,
+      "minecraft:wither_skeleton_spawn_egg": 28
+    },
+    "minecraft:crafted": {
+      "minecraft:iron_boots": 1
+    }
+  },
+  "DataVersion": 4671
+}

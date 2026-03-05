@@ -1,0 +1,41 @@
+#Append Block Interaction Range attribute line to relevant tooltips (pickaxes, shovels, etc.)
+appendBlockInteractionRangeTooltip = true
+#Items or tags that should display Block Interaction Range tooltips.
+#Format: "namespace:path" for item IDs, or "#namespace:path" for tags.
+#Default includes common mining tools (pickaxes, axes, shovels, hoes, shears).
+#Examples:
+#  "minecraft:diamond_pickaxe" - specific item
+#  "#minecraft:enchantable/mining" - all items in tag
+blockInteractionRangeItemTags = ["#minecraft:enchantable/mining"]
+#Append Entity Interaction Range attribute line to relevant tooltips (swords, etc.)
+appendEntityInteractionRangeTooltip = true
+#Items or tags that should display Entity Interaction Range tooltips.
+#Format: "namespace:path" for item IDs, or "#namespace:path" for tags.
+#Default includes weapon-related enchantable tags.
+#Examples:
+#  "minecraft:diamond_sword" - specific item
+#  "#minecraft:enchantable/weapon" - all items in tag
+entityInteractionRangeItemTags = ["#minecraft:enchantable/weapon", "#minecraft:enchantable/trident", "#minecraft:enchantable/fire_aspect", "#minecraft:enchantable/sharp_weapon"]
+#Show the 'Hold [Shift] to expand...' hint in tooltips that have merged attributes or collapsed enchantments.
+showUsabilityHint = false
+#Collapse enchantment descriptions on gear, requiring Shift to be held to view them. 
+#
+#Enchanted Books always show descriptions.
+collapseEnchantmentTooltipsOnGear = true
+#Enable custom coloring of enchantments in tooltips.
+colorEnchantmentNames = true
+#Hex color code (#RRGGBB) for regular enchantment names (if colorEnchantmentNames is true). Curses are always red.
+enchantmentNameColor = "#AAAAAA"
+#Hex color code (#RRGGBB) for enchantment description text.
+enchantmentDescriptionColor = "#808080"
+#Hex color code (#RRGGBB) for enchantments above their max level (excluding curses) if colorEnchantmentNames is true.
+superLeveledEnchantmentColor = "#FF55FF"
+#Define custom color rules for specific attributes in tooltips.
+#Format: "attribute_id:LOGIC[:#HEXCOLOR]"
+#  attribute_id: The Identifier of the attribute (e.g., minecraft:generic.movement_speed).
+#  LOGIC: How to color the modifier value. Options: INVERTED, FIXED.
+#    INVERTED: Use the opposite of the attribute's default sentiment coloring (e.g., positive value = red).
+#    FIXED: Always use the specified hex color, regardless of value.
+#  :#HEXCOLOR: Required only if LOGIC is FIXED. The hex color code (e.g., #RRGGBB).
+#  (If no rule is specified for an attribute, vanilla default coloring is used).
+attributeColorOverrides = ["additionalentityattributes:generic.hitbox_height:FIXED:#808080", "additionalentityattributes:generic.hitbox_width:FIXED:#808080", "additionalentityattributes:generic.model_height:FIXED:#808080", "additionalentityattributes:generic.model_width:FIXED:#808080", "additionalentityattributes:generic.height:FIXED:#808080", "additionalentityattributes:generic.width:FIXED:#808080", "additionalentityattributes:generic.model_scale:FIXED:#808080", "additionalentityattributes:generic.mob_detection_range:INVERTED", "ranged_weapon:pull_time:INVERTED"]

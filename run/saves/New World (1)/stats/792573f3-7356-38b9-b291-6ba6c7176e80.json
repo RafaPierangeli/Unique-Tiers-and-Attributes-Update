@@ -1,0 +1,22 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_shovel": 1,
+      "minecraft:diamond_axe": 1,
+      "minecraft:diamond_pickaxe": 1
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 1,
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:sprint_one_cm": 943,
+      "minecraft:talked_to_villager": 5,
+      "minecraft:time_since_rest": 3631,
+      "minecraft:walk_one_cm": 1049,
+      "minecraft:total_world_time": 3748,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 3631,
+      "minecraft:time_since_death": 3631
+    }
+  },
+  "DataVersion": 4671
+}

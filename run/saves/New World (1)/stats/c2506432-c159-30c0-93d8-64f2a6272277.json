@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_helmet": 1,
+      "minecraft:diamond_chestplate": 1,
+      "minecraft:iron_chestplate": 2,
+      "minecraft:diamond_leggings": 3
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 5,
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:sprint_one_cm": 542,
+      "minecraft:talked_to_villager": 10,
+      "minecraft:time_since_rest": 13067,
+      "minecraft:walk_one_cm": 4031,
+      "minecraft:total_world_time": 17975,
+      "minecraft:leave_game": 2,
+      "minecraft:play_time": 13067,
+      "minecraft:time_since_death": 13067,
+      "minecraft:drop": 5
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_boots": 1,
+      "minecraft:iron_helmet": 1,
+      "minecraft:diamond_leggings": 3
+    },
+    "minecraft:used": {
+      "minecraft:cooked_beef": 3
+    }
+  },
+  "DataVersion": 4671
+}

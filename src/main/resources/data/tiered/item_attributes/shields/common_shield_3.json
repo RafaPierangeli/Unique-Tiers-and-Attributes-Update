@@ -1,0 +1,207 @@
+{
+    "id": "tiered:common_shield_3",
+    "weight": 60,
+    "style": {
+        "color": "gray",
+        "bold": false
+    },
+    "verifiers": [
+        {
+            "tag": "c:tools/shields"
+        }
+    ],
+    "roll_templates": [
+        { "positive": 1, "negative": 1, "weight": 40 },
+        { "positive": 1, "negative": 2, "weight": 30 },
+        { "positive": 0, "negative": 1, "weight": 20 },
+        { "positive": 1, "negative": 0, "weight": 10 }
+    ],
+    "positive_pool": [
+        {
+            "type": "minecraft:attack_damage",
+            "min": 1,
+            "max": 2,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "tiered:durable",
+            "min": 0.1,
+            "max": 0.2,
+            "operation": "add_multiplied_total",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+
+        },
+        {
+            "type": "minecraft:armor",
+            "min": 1,
+            "max": 2,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:armor_toughness",
+            "amount": 1.0,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+
+        {
+            "type": "minecraft:attack_speed",
+            "min": 0.01,
+            "max": 0.1,
+            "operation": "add_multiplied_total",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:max_health",
+            "min": 1.0,
+            "max": 2.0,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:movement_speed",
+            "min": 0.01,
+            "max": 0.03,
+            "operation": "add_multiplied_total",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:knockback_resistance",
+            "min": 0.01,
+            "max": 0.15,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:luck",
+            "amount": 1,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:explosion_knockback_resistance",
+            "min": 0.01,
+            "max": 0.15,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        }
+    ],
+
+    "negative_pool": [
+        {
+            "type": "minecraft:attack_damage",
+            "min": -4,
+            "max": -2,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "tiered:durable",
+            "min": -0.5,
+            "max": -0.25,
+            "operation": "add_multiplied_total",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+
+        },
+        {
+            "type": "minecraft:armor",
+            "min": -3,
+            "max": -2,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+
+
+        },
+        {
+            "type": "minecraft:armor_toughness",
+            "amount": -2.0,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+
+        {
+            "type": "minecraft:attack_speed",
+            "min": -0.05,
+            "max": -0.01,
+            "operation": "add_multiplied_total",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:max_health",
+            "min": -2.0,
+            "max": -1.0,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:movement_speed",
+            "min": -0.03,
+            "max": -0.01,
+            "operation": "add_multiplied_total",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        },
+        {
+            "type": "minecraft:luck",
+            "min": -2,
+            "max": -1,
+            "operation": "add_value",
+            "optional_equipment_slots": [
+                "mainhand",
+                "offhand"
+            ]
+        }
+    ]
+}

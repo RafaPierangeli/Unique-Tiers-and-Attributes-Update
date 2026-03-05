@@ -1,0 +1,29 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:porkchop": 2,
+      "minecraft:leather": 1
+    },
+    "minecraft:used": {
+      "minecraft:hoglin_spawn_egg": 8,
+      "minecraft:netherite_sword": 25
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2447,
+      "minecraft:walk_one_cm": 1843,
+      "minecraft:total_world_time": 2470,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 8,
+      "minecraft:damage_taken": 54,
+      "minecraft:play_time": 2447,
+      "minecraft:damage_dealt": 3239,
+      "minecraft:jump": 12,
+      "minecraft:time_since_death": 2447
+    },
+    "minecraft:killed": {
+      "minecraft:hoglin": 7,
+      "minecraft:zoglin": 1
+    }
+  },
+  "DataVersion": 4671
+}

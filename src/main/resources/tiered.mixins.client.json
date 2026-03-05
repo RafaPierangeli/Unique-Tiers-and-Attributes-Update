@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "draylar.tiered.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "client.HandledScreenCaptureMixin",
+    "client.TooltipBackgroundRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

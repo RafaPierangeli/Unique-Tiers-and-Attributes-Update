@@ -1,0 +1,45 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:diamond_sword": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_boots": 4,
+      "minecraft:chainmail_helmet": 12,
+      "minecraft:diamond_helmet": 3,
+      "minecraft:diamond_chestplate": 3,
+      "minecraft:air": 0,
+      "minecraft:diamond_leggings": 6,
+      "minecraft:chainmail_chestplate": 11
+    },
+    "minecraft:killed": {
+      "minecraft:villager": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_boots": 4,
+      "minecraft:diamond_chestplate": 3,
+      "minecraft:diamond_leggings": 5,
+      "minecraft:chainmail_helmet": 12,
+      "minecraft:stick": 1,
+      "minecraft:chainmail_chestplate": 11,
+      "minecraft:diamond_helmet": 3
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 39,
+      "minecraft:talked_to_villager": 7,
+      "minecraft:time_since_rest": 4438,
+      "minecraft:walk_one_cm": 7860,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_dealt": 200,
+      "minecraft:play_time": 4438,
+      "minecraft:jump": 5,
+      "minecraft:time_since_death": 4438,
+      "minecraft:drop": 39,
+      "minecraft:sprint_one_cm": 443,
+      "minecraft:total_world_time": 4486,
+      "minecraft:fly_one_cm": 87
+    }
+  },
+  "DataVersion": 4671
+}

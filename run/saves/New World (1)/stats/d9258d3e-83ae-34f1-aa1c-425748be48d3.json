@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:villager": 4
+    },
+    "minecraft:crafted": {
+      "minecraft:iron_boots": 1
+    },
+    "minecraft:used": {
+      "minecraft:villager_spawn_egg": 1,
+      "minecraft:diamond_axe": 4
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 1,
+      "minecraft:talked_to_villager": 2,
+      "minecraft:time_since_rest": 2844,
+      "minecraft:walk_one_cm": 974,
+      "minecraft:total_world_time": 2881,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 4,
+      "minecraft:play_time": 2844,
+      "minecraft:damage_dealt": 800,
+      "minecraft:time_since_death": 2844
+    }
+  },
+  "DataVersion": 4671
+}

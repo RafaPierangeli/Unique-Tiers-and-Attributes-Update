@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 2,
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 422,
+      "minecraft:walk_one_cm": 189,
+      "minecraft:total_world_time": 482,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 422,
+      "minecraft:time_since_death": 422
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_helmet": 2
+    }
+  },
+  "DataVersion": 4671
+}

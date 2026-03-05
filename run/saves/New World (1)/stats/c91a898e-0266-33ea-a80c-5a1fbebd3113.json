@@ -1,0 +1,51 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:diamond_sword": 1,
+      "minecraft:dirt": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 1,
+      "minecraft:emerald": 39
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_boots": 6,
+      "minecraft:diamond_chestplate": 1,
+      "minecraft:diamond_leggings": 1,
+      "minecraft:emerald": 1,
+      "minecraft:diamond_helmet": 8
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_boots": 6,
+      "minecraft:diamond_helmet": 4,
+      "minecraft:diamond_chestplate": 1,
+      "minecraft:diamond_leggings": 2
+    },
+    "minecraft:mined": {
+      "minecraft:grass_block": 1
+    },
+    "minecraft:killed": {
+      "minecraft:drowned": 1
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 13,
+      "minecraft:talked_to_villager": 5,
+      "minecraft:time_since_rest": 5994,
+      "minecraft:walk_one_cm": 5357,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:walk_under_water_one_cm": 18,
+      "minecraft:damage_taken": 80,
+      "minecraft:damage_dealt": 200,
+      "minecraft:play_time": 5994,
+      "minecraft:jump": 6,
+      "minecraft:time_since_death": 5994,
+      "minecraft:drop": 17,
+      "minecraft:sprint_one_cm": 914,
+      "minecraft:total_world_time": 6650,
+      "minecraft:fly_one_cm": 369,
+      "minecraft:walk_on_water_one_cm": 435
+    }
+  },
+  "DataVersion": 4671
+}

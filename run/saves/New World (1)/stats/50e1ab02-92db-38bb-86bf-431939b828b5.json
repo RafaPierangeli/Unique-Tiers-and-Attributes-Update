@@ -1,0 +1,22 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_sword": 1
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 1,
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 5642,
+      "minecraft:walk_one_cm": 3002,
+      "minecraft:total_world_time": 7230,
+      "minecraft:leave_game": 4,
+      "minecraft:play_time": 5642,
+      "minecraft:time_since_death": 5642,
+      "minecraft:drop": 3
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_sword": 3
+    }
+  },
+  "DataVersion": 4671
+}

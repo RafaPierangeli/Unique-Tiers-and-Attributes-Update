@@ -1,0 +1,19 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_leggings": 1,
+      "minecraft:iron_leggings": 1
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 2,
+      "minecraft:talked_to_villager": 2,
+      "minecraft:time_since_rest": 2348,
+      "minecraft:walk_one_cm": 1029,
+      "minecraft:total_world_time": 2485,
+      "minecraft:leave_game": 2,
+      "minecraft:play_time": 2348,
+      "minecraft:time_since_death": 2348
+    }
+  },
+  "DataVersion": 4671
+}

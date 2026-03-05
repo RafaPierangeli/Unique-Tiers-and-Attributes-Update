@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:diamond_chestplate": 1,
+      "minecraft:diamond_helmet": 4
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_helmet": 1,
+      "minecraft:diamond_chestplate": 1
+    },
+    "minecraft:used": {
+      "minecraft:netherite_sword": 2,
+      "minecraft:zombie_spawn_egg": 1
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 2,
+      "minecraft:sprint_one_cm": 224,
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 4429,
+      "minecraft:walk_one_cm": 713,
+      "minecraft:total_world_time": 4613,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 1,
+      "minecraft:play_time": 4429,
+      "minecraft:damage_dealt": 200,
+      "minecraft:time_since_death": 4429,
+      "minecraft:drop": 5
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 1
+    }
+  },
+  "DataVersion": 4671
+}

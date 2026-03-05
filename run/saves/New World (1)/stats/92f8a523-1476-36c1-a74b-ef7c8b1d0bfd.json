@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:iron_chestplate": 3
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 3,
+      "minecraft:sprint_one_cm": 2936,
+      "minecraft:talked_to_villager": 2,
+      "minecraft:time_since_rest": 3714,
+      "minecraft:walk_one_cm": 1759,
+      "minecraft:total_world_time": 3741,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 3574,
+      "minecraft:play_time": 3714,
+      "minecraft:jump": 13,
+      "minecraft:time_since_death": 3714
+    }
+  },
+  "DataVersion": 4671
+}

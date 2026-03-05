@@ -1,0 +1,43 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "tiered:reforge_block": 2
+    },
+    "minecraft:used": {
+      "minecraft:stone": 1,
+      "minecraft:grass_block": 12,
+      "tiered:reforge_block": 2,
+      "minecraft:crafting_table": 1,
+      "minecraft:netherite_pickaxe": 23,
+      "minecraft:netherite_shovel": 10,
+      "minecraft:torch": 3,
+      "minecraft:dirt": 10
+    },
+    "minecraft:mined": {
+      "minecraft:wall_torch": 1,
+      "minecraft:grass_block": 10,
+      "minecraft:stone": 22
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 10,
+      "minecraft:cobblestone": 22,
+      "minecraft:torch": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 5,
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 11303,
+      "minecraft:walk_one_cm": 11162,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 11303,
+      "minecraft:jump": 13,
+      "minecraft:time_since_death": 11303,
+      "minecraft:aviate_one_cm": 815,
+      "minecraft:sprint_one_cm": 5114,
+      "minecraft:total_world_time": 11372,
+      "minecraft:fly_one_cm": 526,
+      "minecraft:interact_with_anvil": 1
+    }
+  },
+  "DataVersion": 4671
+}

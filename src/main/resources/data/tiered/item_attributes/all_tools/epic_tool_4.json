@@ -1,0 +1,103 @@
+{
+    "id": "tiered:epic_tool_4",
+    "weight": 15,
+    "style": {
+        "color": "dark_purple",
+        "bold": false
+    },
+    "verifiers": [
+        {
+            "tag": "minecraft:axes"
+        },
+        {
+            "tag": "minecraft:pickaxes"
+        },
+        {
+            "tag": "minecraft:shovels"
+        },
+        {
+            "tag": "minecraft:hoes"
+        }
+    ],
+    "roll_templates": [
+        { "positive": 3, "negative": 0, "weight": 50 },
+        { "positive": 4, "negative": 0, "weight": 40 }
+    ],
+    "positive_pool": [
+        {
+            "type": "minecraft:attack_damage",
+            "min": 2,
+            "max": 4,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "tiered:durable",
+            "min": 0.3,
+            "max": 0.6,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+
+        },
+        {
+            "type": "minecraft:mining_efficiency",
+            "min": 1,
+            "max": 4,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:submerged_mining_speed",
+            "min": 0.2,
+            "max": 0.5,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+
+        {
+            "type": "minecraft:attack_speed",
+            "min": 0.2,
+            "max": 0.4,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "tiered:dig_speed",
+            "min": 1,
+            "max": 3,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:movement_speed",
+            "min": 0.2,
+            "max": 0.6,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:block_interaction_range",
+            "min": 1,
+            "max": 3,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:luck",
+            "min": 2,
+            "max": 4,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:block_break_speed",
+            "min": 1,
+            "max": 2,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        }
+    ],
+
+    "negative_pool": [
+    ]
+}

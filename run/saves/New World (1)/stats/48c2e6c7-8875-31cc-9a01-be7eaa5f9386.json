@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:netherite_sword": 1
+    },
+    "minecraft:custom": {
+      "minecraft:open_chest": 2,
+      "minecraft:time_since_rest": 3542,
+      "minecraft:walk_one_cm": 1746,
+      "minecraft:total_world_time": 5225,
+      "minecraft:leave_game": 1,
+      "minecraft:sneak_time": 2,
+      "minecraft:play_time": 3542,
+      "minecraft:time_since_death": 3542
+    }
+  },
+  "DataVersion": 4671
+}

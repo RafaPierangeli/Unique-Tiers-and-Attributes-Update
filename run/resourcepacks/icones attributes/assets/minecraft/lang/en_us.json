@@ -1,0 +1,21 @@
+{
+  "attribute.name.armor": "§f\uD833\uDD01§r Armor",
+  "attribute.name.armor_toughness": "§f\uD833\uDD02§r Armor Toughness",
+  "attribute.name.attack_damage": "§f\uD833\uDD03§r Attack Damage",
+  "attribute.name.attack_knockback": "§f\uD833\uDD04§r Attack Knockback",
+  "attribute.name.attack_speed": "§f\uD833\uDD05§r Attack Speed",
+  "attribute.name.fall_damage_multiplier": "§f\uD833\uDD0D§r Fall Damage Multiplier",
+  "attribute.name.gravity": "§f\uD833\uDD0C§r Gravity",
+  "attribute.name.jump_strength": "§f\uD833\uDD0B§r Jump Strength",
+  "attribute.name.knockback_resistance": "§f\uD833\uDD07§r Knockback Resistance",
+  "attribute.name.luck": "§f\uD833\uDD08§r Luck",
+  "attribute.name.max_health": "§f\uD833\uDD09§r Max Health",
+  "attribute.name.movement_speed": "§f\uD833\uDD0A§r Speed",
+  "attribute.name.block_break_speed": "§f\uD833\uDD0F§r Block Break Speed",
+  "attribute.name.block_interaction_range": "§f\uD833\uDD10§r Block Interaction Range",
+  "attribute.name.entity_interaction_range": "§f\uD833\uDD11§r Entity Interaction Range",
+  "attribute.name.mining_efficiency": "§f\uD833\uDD0E§r Mining Efficiency",
+  "attribute.name.sweeping_damage_ratio": "§f\uD833\uDD06§r Sweeping Damage Ratio",
+  "attribute.name.submerged_mining_speed": "§f\uE601§r Submerged mining speed",
+  "attribute.name.oxygen_bonus": "§f\uE600§r Oxygen Bonus"
+}

@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:mace": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8555,
+      "minecraft:walk_one_cm": 757,
+      "minecraft:total_world_time": 8983,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 8555,
+      "minecraft:time_since_death": 8555,
+      "minecraft:drop": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:mace": 1
+    }
+  },
+  "DataVersion": 4671
+}

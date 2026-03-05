@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:diamond_sword": 6
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_axe": 1,
+      "minecraft:diamond_sword": 2,
+      "minecraft:iron_chestplate": 1
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 4,
+      "minecraft:sprint_one_cm": 561,
+      "minecraft:talked_to_villager": 5,
+      "minecraft:time_since_rest": 4040,
+      "minecraft:walk_one_cm": 1342,
+      "minecraft:total_world_time": 4400,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 4040,
+      "minecraft:time_since_death": 4040,
+      "minecraft:drop": 6
+    }
+  },
+  "DataVersion": 4671
+}

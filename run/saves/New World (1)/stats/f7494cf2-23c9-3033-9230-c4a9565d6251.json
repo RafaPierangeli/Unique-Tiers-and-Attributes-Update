@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 725,
+      "minecraft:walk_one_cm": 1870,
+      "minecraft:total_world_time": 746,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 7,
+      "minecraft:play_time": 725,
+      "minecraft:damage_dealt": 1400,
+      "minecraft:time_since_death": 725
+    },
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 7
+    },
+    "minecraft:picked_up": {
+      "minecraft:coal": 12,
+      "minecraft:stone_sword": 2,
+      "minecraft:bone": 21
+    },
+    "minecraft:used": {
+      "minecraft:spruce_fence": 1,
+      "minecraft:netherite_sword": 14,
+      "minecraft:wither_skeleton_spawn_egg": 7
+    }
+  },
+  "DataVersion": 4671
+}

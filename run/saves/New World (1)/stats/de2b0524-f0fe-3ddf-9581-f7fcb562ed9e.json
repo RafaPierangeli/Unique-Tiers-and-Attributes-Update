@@ -1,0 +1,43 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:stone": 210,
+      "minecraft:grass_block": 4,
+      "minecraft:spruce_fence": 4,
+      "tiered:reforge_block": 4,
+      "minecraft:warden_spawn_egg": 1,
+      "minecraft:netherite_sword": 47,
+      "minecraft:anvil": 1,
+      "minecraft:wither_skeleton_spawn_egg": 11,
+      "minecraft:torch": 17,
+      "minecraft:stone_stairs": 8
+    },
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 11,
+      "minecraft:warden": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 6470,
+      "minecraft:time_since_rest": 17085,
+      "minecraft:fall_one_cm": 300,
+      "minecraft:walk_one_cm": 41578,
+      "minecraft:total_world_time": 17288,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 2417,
+      "minecraft:mob_kills": 12,
+      "minecraft:damage_dealt": 7200,
+      "minecraft:play_time": 17085,
+      "minecraft:jump": 24,
+      "minecraft:time_since_death": 17085
+    },
+    "minecraft:picked_up": {
+      "minecraft:coal": 2,
+      "minecraft:stone_sword": 1,
+      "minecraft:sculk_catalyst": 1,
+      "minecraft:wildflowers": 2,
+      "minecraft:torch": 1,
+      "minecraft:bone": 8
+    }
+  },
+  "DataVersion": 4671
+}

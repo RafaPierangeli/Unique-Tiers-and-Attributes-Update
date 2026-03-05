@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 4,
+      "minecraft:talked_to_villager": 5,
+      "minecraft:time_since_rest": 4127,
+      "minecraft:walk_one_cm": 1153,
+      "minecraft:total_world_time": 4148,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 4127,
+      "minecraft:time_since_death": 4127,
+      "minecraft:drop": 5
+    },
+    "minecraft:picked_up": {
+      "minecraft:diamond_leggings": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_helmet": 1,
+      "minecraft:diamond_leggings": 3
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_leggings": 4,
+      "minecraft:diamond_helmet": 1
+    }
+  },
+  "DataVersion": 4671
+}

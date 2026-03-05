@@ -1,0 +1,104 @@
+{
+    "id": "tiered:legendary_melee_4",
+    "weight": 7,
+    "style": {
+        "color": "gold",
+        "bold": false
+    },
+    "verifiers": [
+        {
+            "tag": "minecraft:swords"
+        },
+        {
+            "tag": "minecraft:spears"
+        },
+        {
+            "id": "minecraft:mace"
+        },
+        {
+            "id": "minecraft:trident"
+        }
+    ],
+    "roll_templates": [
+        { "positive": 4, "negative": 0, "weight": 50 },
+        { "positive": 5, "negative": 0, "weight": 40 },
+        { "positive": 6, "negative": 0, "weight": 10 }
+    ],
+    "positive_pool": [
+        {
+            "type": "minecraft:attack_damage",
+            "min": 4,
+            "max": 8,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "tiered:durable",
+            "min": 0.3,
+            "max": 0.7,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+
+        },
+        {
+            "type": "minecraft:sweeping_damage_ratio",
+            "min": 0.3,
+            "max": 0.8,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:attack_knockback",
+            "min": 0.35,
+            "max": 0.7,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+
+        {
+            "type": "minecraft:attack_speed",
+            "min": 0.2,
+            "max": 0.5,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "tiered:critical_chance",
+            "min": 0.3,
+            "max": 0.75,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:movement_speed",
+            "min": 0.2,
+            "max": 0.4,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:knockback_resistance",
+            "min": 0.25,
+            "max": 0.45,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:luck",
+            "min": 3,
+            "max": 7,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "tiered:critical_damage",
+            "min": 1,
+            "max": 2.5,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        }
+    ],
+
+    "negative_pool": [
+    ]
+}

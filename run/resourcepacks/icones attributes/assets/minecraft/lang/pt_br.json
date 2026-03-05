@@ -1,0 +1,21 @@
+{
+  "attribute.name.armor": "§f\uD833\uDD01§r Armadura",
+  "attribute.name.armor_toughness": "§f\uD833\uDD02§r Resistência da Armadura",
+  "attribute.name.attack_damage": "§f\uD833\uDD03§r Dano de Ataque",
+  "attribute.name.attack_knockback": "§f\uD833\uDD04§r Repulsão de Ataque",
+  "attribute.name.attack_speed": "§f\uD833\uDD05§r Velocidade de Ataque",
+  "attribute.name.fall_damage_multiplier": "§f\uD833\uDD0D§r Multiplicador de Dano de Queda",
+  "attribute.name.gravity": "§f\uD833\uDD0C§r Gravidade",
+  "attribute.name.jump_strength": "§f\uD833\uDD0B§r Força do Pulo",
+  "attribute.name.knockback_resistance": "§f\uD833\uDD07§r Resistência à Repulsão",
+  "attribute.name.luck": "§f\uD833\uDD08§r Sorte",
+  "attribute.name.max_health": "§f\uD833\uDD09§r Vida Máxima",
+  "attribute.name.movement_speed": "§f\uD833\uDD0A§r Velocidade de Movimento",
+  "attribute.name.block_break_speed": "§f\uD833\uDD0F§r Velocidade de Mineração",
+  "attribute.name.block_interaction_range": "§f\uD833\uDD10§r Alcance de Interação com Blocos",
+  "attribute.name.entity_interaction_range": "§f\uD833\uDD11§r Alcance de Interação com Entidades",
+  "attribute.name.mining_efficiency": "§f\uD833\uDD0E§r Eficiência de Mineração",
+  "attribute.name.sweeping_damage_ratio": "§f\uD833\uDD06§r Proporção de Dano de Varredura",
+  "attribute.name.aqua_affinity": "§f\uD833\uDD42§r Afinidade Aquatica",
+  "attribute.name.respiration": "§f\uD833\uDD43§r Respiração"
+}

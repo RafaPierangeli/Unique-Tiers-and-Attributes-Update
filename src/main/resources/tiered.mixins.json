@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "package": "draylar.tiered.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+
+    "LivingEntityMixin",
+    "TradeOutputSlotMixin",
+    "PlayerEntityMixin",
+    "ItemMixin",
+    "TridentEntityMixin",
+    "LootTableMixin",
+    "MerchantScreenHandlerMixin",
+    "RangedWeaponItemMixin",
+    "ItemFrameEntityMixin",
+    "MobEntityMixin",
+    "ArmorStandEntityMixin",
+    "CraftingScreenHandlerMixin",
+    "access.ServerPlayerEntityAccessor"
+  ],
+  "client": [
+    "client.ItemStackClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

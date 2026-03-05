@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:short_grass": 3
+    },
+    "minecraft:used": {
+      "minecraft:villager_spawn_egg": 1,
+      "minecraft:grindstone": 1,
+      "minecraft:anvil": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_shovel": 1,
+      "minecraft:diamond_axe": 3,
+      "minecraft:diamond_chestplate": 4,
+      "minecraft:air": 0,
+      "minecraft:iron_axe": 3,
+      "minecraft:emerald": 26
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 32,
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:talked_to_villager": 9,
+      "minecraft:time_since_rest": 15272,
+      "minecraft:walk_one_cm": 15898,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 15272,
+      "minecraft:jump": 17,
+      "minecraft:time_since_death": 15272,
+      "minecraft:drop": 12,
+      "minecraft:open_barrel": 1,
+      "minecraft:sprint_one_cm": 11799,
+      "minecraft:open_chest": 3,
+      "minecraft:total_world_time": 50076,
+      "minecraft:fly_one_cm": 390179,
+      "minecraft:sneak_time": 194
+    },
+    "minecraft:dropped": {
+      "minecraft:iron_axe": 3,
+      "minecraft:diamond_shovel": 1,
+      "minecraft:iron_ingot": 1,
+      "minecraft:diamond_chestplate": 3,
+      "minecraft:diamond_axe": 2,
+      "minecraft:golden_axe": 1,
+      "minecraft:stick": 2
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 4,
+      "minecraft:sprint_one_cm": 1180,
+      "minecraft:talked_to_villager": 4,
+      "minecraft:time_since_rest": 9773,
+      "minecraft:walk_one_cm": 3833,
+      "minecraft:total_world_time": 10397,
+      "minecraft:leave_game": 2,
+      "minecraft:play_time": 9773,
+      "minecraft:time_since_death": 9773
+    },
+    "minecraft:used": {
+      "minecraft:villager_spawn_egg": 3,
+      "minecraft:grindstone": 1,
+      "minecraft:smithing_table": 1,
+      "minecraft:blast_furnace": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:stone_shovel": 1,
+      "minecraft:iron_helmet": 3,
+      "minecraft:air": 0
+    }
+  },
+  "DataVersion": 4671
+}

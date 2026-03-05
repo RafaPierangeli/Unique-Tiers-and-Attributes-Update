@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:zombie": 6
+    },
+    "minecraft:used": {
+      "minecraft:grass_block": 2,
+      "minecraft:netherite_sword": 13,
+      "minecraft:zombie_spawn_egg": 6,
+      "minecraft:diamond_sword": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_helmet": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:potato": 1,
+      "minecraft:wheat_seeds": 1,
+      "minecraft:rotten_flesh": 6
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 1,
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 4050,
+      "minecraft:walk_one_cm": 6550,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 6,
+      "minecraft:play_time": 4050,
+      "minecraft:damage_dealt": 1203,
+      "minecraft:jump": 17,
+      "minecraft:time_since_death": 4050,
+      "minecraft:sprint_one_cm": 9229,
+      "minecraft:total_world_time": 4224,
+      "minecraft:fly_one_cm": 2758,
+      "minecraft:sneak_time": 1
+    }
+  },
+  "DataVersion": 4671
+}

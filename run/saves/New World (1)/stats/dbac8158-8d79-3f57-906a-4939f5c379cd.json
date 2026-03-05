@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 3758,
+      "minecraft:walk_one_cm": 2722,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:play_time": 3758,
+      "minecraft:damage_dealt": 5000,
+      "minecraft:jump": 9,
+      "minecraft:time_since_death": 3758,
+      "minecraft:sprint_one_cm": 3111,
+      "minecraft:total_world_time": 4075,
+      "minecraft:fly_one_cm": 2777,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:sneak_time": 3,
+      "minecraft:interact_with_blast_furnace": 1
+    },
+    "minecraft:killed": {
+      "minecraft:warden": 1
+    },
+    "minecraft:used": {
+      "minecraft:warden_spawn_egg": 1,
+      "minecraft:splash_potion": 4,
+      "minecraft:netherite_sword": 50
+    }
+  },
+  "DataVersion": 4671
+}

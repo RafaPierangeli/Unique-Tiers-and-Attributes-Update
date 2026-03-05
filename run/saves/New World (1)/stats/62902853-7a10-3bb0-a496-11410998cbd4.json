@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 3,
+      "minecraft:time_since_rest": 2683,
+      "minecraft:walk_one_cm": 1045,
+      "minecraft:total_world_time": 2734,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 2683,
+      "minecraft:time_since_death": 2683,
+      "minecraft:drop": 16
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_boots": 8,
+      "minecraft:diamond_sword": 2,
+      "minecraft:diamond_helmet": 6
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_boots": 8,
+      "minecraft:diamond_shovel": 4,
+      "minecraft:diamond_helmet": 6,
+      "minecraft:diamond_sword": 3
+    }
+  },
+  "DataVersion": 4671
+}

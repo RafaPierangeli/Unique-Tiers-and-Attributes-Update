@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:dirt": 2,
+      "minecraft:grass_block": 2,
+      "minecraft:stone": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 3572,
+      "minecraft:walk_one_cm": 4025,
+      "minecraft:total_world_time": 3610,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 3572,
+      "minecraft:time_since_death": 3572
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_pickaxe": 1
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 4,
+      "minecraft:diamond_shovel": 1
+    }
+  },
+  "DataVersion": 4671
+}

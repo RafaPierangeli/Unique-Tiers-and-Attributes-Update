@@ -1,0 +1,33 @@
+{
+	"enableDefaultModifiers": true,
+	// Items in for example mineshaft chests get modifiers
+	"lootContainerModifier": true,
+	"entityItemModifier": true,
+	"entityDropModifier": true,
+	// Crafted items get modifiers
+	"craftingModifier": true,
+	// Merchant items get modifiers
+	"merchantModifier": true,
+	// Merchant items Scaling for merchant level
+	"merchantLevelScaling": true,
+	// Decreases the biggest weights by this modifier
+	"reforgeModifier": 0.8999999761581421,
+	// Modify the biggest weights by this modifier per smithing level
+	"levelzReforgeModifier": 0.009999999776482582,
+	// Modify the biggest weights by this modifier per luck
+	"luckReforgeModifier": 0.019999999552965164,
+	"reforgeXpCost": 50,
+	"uniqueReforge": false,
+	"showReforgingTab": true,
+	"xIconPosition": 0,
+	"yIconPosition": 0,
+	"tieredTooltip": true,
+	"centerName": true,
+	// Color mode for attributes in tooltip
+	"attributeColorMode": "DEFAULT",
+	// Draws a solid colored line around the tooltip based on the tier's rarity color.
+	"enableTierColorBorder": true,
+	// Draws custom textures (corners and top icon) around the tooltip
+	"enableTierOrnaments": true,
+	"uniqueTooltipMode": "ON_SHIFT"
+}

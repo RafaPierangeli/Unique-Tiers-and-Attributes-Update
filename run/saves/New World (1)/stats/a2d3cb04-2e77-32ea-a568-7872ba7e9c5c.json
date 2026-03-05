@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:iron_helmet": 1,
+      "minecraft:iron_chestplate": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1089,
+      "minecraft:walk_one_cm": 275,
+      "minecraft:total_world_time": 1255,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 1089,
+      "minecraft:time_since_death": 1089,
+      "minecraft:drop": 2
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:netherite_ingot": 33,
+      "minecraft:amethyst_shard": 33,
+      "minecraft:netherite_sword": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 254,
+      "minecraft:walk_one_cm": 266,
+      "minecraft:total_world_time": 1877,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 254,
+      "minecraft:time_since_death": 254
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:iron_trapdoor": 1,
+      "minecraft:iron_boots": 7
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 5,
+      "minecraft:sprint_one_cm": 132,
+      "minecraft:time_since_rest": 3858,
+      "minecraft:fall_one_cm": 225,
+      "minecraft:walk_one_cm": 1645,
+      "minecraft:total_world_time": 4546,
+      "minecraft:leave_game": 3,
+      "minecraft:play_time": 3858,
+      "minecraft:jump": 3,
+      "minecraft:time_since_death": 3858
+    }
+  },
+  "DataVersion": 4671
+}

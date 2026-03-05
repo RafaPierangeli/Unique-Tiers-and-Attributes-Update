@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:wither_skeleton_spawn_egg": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1777,
+      "minecraft:walk_one_cm": 170,
+      "minecraft:total_world_time": 1804,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:play_time": 1777,
+      "minecraft:damage_dealt": 180,
+      "minecraft:time_since_death": 1777
+    },
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 1
+    }
+  },
+  "DataVersion": 4671
+}

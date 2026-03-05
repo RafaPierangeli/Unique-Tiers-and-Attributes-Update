@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:hoglin": 1
+    },
+    "minecraft:used": {
+      "minecraft:hoglin_spawn_egg": 1,
+      "minecraft:netherite_sword": 5
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 242,
+      "minecraft:walk_one_cm": 42,
+      "minecraft:total_world_time": 271,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:play_time": 242,
+      "minecraft:damage_dealt": 400,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 242
+    }
+  },
+  "DataVersion": 4671
+}

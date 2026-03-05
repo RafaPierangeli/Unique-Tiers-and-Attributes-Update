@@ -1,0 +1,50 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_boots": 3,
+      "minecraft:chainmail_helmet": 12,
+      "minecraft:chainmail_leggings": 1,
+      "minecraft:diamond_helmet": 7,
+      "minecraft:iron_chestplate": 20,
+      "minecraft:iron_boots": 14,
+      "minecraft:diamond_leggings": 5,
+      "minecraft:shield": 1,
+      "minecraft:diamond_axe": 1,
+      "minecraft:diamond_chestplate": 7,
+      "minecraft:air": 0,
+      "minecraft:emerald": 10,
+      "minecraft:iron_leggings": 14
+    },
+    "minecraft:used": {
+      "minecraft:villager_spawn_egg": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_boots": 3,
+      "minecraft:diamond_chestplate": 7,
+      "minecraft:diamond_leggings": 5,
+      "minecraft:iron_chestplate": 20,
+      "minecraft:villager_spawn_egg": 1,
+      "minecraft:chainmail_helmet": 8,
+      "minecraft:iron_boots": 14,
+      "minecraft:shield": 1,
+      "minecraft:iron_leggings": 12,
+      "minecraft:diamond_helmet": 7
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 95,
+      "minecraft:talked_to_villager": 18,
+      "minecraft:time_since_rest": 11265,
+      "minecraft:walk_one_cm": 8688,
+      "minecraft:leave_game": 2,
+      "minecraft:play_time": 11265,
+      "minecraft:jump": 7,
+      "minecraft:time_since_death": 11265,
+      "minecraft:drop": 78,
+      "minecraft:sprint_one_cm": 5571,
+      "minecraft:total_world_time": 11373,
+      "minecraft:fly_one_cm": 1157,
+      "minecraft:sneak_time": 3
+    }
+  },
+  "DataVersion": 4671
+}

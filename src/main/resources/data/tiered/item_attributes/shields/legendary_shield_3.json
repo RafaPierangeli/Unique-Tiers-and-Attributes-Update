@@ -1,0 +1,86 @@
+{
+    "id": "tiered:legendary_shield_3",
+    "weight": 7,
+    "style": {
+        "color": "gold",
+        "bold": false
+    },
+    "verifiers": [
+        {
+            "tag": "c:tools/shields"
+        }
+    ],
+    "roll_templates": [
+        { "positive": 4, "negative": 0, "weight": 50 },
+        { "positive": 5, "negative": 0, "weight": 40 },
+        { "positive": 6, "negative": 0, "weight": 10 }
+    ],
+    "positive_pool": [
+        {
+            "type": "minecraft:attack_damage",
+            "min": 1,
+            "max": 5,
+            "operation": "add_value"
+        },
+        {
+            "type": "tiered:durable",
+            "min": 0.1,
+            "max": 0.3,
+            "operation": "add_multiplied_total"
+
+        },
+        {
+            "type": "minecraft:armor",
+            "min": 1,
+            "max": 3,
+            "operation": "add_value"
+
+
+        },
+        {
+            "type": "minecraft:armor_toughness",
+            "min": 1.0,
+            "max": 2.0,
+            "operation": "add_value"
+        },
+
+        {
+            "type": "minecraft:attack_speed",
+            "min": 0.05,
+            "max": 0.2,
+            "operation": "add_multiplied_total"
+        },
+        {
+            "type": "minecraft:max_health",
+            "min": 2.0,
+            "max": 4.0,
+            "operation": "add_value"
+        },
+        {
+            "type": "minecraft:movement_speed",
+            "min": 0.01,
+            "max": 0.05,
+            "operation": "add_multiplied_total"
+        },
+        {
+            "type": "minecraft:knockback_resistance",
+            "min": 0.01,
+            "max": 0.25,
+            "operation": "add_value"
+        },
+        {
+            "type": "minecraft:luck",
+            "min": 1,
+            "max": 3,
+            "operation": "add_value"
+        },
+        {
+            "type": "minecraft:explosion_knockback_resistance",
+            "min": 0.01,
+            "max": 0.25,
+            "operation": "add_value"
+        }
+    ],
+
+    "negative_pool": []
+}

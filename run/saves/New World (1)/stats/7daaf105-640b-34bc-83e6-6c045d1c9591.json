@@ -1,0 +1,13 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 2628,
+      "minecraft:total_world_time": 2874,
+      "minecraft:leave_game": 3,
+      "minecraft:play_time": 2628,
+      "minecraft:time_since_death": 2628
+    }
+  },
+  "DataVersion": 4671
+}

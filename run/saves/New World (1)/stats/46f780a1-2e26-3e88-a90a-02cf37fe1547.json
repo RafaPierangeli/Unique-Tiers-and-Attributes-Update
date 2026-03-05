@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 3,
+      "minecraft:creeper": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:gunpowder": 2
+    },
+    "minecraft:used": {
+      "minecraft:netherite_sword": 4,
+      "minecraft:wither_skeleton_spawn_egg": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3933,
+      "minecraft:walk_one_cm": 1681,
+      "minecraft:total_world_time": 4383,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 4,
+      "minecraft:play_time": 3933,
+      "minecraft:damage_dealt": 800,
+      "minecraft:time_since_death": 3933
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,22 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:chest": 1
+    },
+    "minecraft:custom": {
+      "minecraft:open_chest": 1,
+      "minecraft:time_since_rest": 1256,
+      "minecraft:walk_one_cm": 384,
+      "minecraft:total_world_time": 1295,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 1256,
+      "minecraft:time_since_death": 1256
+    },
+    "minecraft:picked_up": {
+      "minecraft:netherite_ingot": 38,
+      "minecraft:amethyst_shard": 38,
+      "minecraft:netherite_sword": 1
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:iron_helmet": 2,
+      "minecraft:iron_boots": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 2010,
+      "minecraft:walk_one_cm": 407,
+      "minecraft:total_world_time": 2266,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 2010,
+      "minecraft:time_since_death": 2010
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:villager": 3
+    },
+    "minecraft:dropped": {
+      "tiered:reforge_block": 1,
+      "minecraft:diamond_helmet": 4
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_helmet": 4,
+      "minecraft:diamond_sword": 1
+    },
+    "minecraft:picked_up": {
+      "tiered:reforge_block": 1
+    },
+    "minecraft:used": {
+      "minecraft:diamond_sword": 9
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 5,
+      "minecraft:talked_to_villager": 12,
+      "minecraft:time_since_rest": 12321,
+      "minecraft:walk_one_cm": 8131,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 3,
+      "minecraft:play_time": 12321,
+      "minecraft:damage_dealt": 600,
+      "minecraft:jump": 33,
+      "minecraft:time_since_death": 12321,
+      "minecraft:drop": 5,
+      "minecraft:sprint_one_cm": 2955,
+      "minecraft:total_world_time": 12481,
+      "minecraft:fly_one_cm": 6079
+    }
+  },
+  "DataVersion": 4671
+}

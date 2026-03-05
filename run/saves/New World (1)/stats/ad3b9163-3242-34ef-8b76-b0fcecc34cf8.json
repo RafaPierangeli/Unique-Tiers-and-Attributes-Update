@@ -1,0 +1,29 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:stone": 2,
+      "minecraft:warden_spawn_egg": 12,
+      "minecraft:netherite_sword": 94
+    },
+    "minecraft:picked_up": {
+      "minecraft:sculk_catalyst": 12
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 475,
+      "minecraft:time_since_rest": 5114,
+      "minecraft:walk_one_cm": 5099,
+      "minecraft:total_world_time": 5159,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 856,
+      "minecraft:mob_kills": 12,
+      "minecraft:play_time": 5114,
+      "minecraft:damage_dealt": 60000,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 5114
+    },
+    "minecraft:killed": {
+      "minecraft:warden": 12
+    }
+  },
+  "DataVersion": 4671
+}

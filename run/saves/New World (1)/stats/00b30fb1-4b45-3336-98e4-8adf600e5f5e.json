@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1408,
+      "minecraft:walk_one_cm": 3774,
+      "minecraft:total_world_time": 1477,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:play_time": 1408,
+      "minecraft:damage_dealt": 201,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 1408
+    },
+    "minecraft:used": {
+      "minecraft:wither_skeleton_spawn_egg": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:netherite_ingot": 55
+    }
+  },
+  "DataVersion": 4671
+}

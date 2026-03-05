@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1491,
+      "minecraft:walk_one_cm": 501,
+      "minecraft:total_world_time": 2040,
+      "minecraft:leave_game": 2,
+      "minecraft:play_time": 1491,
+      "minecraft:time_since_death": 1491
+    },
+    "minecraft:used": {
+      "tiered:reforge_block": 4
+    }
+  },
+  "DataVersion": 4671
+}

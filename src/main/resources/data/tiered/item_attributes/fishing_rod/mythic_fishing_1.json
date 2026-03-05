@@ -1,0 +1,88 @@
+{
+  "id": "tiered:mythic_fishing_1",
+  "weight": 0,
+  "style": {
+    "color": "aqua",
+    "bold": false
+  },
+  "verifiers": [
+    {
+      "id": "minecraft:fishing_rod"
+    }
+  ],
+  "roll_templates": [
+    { "positive": 7, "negative": 0, "weight": 50 },
+    { "positive": 8, "negative": 0, "weight": 40 },
+    { "positive": 9, "negative": 0, "weight": 10 }
+  ],
+  "positive_pool": [
+    {
+      "type": "minecraft:attack_damage",
+      "min": 5,
+      "max": 10,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "tiered:durable",
+      "min": 0.8,
+      "max": 1,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+
+    },
+    {
+      "type": "minecraft:luck_of_the_sea",
+      "min": 1,
+      "max": 1,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:entity_interaction_range",
+      "min": 1,
+      "max": 1,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+
+    {
+      "type": "minecraft:attack_speed",
+      "min": 0.5,
+      "max": 0.8,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:water_movement_efficiency",
+      "min": 0.6,
+      "max": 1,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:movement_speed",
+      "min": 1,
+      "max": 2,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:oxygen_bonus",
+      "min": 5,
+      "max": 8,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:luck",
+      "min": 15,
+      "max": 20,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    }
+  ],
+
+  "negative_pool": [
+  ]
+}

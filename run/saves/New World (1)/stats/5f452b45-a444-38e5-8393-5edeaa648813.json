@@ -1,0 +1,16 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 532,
+      "minecraft:walk_one_cm": 166,
+      "minecraft:total_world_time": 559,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 532,
+      "minecraft:time_since_death": 532
+    },
+    "minecraft:picked_up": {
+      "minecraft:netherite_helmet": 1
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 3484,
+      "minecraft:walk_one_cm": 1723,
+      "minecraft:total_world_time": 3511,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 3484,
+      "minecraft:time_since_death": 3484,
+      "minecraft:drop": 25
+    },
+    "minecraft:crafted": {
+      "minecraft:iron_helmet": 14
+    },
+    "minecraft:dropped": {
+      "minecraft:iron_helmet": 12,
+      "minecraft:iron_trapdoor": 1,
+      "minecraft:iron_chestplate": 3,
+      "minecraft:iron_boots": 7,
+      "minecraft:diamond_helmet": 2
+    }
+  },
+  "DataVersion": 4671
+}

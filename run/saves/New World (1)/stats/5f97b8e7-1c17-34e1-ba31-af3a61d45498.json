@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:spruce_fence": 2,
+      "minecraft:cooked_beef": 1,
+      "minecraft:splash_potion": 7,
+      "minecraft:netherite_sword": 33,
+      "minecraft:wither_skeleton_spawn_egg": 33
+    },
+    "minecraft:picked_up": {
+      "minecraft:wither_skeleton_skull": 1,
+      "minecraft:coal": 57,
+      "minecraft:stone_sword": 5,
+      "minecraft:bone": 84
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 6115,
+      "minecraft:time_since_rest": 12140,
+      "minecraft:walk_one_cm": 5619,
+      "minecraft:total_world_time": 13816,
+      "minecraft:leave_game": 3,
+      "minecraft:fly_one_cm": 2621,
+      "minecraft:mob_kills": 33,
+      "minecraft:play_time": 12140,
+      "minecraft:damage_dealt": 6600,
+      "minecraft:jump": 12,
+      "minecraft:time_since_death": 12140
+    },
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 33
+    }
+  },
+  "DataVersion": 4671
+}
