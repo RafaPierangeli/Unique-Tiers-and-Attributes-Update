@@ -232,6 +232,7 @@
   "tiered:unique_elytra_4.label": "Unique",
 
   "tiered:mythic_armor_randow_1.label": "Mythic",
+  "tiered:mythic_ranged_1.label": "Mythic",
 
   "tiered:common.label": "Common",
   "tiered:uncommon.label": "Uncommon",
@@ -297,7 +298,8 @@
 
   "text.autoconfig.tiered.option.enableTierOrnaments": "Enable Tier Ornaments",
   "text.autoconfig.tiered.option.enableTierOrnaments.@Tooltip": "Draws custom textures (corners and top icon) around the tooltip.",
-  "tiered.tooltip.press_shift": "Press [SHIFT] for Unique Attributes",
+  "tiered.tooltip.press_shift": "Press SHIFT for Unique Attributes",
+  "tiered.tooltip.press_ctrl": "Press CRTL for Unique Attributes",
   "text.autoconfig.tiered.option.uniqueTooltipMode": "Unique Attributes Display",
   "text.autoconfig.tiered.enum.TooltipDisplayMode.OFF": "Off",
   "text.autoconfig.tiered.enum.TooltipDisplayMode.ALWAYS": "Always",

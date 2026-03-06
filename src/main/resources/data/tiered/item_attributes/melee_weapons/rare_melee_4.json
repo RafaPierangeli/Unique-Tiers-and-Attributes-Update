@@ -20,9 +20,9 @@
         }
     ],
     "roll_templates": [
-        { "positive": 1, "negative": 1, "weight": 30 },
-        { "positive": 2, "negative": 1, "weight": 50 },
-        { "positive": 2, "negative": 0, "weight": 20 }
+        { "positive": 3, "negative": 0, "weight": 60 },
+        { "positive": 2, "negative": 1, "weight": 30 },
+        { "positive": 2, "negative": 0, "weight": 10 }
     ],
     "positive_pool": [
         {

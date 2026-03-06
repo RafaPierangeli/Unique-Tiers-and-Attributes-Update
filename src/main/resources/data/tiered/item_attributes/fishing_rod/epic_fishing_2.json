@@ -1,26 +1,85 @@
 {
     "id": "tiered:epic_fishing_2",
+    "weight": 15,
+    "style": {
+        "color": "dark_purple",
+        "bold": false
+    },
     "verifiers": [
         {
             "id": "minecraft:fishing_rod"
         }
     ],
-    "weight": 8,
-    "style": {
-        "color": "dark_purple"
-    },
-    "attributes": [
+    "roll_templates": [
+        { "positive": 3, "negative": 0, "weight": 60 },
+        { "positive": 4, "negative": 0, "weight": 40 }
+    ],
+    "positive_pool": [
         {
-            "type": "tiered:generic.durable",
-            "modifier": {
-                "name": "tiered:epic_fishing_2",
-                "operation": "ADD_MULTIPLIED_TOTAL",
-                "amount": 0.3
-            },
-            "optional_equipment_slots": [
-                "MAINHAND",
-                "OFFHAND"
-            ]
+            "type": "minecraft:attack_damage",
+            "min": 2,
+            "max": 5,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "tiered:durable",
+            "min": 0.2,
+            "max": 0.6,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+
+        },
+        {
+            "type": "minecraft:water_movement_efficiency",
+            "amount": 0.4,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:entity_interaction_range",
+            "amount": 1,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+
+        {
+            "type": "minecraft:attack_speed",
+            "min": 0.2,
+            "max": 0.5,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:step_height",
+            "min": 0.2,
+            "max": 0.6,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:movement_speed",
+            "min": 0.3,
+            "max": 0.6,
+            "operation": "add_multiplied_total",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:oxygen_bonus",
+            "min": 3,
+            "max": 5,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:luck",
+            "min": 5,
+            "max": 10,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
         }
+    ],
+
+    "negative_pool": [
     ]
 }

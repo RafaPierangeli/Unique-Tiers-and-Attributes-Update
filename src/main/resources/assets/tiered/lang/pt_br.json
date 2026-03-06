@@ -233,6 +233,7 @@
 
 	"tiered:mythic_armor_randow_1.label": "Mítico",
 	"tiered:mythic_elytra.label": "Mítico",
+	"tiered:mythic_ranged_1.label": "Mítico",
 
 	"tiered:common.label": "Comum",
 	"tiered:uncommon.label": "Incomum",
@@ -299,7 +300,8 @@
 
 	"text.autoconfig.tiered.option.enableTierOrnaments": "Ativar Ornamentos do Tier",
 	"text.autoconfig.tiered.option.enableTierOrnaments.@Tooltip": "Desenha texturas personalizadas (cantos e ícone superior) ao redor do tooltip.",
-	"tiered.tooltip.press_shift": "Pressione [SHIFT] para Atributos Únicos",
+	"tiered.tooltip.press_shift": "Pressione SHIFT para Atributos Únicos",
+	"tiered.tooltip.press_ctrl": "Pressione CTRL para Atributos Únicos",
 	"text.autoconfig.tiered.option.uniqueTooltipMode": "Exibição de Atributos Únicos",
 	"text.autoconfig.tiered.enum.TooltipDisplayMode.OFF": "Desligado",
 	"text.autoconfig.tiered.enum.TooltipDisplayMode.ALWAYS": "Sempre",

@@ -1,24 +1,3 @@
-/reload
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/time set day
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/time set day
-/tiered tier Player597 mythic
-/reload
-/gamemode creative
-/reload
 /gamemode survival
 /experience add Player735 50000
 /gamemode creative
@@ -47,4 +26,25 @@
 /gamemode creative
 /gamemode survival
 /time set day
+/gamemode creative
+/reload
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/time set day
+/weather clear
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
 /gamemode creative

@@ -96,6 +96,13 @@
             "max": 3.5,
             "operation": "add_value",
             "required_equipment_slots": ["mainhand"]
+        },
+        {
+            "type": "minecraft:entity_interaction_range",
+            "min": 1,
+            "max": 2,
+            "operation": "add_value",
+            "required_equipment_slots": ["mainhand"]
         }
     ],
 

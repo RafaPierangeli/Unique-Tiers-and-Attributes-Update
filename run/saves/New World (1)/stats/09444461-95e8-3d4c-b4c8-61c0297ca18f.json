@@ -1,5 +1,28 @@
 {
   "stats": {
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 20,
+      "minecraft:talked_to_villager": 8,
+      "minecraft:time_since_rest": 32059,
+      "minecraft:walk_one_cm": 26896,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 1,
+      "minecraft:walk_under_water_one_cm": 136,
+      "minecraft:damage_dealt": 200,
+      "minecraft:play_time": 32059,
+      "minecraft:jump": 73,
+      "minecraft:time_since_death": 32059,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 16576,
+      "minecraft:fall_one_cm": 1100,
+      "minecraft:total_world_time": 33083,
+      "minecraft:fly_one_cm": 10884,
+      "minecraft:interact_with_anvil": 2,
+      "minecraft:walk_on_water_one_cm": 1843
+    },
+    "minecraft:dropped": {
+      "minecraft:flint": 5
+    },
     "minecraft:mined": {
       "minecraft:sand": 5,
       "minecraft:dirt": 31,
@@ -7,38 +30,11 @@
       "minecraft:grass_block": 32,
       "minecraft:stone": 4
     },
-    "minecraft:crafted": {
-      "minecraft:diamond_sword": 1,
-      "minecraft:emerald": 19
-    },
     "minecraft:picked_up": {
       "minecraft:dirt": 63,
       "minecraft:cobblestone": 4,
       "minecraft:sand": 5,
       "minecraft:birch_log": 3
-    },
-    "minecraft:dropped": {
-      "minecraft:flint": 5
-    },
-    "minecraft:custom": {
-      "minecraft:traded_with_villager": 20,
-      "minecraft:talked_to_villager": 8,
-      "minecraft:time_since_rest": 12310,
-      "minecraft:walk_one_cm": 26740,
-      "minecraft:leave_game": 2,
-      "minecraft:mob_kills": 1,
-      "minecraft:walk_under_water_one_cm": 136,
-      "minecraft:damage_dealt": 200,
-      "minecraft:play_time": 12310,
-      "minecraft:jump": 73,
-      "minecraft:time_since_death": 12310,
-      "minecraft:drop": 1,
-      "minecraft:sprint_one_cm": 16576,
-      "minecraft:fall_one_cm": 1100,
-      "minecraft:total_world_time": 12548,
-      "minecraft:fly_one_cm": 10884,
-      "minecraft:interact_with_anvil": 2,
-      "minecraft:walk_on_water_one_cm": 1843
     },
     "minecraft:used": {
       "minecraft:sand": 5,
@@ -50,6 +46,10 @@
       "minecraft:dirt": 63,
       "minecraft:birch_log": 3,
       "minecraft:cobblestone": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_sword": 1,
+      "minecraft:emerald": 19
     },
     "minecraft:killed": {
       "minecraft:villager": 1

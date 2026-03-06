@@ -1,19 +1,25 @@
-# Tiered
+# Unique Tiers and Attributes Items (Tiered)
 
-Tiered is a Fabric mod inspired by [Quality Tools](https://www.curseforge.com/minecraft/mc-mods/quality-tools). Every tool you make will have a special modifier, as seen below:
-
-<img src="resources/legendary_chestplate.png" width="400">
+Unique Tiers and Attributes Items, (old Tiered) is a Fabric mod inspired by [Quality Tools](https://www.curseforge.com/minecraft/mc-mods/quality-tools). Every tool you make will have a special modifier, as seen below:
 
 ### Installation
-Tiered is a mod built for the [Fabric Loader](https://fabricmc.net/). It requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api), [AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag) and [LibZ](https://www.curseforge.com/minecraft/mc-mods/libz) to be installed separately; all other dependencies are installed with the mod.
+This mod built for the [Fabric Loader](https://fabricmc.net/). It requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api), [ModMenu](https://www.curseforge.com/minecraft/mc-mods/modmenu) and [Cloth](https://www.curseforge.com/minecraft/mc-mods/cloth-config) to show configs and be installed separately; all other dependencies are installed with the mod.
 
 ### Customization
 
 Tiered is entirely data-driven, which means you can add, modify, and remove modifiers as you see fit. The base path for modifiers is `data/modid/item_attributes`, and tiered modifiers are stored under the modid of tiered. Here's an example modifier called "Hasteful," which grants more dig speed when any of the valid tools are held:
 ```json
 {
-  "id": "tiered:hasteful",
+  "id": "tiered:common_tool_1",
+  "weight": 60,
+  "style": {
+    "color": "gray",
+    "bold": false
+  },
   "verifiers": [
+    {
+      "tag": "minecraft:axes"
+    },
     {
       "tag": "minecraft:pickaxes"
     },
@@ -21,71 +27,186 @@ Tiered is entirely data-driven, which means you can add, modify, and remove modi
       "tag": "minecraft:shovels"
     },
     {
-      "tag": "minecraft:axes"
+      "tag": "minecraft:hoes"
     }
   ],
-  "weight": 10,
-  "style": {
-    "color": "GREEN"
-  },
-  "attributes": [
+  "roll_templates": [
+    { "positive": 1, "negative": 1, "weight": 40 },
+    { "positive": 1, "negative": 2, "weight": 30 },
+    { "positive": 0, "negative": 1, "weight": 20 },
+    { "positive": 1, "negative": 0, "weight": 10 }
+  ],
+  "positive_pool": [
     {
-      "type": "generic.dig_speed",
-      "modifier": {
-        "name": "tiered:hasteful",
-        "operation": "ADD_MULTIPLIED_TOTAL",
-        "amount": 0.10
-      },
-      "optional_equipment_slots": [
-        "MAINHAND"
-      ]
+      "type": "minecraft:attack_damage",
+      "min": 1,
+      "max": 2,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "tiered:durable",
+      "min": 0.1,
+      "max": 0.2,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+
+    },
+    {
+      "type": "minecraft:mining_efficiency",
+      "min": 1,
+      "max": 2,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:submerged_mining_speed",
+      "min": 0.1,
+      "max": 0.2,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+
+    {
+      "type": "minecraft:attack_speed",
+      "min": 0.1,
+      "max": 0.2,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "tiered:dig_speed",
+      "min": 1,
+      "max": 2,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:movement_speed",
+      "min": 0.1,
+      "max": 0.4,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:block_interaction_range",
+      "amount": 1,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:luck",
+      "amount": 1,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    }
+  ],
+
+  "negative_pool": [
+    {
+      "type": "minecraft:attack_damage",
+      "min": -4,
+      "max": -2,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "tiered:durable",
+      "min": -0.5,
+      "max": -0.25,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+
+    },
+    {
+      "type": "minecraft:block_interaction_range",
+      "amount": -2,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+
+    },
+    {
+      "type": "minecraft:attack_speed",
+      "min": -0.05,
+      "max": -0.01,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:mining_efficiency",
+      "min": -0.5,
+      "max": -0.01,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:max_health",
+      "min": -2.0,
+      "max": -1.0,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:movement_speed",
+      "min": -0.03,
+      "max": -0.01,
+      "operation": "add_multiplied_total",
+      "required_equipment_slots": ["mainhand"]
+    },
+    {
+      "type": "minecraft:luck",
+      "min": -2,
+      "max": -1,
+      "operation": "add_value",
+      "required_equipment_slots": ["mainhand"]
     }
   ]
 }
 ```
-
+Every jsons accept a variable attributes and chance to sort positive and negative rools. Armor equipment no need to specific a slot equipment ( this mod is work for you)
 #### Attributes
 
-Tiered currently provides 4 custom attributes: Dig Speed, Crit chance, Durability and Range Attack Damage. Dig Speed increases the speed of your block breaking (think: haste), Crit Chance offers a random chance to crit when using a tool and Durability increases, who would have thought it, the durability of an item.
+Tiered currently provides 5 custom attributes: Dig Speed, Crit chance, Durability and Range Attack Damage. Dig Speed increases the speed of your block breaking (think: haste), Crit Chance offers a random chance to crit when using a tool and Durability increases, who would have thought it, the durability of an item.
 
 Vanilla types:
-- "generic.armor"
-- "generic.armor_toughness"
-- "generic.attack_damage"
-- "generic.attack_knockback"
-- "generic.attack_speed"
-- "player.block_break_speed"
-- "player.block_interaction_range"
-- "generic.burning_time"
-- "generic.explosion_knockback_resistance"
-- "player.entity_interaction_range"
-- "generic.fall_damage_multiplier"
-- "generic.flying_speed"
-- "generic.follow_range"
-- "generic.gravity"
-- "generic.jump_strength"
-- "generic.knockback_resistance"
-- "generic.luck"
-- "generic.max_absorption"
-- "generic.max_health"
-- "player.mining_efficiency"
-- "generic.movement_efficiency"
-- "generic.movement_speed"
-- "generic.oxygen_bonus"
-- "generic.safe_fall_distance"
-- "generic.scale"
-- "player.sneaking_speed"
+- "armor"
+- "armor_toughness"
+- "attack_damage"
+- "attack_knockback"
+- "attack_speed"
+- "block_break_speed"
+- "block_interaction_range"
+- "burning_time"
+- "explosion_knockback_resistance"
+- "entity_interaction_range"
+- "fall_damage_multiplier"
+- "flying_speed"
+- "follow_range"
+- "gravity"
+- "jump_strength"
+- "knockback_resistance"
+- "luck"
+- "max_absorption"
+- "max_health"
+- "mining_efficiency"
+- "movement_efficiency"
+- "movement_speed"
+- "oxygen_bonus"
+- "safe_fall_distance"
+- "scale"
+- "sneaking_speed"
 - "zombie.spawn_reinforcements"
-- "generic.step_height"
-- "player.submerged_mining_speed"
-- "player.sweeping_damage_ratio"
-- "generic.water_movement_efficiency"
+- "step_height"
+- "submerged_mining_speed"
+- "sweeping_damage_ratio"
+- "water_movement_efficiency"
 
 Tiered Types:
-- "tiered:generic.dig_speed"
-- "tiered:generic.dig_speed"
-- "tiered:generic.crit_chance"
-- "tiered:generic.range_attack_damage"
+- "tiered:dig_speed"
+- "tiered:dig_speed"
+- "tiered:critical_chance"
+- "tiered:critical_damage"
+- "tiered:range_attack_damage"
 
 #### Verifiers
 
@@ -110,30 +231,11 @@ Item tags can be found on the [wiki](https://minecraft.wiki/w/Tag#Item_tags_2).
 The weight determines the commonness of the tier. Higher weights increase the chance of being applied on the item and vice versa.
 
 #### Tooltip
-Since V1.2, custom tooltip borders can get set via a resource pack.
+Since V1.2, tooltip borders and ornaments can be disable and get set via a resource pack.
 - The border texture has to be in the `assets\tiered\textures\gui` folder.
 - The file has to be a json file and put inside the `assets\tiered\tooltips` folder.
-- The `background_gradient` can also get set.
 - The gradients has to be hex code, check transparency here: [https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4](https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4)
-- Check out the default datapack under `src\main\resources\assets\tiered\tooltips`.
 
-Example:
-```json
-{ 
-    "tooltips": [
-        {
-            "index": 0,
-            "start_border_gradient": "FFBABABA",
-            "end_border_gradient": "FF565656",
-            "texture": "tiered_borders",
-            "decider": [
-                "set_the_id_here",
-                "tiered:common_armor"
-            ]
-        }
-    ]
-}
-```
 
 #### Reforge
 

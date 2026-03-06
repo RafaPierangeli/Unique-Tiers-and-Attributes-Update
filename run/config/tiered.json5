@@ -24,7 +24,7 @@
 	"tieredTooltip": true,
 	"centerName": true,
 	// Color mode for attributes in tooltip
-	"attributeColorMode": "DEFAULT",
+	"attributeColorMode": "TIER_COLOR",
 	// Draws a solid colored line around the tooltip based on the tier's rarity color.
 	"enableTierColorBorder": true,
 	// Draws custom textures (corners and top icon) around the tooltip

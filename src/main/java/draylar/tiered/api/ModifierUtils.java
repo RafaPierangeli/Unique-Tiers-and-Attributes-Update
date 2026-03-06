@@ -356,7 +356,7 @@ public class ModifierUtils {
                 double rawValue = roll.min() + (random.nextDouble() * (roll.max() - roll.min()));
 
                 String attrName = roll.type().getPath();
-                if (attrName.equals("attack_damage") || attrName.equals("max_health") || attrName.equals("luck") || attrName.equals("safe_fall_distance") || attrName.equals("oxygen_bonus") || attrName.equals("armor_toughness") || attrName.equals("armor") || attrName.equals("entity_interaction_range") || attrName.equals("dig_speed") || attrName.equals("block_break_speed") || attrName.equals("block_interaction_range") || attrName.equals("mining_efficiency")) {
+                if (attrName.equals("attack_damage") || attrName.equals("max_health") || attrName.equals("luck") || attrName.equals("safe_fall_distance") || attrName.equals("oxygen_bonus") || attrName.equals("armor_toughness") || attrName.equals("armor") || attrName.equals("entity_interaction_range") || attrName.equals("dig_speed") || attrName.equals("block_break_speed") || attrName.equals("block_interaction_range") || attrName.equals("mining_efficiency") || attrName.equals("range_attack_damage")) {
                     finalValue = Math.round(rawValue);
                 } else {
                     finalValue = Math.round(rawValue * 100.0) / 100.0;
