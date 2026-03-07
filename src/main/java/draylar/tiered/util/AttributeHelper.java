@@ -22,11 +22,9 @@ public class AttributeHelper {
         // Agora usamos o SEU novo atributo de Dano Crítico!
         EntityAttributeInstance instance = playerEntity.getAttributeInstance(CustomEntityAttributes.CRITICAL_DAMAGE);
         if (instance != null) {
-            // Pegamos o multiplicador extra (ex: 0.5)
+
             float bonusMultiplier = (float) instance.getValue();
 
-            // Se o dano base era 10, e o bonus é 0.5 (50% a mais), o extra é 5.
-            // Retornamos o dano antigo + o bônus.
             return oldDamage + (oldDamage * bonusMultiplier);
         }
         return oldDamage;

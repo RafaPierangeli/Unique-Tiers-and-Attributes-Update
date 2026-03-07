@@ -1,5 +1,5 @@
-[16:49:25] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.11 with Fabric Loader 0.18.4
-[16:49:25] [main/INFO] (FabricLoader) Loading 68 mods:
+[18:11:13] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.11 with Fabric Loader 0.18.4
+[18:11:13] [main/INFO] (FabricLoader) Loading 69 mods:
 	- attributescreen 1.0.0
 	- bettercombat 3.0.0
 	   \-- tiny_config 3.1.0
@@ -63,26 +63,26 @@
 	- minecraft 1.21.11
 	- mixinextras 0.5.0
 	- modmenu 17.0.0-beta.2
+	   \-- placeholder-api 2.8.1+1.21.10
 	- player_animation_library 1.1.6+mc.1.21.11
 	   |-- com_zigythebird_mochafloats 4.1.5
 	   \-- org_javassist_javassist 3.30.2-GA
 	- puzzleslib 21.11.11
-	- tiered 1.4
-[16:49:29] [pool-2-thread-11/WARN] (FabricLoader/ModRemap) Cannot remap tick because it does not exists in any of the targets [net/minecraft/class_11890]
-[16:49:29] [pool-2-thread-11/WARN] (FabricLoader/ModRemap) Cannot remap method_5773 because it does not exists in any of the targets [net/minecraft/class_11890]
-[16:49:31] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/rafae/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/cf31463202f72d03b0ef1e1e38e8ee71b7faaab6/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[16:49:31] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[16:49:31] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[16:49:32] [main/WARN] (FabricLoader/Mixin) Reference map 'tiny_config-common-common-refmap.json' for tiny_config.mixins.json could not be read. If this is a development environment you can ignore this message
-[16:49:33] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[16:49:35] [Datafixer Bootstrap/INFO] (Minecraft) 287 Datafixer optimizations took 639 milliseconds
-[16:49:42] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[16:49:42] [Render thread/INFO] (Minecraft) Setting user: Player300
-[16:49:42] [Render thread/INFO] (Puzzles Lib) Constructing components for puzzleslib:common
-[16:49:42] [Render thread/INFO] (icon-leading-tooltip) Hello Fabric world!
-[16:49:42] [Render thread/INFO] (Puzzles Lib) Constructing components for healthbars:common
-[16:49:42] [Render thread/INFO] (Puzzles Lib) Dispatching loading event for config healthbars-client.toml
-[16:49:42] [Download-2/ERROR] (Minecraft) Failed to fetch user properties
+	- tiered 1.5
+[18:11:16] [pool-2-thread-5/WARN] (FabricLoader/ModRemap) Cannot remap tick because it does not exists in any of the targets [net/minecraft/class_11890]
+[18:11:16] [pool-2-thread-5/WARN] (FabricLoader/ModRemap) Cannot remap method_5773 because it does not exists in any of the targets [net/minecraft/class_11890]
+[18:11:19] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/rafae/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/cf31463202f72d03b0ef1e1e38e8ee71b7faaab6/sponge-mixin-0.17.0+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[18:11:19] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[18:11:19] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[18:11:19] [main/WARN] (FabricLoader/Mixin) Reference map 'tiny_config-common-common-refmap.json' for tiny_config.mixins.json could not be read. If this is a development environment you can ignore this message
+[18:11:20] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[18:11:22] [Datafixer Bootstrap/INFO] (Minecraft) 287 Datafixer optimizations took 644 milliseconds
+[18:11:29] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[18:11:29] [Render thread/INFO] (Minecraft) Setting user: Player422
+[18:11:29] [Render thread/INFO] (Puzzles Lib) Constructing components for healthbars:common
+[18:11:29] [Render thread/INFO] (Puzzles Lib) Dispatching loading event for config healthbars-client.toml
+[18:11:29] [Render thread/INFO] (icon-leading-tooltip) Hello Fabric world!
+[18:11:29] [Download-2/ERROR] (Minecraft) Failed to fetch user properties
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at knot//com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:59)
 	at knot//com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:150)
@@ -96,16 +96,16 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56)
 	at knot//com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:121)
 	... 5 more
-[16:49:43] [Render thread/INFO] (Mod Menu/Update Checker) Checking mod updates...
-[16:49:43] [Render thread/INFO] (Puzzles Lib) Constructing components for puzzleslib:client
-[16:49:43] [Render thread/INFO] (Puzzles Lib) Constructing components for healthbars:client
-[16:49:43] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[16:49:44] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[16:49:45] [Render thread/INFO] (Minecraft) Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
-[16:49:45] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, attributescreen, bettercombat, cloth-config, dynamictooltips, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, forgeconfigapiport, healthbars, icon-leading-tooltip, modmenu, tiered, file/icones attributes
-[16:49:45] [Worker-Main-9/ERROR] (ModNioPackResources) Invalid path in mod resource-pack tiered: tiered:textures/block/reforge_block (2).png, ignoring
-[16:49:45] [Download-2/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
-[16:49:45] [Download-2/ERROR] (Minecraft) Failed to fetch Realms feature flags
+[18:11:29] [Render thread/INFO] (Puzzles Lib) Constructing components for puzzleslib:common
+[18:11:29] [Render thread/INFO] (Puzzles Lib) Constructing components for healthbars:client
+[18:11:30] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[18:11:30] [Render thread/INFO] (Mod Menu/Update Checker) Checking mod updates...
+[18:11:30] [Render thread/INFO] (Puzzles Lib) Constructing components for puzzleslib:client
+[18:11:30] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[18:11:31] [Render thread/INFO] (Minecraft) Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[18:11:32] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, attributescreen, bettercombat, cloth-config, dynamictooltips, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, forgeconfigapiport, healthbars, icon-leading-tooltip, modmenu, placeholder-api, tiered, file/icones attributes
+[18:11:32] [Download-2/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[18:11:32] [Download-2/ERROR] (Minecraft) Failed to fetch Realms feature flags
 net.minecraft.client.realms.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC'
 	at knot//net.minecraft.client.realms.RealmsClient.execute(RealmsClient.java:526)
 	at knot//net.minecraft.client.realms.RealmsClient.fetchFeatureFlags(RealmsClient.java:186)
@@ -113,28 +113,29 @@ net.minecraft.client.realms.exception.RealmsServiceException: Realms authenticat
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-[16:49:46] [Worker-Main-11/INFO] (Minecraft) Found unifont_all_no_pua-17.0.01.hex, loading
-[16:49:46] [Worker-Main-2/INFO] (Minecraft) Found unifont_pua-17.0.01.hex, loading
-[16:49:46] [Worker-Main-8/INFO] (Minecraft) Found unifont_jp_patch-17.0.01.hex, loading
-[16:49:47] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on LG ULTRAWIDE (NVIDIA High Definition Audio)
-[16:49:47] [Render thread/INFO] (Minecraft) Sound engine started
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
-[16:49:47] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[16:49:48] [IO-Worker-1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
-[16:49:48] [IO-Worker-1/ERROR] (Minecraft) Couldn't connect to realms
+[18:11:32] [Worker-Main-9/ERROR] (ModNioPackResources) Invalid path in mod resource-pack tiered: tiered:textures/block/reforge_block (2).png, ignoring
+[18:11:32] [Worker-Main-6/INFO] (Minecraft) Found unifont_pua-17.0.01.hex, loading
+[18:11:32] [Worker-Main-8/INFO] (Minecraft) Found unifont_all_no_pua-17.0.01.hex, loading
+[18:11:32] [Worker-Main-1/INFO] (Minecraft) Found unifont_jp_patch-17.0.01.hex, loading
+[18:11:33] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on LG ULTRAWIDE (NVIDIA High Definition Audio)
+[18:11:33] [Render thread/INFO] (Minecraft) Sound engine started
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/particles.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
+[18:11:33] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[18:11:34] [IO-Worker-1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[18:11:34] [IO-Worker-1/ERROR] (Minecraft) Couldn't connect to realms
 net.minecraft.client.realms.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC'
 	at knot//net.minecraft.client.realms.RealmsClient.execute(RealmsClient.java:526)
 	at knot//net.minecraft.client.realms.RealmsClient.clientCompatible(RealmsClient.java:307)
@@ -143,1032 +144,72 @@ net.minecraft.client.realms.exception.RealmsServiceException: Realms authenticat
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-[16:49:53] [Render thread/INFO] (Minecraft) Loaded 1471 recipes
-[16:49:53] [Render thread/INFO] (Minecraft) Loaded 1584 advancements
-[16:49:54] [Render thread/INFO] (AttributeDataLoader) Carregados 153 tiers de atributos
-[16:49:54] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 65 new biomes in 2.107 ms
-[16:49:54] [Server thread/INFO] (WeaponRegistry) Encoded Weapon Attribute registry size (with package overhead): 2559 bytes (in 1 string chunks with the size of 10000)
-[16:49:54] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.11
-[16:49:54] [Server thread/INFO] (Minecraft) Generating keypair
-[16:49:54] [Server thread/INFO] (Minecraft) Loading 0 persistent chunks...
-[16:49:54] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
-[16:49:54] [Server thread/WARN] (TranslationConventionLogWarnings) 
+[18:13:22] [Render thread/INFO] (Minecraft) Loaded 1471 recipes
+[18:13:22] [Render thread/INFO] (Minecraft) Loaded 1584 advancements
+[18:13:22] [Render thread/INFO] (AttributeDataLoader) Carregados 153 tiers de atributos
+[18:13:22] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 65 new biomes in 1.374 ms
+[18:13:22] [Server thread/INFO] (WeaponRegistry) Encoded Weapon Attribute registry size (with package overhead): 2559 bytes (in 1 string chunks with the size of 10000)
+[18:13:22] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.11
+[18:13:22] [Server thread/INFO] (Minecraft) Generating keypair
+[18:13:22] [Server thread/INFO] (Minecraft) Loading 0 persistent chunks...
+[18:13:22] [Server thread/WARN] (TranslationConventionLogWarnings) 
 	Dev warning - Untranslated Item Tags detected. Please translate your item tags so other mods such as recipe viewers can properly display your tag's name.
 	The format desired is tag.item.<namespace>.<path> for the translation key with slashes in path turned into periods.
 	To disable this message, set this system property in your runs: `-Dfabric-tag-conventions-v2.missingTagTranslationWarning=SILENCED`.
 	To see individual untranslated item tags found, set the system property to `-Dfabric-tag-conventions-v2.missingTagTranslationWarning=VERBOSE`.
 	Default is `SHORT`.
 
-[16:49:55] [Netty Local IO #1/INFO] (BetterCombatMod) Received config sync packet
-[16:49:55] [Netty Local IO #1/INFO] (WeaponRegistry) Decoded Weapon Attribute registry in 1 string chunks
-[16:49:55] [Server thread/INFO] (Minecraft) Loading 49 chunks for player spawn...
-[16:49:55] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
-[16:49:55] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
-[16:49:56] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
-[16:49:56] [Server thread/INFO] (Minecraft) Time elapsed: 1629 ms
-[16:49:56] [Server thread/INFO] (Minecraft) Player300[local:E:92f33896] logged in with entity id 52 at (-2696.550247056031, 60.0, 869.3707755667655)
-[16:49:56] [Server thread/INFO] (Minecraft) Player300 joined the game
-[16:49:56] [Server thread/INFO] (Minecraft) Player300 has completed the challenge [Cover Me in Debris]
-[16:49:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Player300 has completed the challenge [Cover Me in Debris]
-[16:49:56] [Server thread/INFO] (Minecraft) Changing view distance to 24, from 10
-[16:49:56] [Server thread/INFO] (Minecraft) Changing simulation distance to 24, from 0
-[16:49:56] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
-[16:49:56] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
-[16:49:56] [Render thread/INFO] (Minecraft) Loaded 20 advancements
-[16:49:57] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[16:49:57] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 8.
-[16:49:57] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
-[16:49:57] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
-[16:49:57] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
-[16:49:57] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
-[16:49:58] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
-[16:49:59] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
-[16:50:01] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:11] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:12] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:13] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 0.0
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 1
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 2
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 7
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 16
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 27
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 41
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 54
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 589
-[16:50:14] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:50:41] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 1024 reached during a single frame. New capacity will be 2048.
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:21] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:22] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: === [DEBUG FORJA] RAIO-X DOS PESOS (INT) ===
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Sorte do Jogador: 42.0
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Reforge Modifier (Corte da Forja): 0.9
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Luck Modifier (Bônus da Sorte): 0.02
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: --- CICLO DE VIDA DOS PESOS ---
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/mythic_ranged_1 -> JSON: 0 | Forja(+1): 1 | FINAL: 2
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_4 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_3 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_2 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/unique_ranged_1 -> JSON: 1 | Forja(+1): 2 | FINAL: 3
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_4 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_3 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_2 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/legendary_ranged_1 -> JSON: 6 | Forja(+1): 7 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_4 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_3 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_2 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/epic_ranged_1 -> JSON: 15 | Forja(+1): 16 | FINAL: 17
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_3 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_2 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_1 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/rare_ranged_4 -> JSON: 30 | Forja(+1): 31 | FINAL: 4
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_1 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_3 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_2 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/uncommon_ranged_4 -> JSON: 45 | Forja(+1): 46 | FINAL: 6
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_1 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_2 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_3 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ranged_weapons/common_ranged_4 -> JSON: 60 | Forja(+1): 61 | FINAL: 8
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: Peso Total da Roleta: 186
-[16:51:23] [Server thread/INFO] (Minecraft) [STDOUT]: ====================================================
-[16:51:53] [Server thread/INFO] (Minecraft) Player300 has made the advancement [Take Aim]
-[16:51:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Player300 has made the advancement [Take Aim]
-[16:51:53] [Render thread/INFO] (Minecraft) Loaded 25 advancements
-[16:52:25] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
-[16:52:38] [Render thread/INFO] (Minecraft) Loaded 61 advancements
-[16:52:53] [Server thread/INFO] (Minecraft) [Player300: Set own game mode to Survival Mode]
-[16:52:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Survival Mode
-[16:53:07] [Server thread/INFO] (Minecraft) [Player300: Set own game mode to Creative Mode]
-[16:53:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
-[16:53:38] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[16:53:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[16:53:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[16:53:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[16:53:40] [Render thread/INFO] (Minecraft) Stopping!
-[16:53:41] [Server thread/INFO] (Minecraft) Player300 lost connection: Disconnected
-[16:53:41] [Server thread/INFO] (Minecraft) Player300 left the game
-[16:53:41] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[16:53:41] [Server thread/INFO] (Minecraft) Stopping server
-[16:53:41] [Server thread/INFO] (Minecraft) Saving players
-[16:53:41] [Server thread/INFO] (Minecraft) Saving worlds
-[16:53:41] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[16:53:41] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[16:53:41] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[16:53:41] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
-[16:53:41] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[16:53:41] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[16:53:41] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[18:13:23] [Netty Local IO #1/INFO] (BetterCombatMod) Received config sync packet
+[18:13:23] [Netty Local IO #1/INFO] (WeaponRegistry) Decoded Weapon Attribute registry in 1 string chunks
+[18:13:23] [Server thread/INFO] (Minecraft) Loading 49 chunks for player spawn...
+[18:13:23] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[18:13:23] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[18:13:23] [Server thread/INFO] (Minecraft) Preparing spawn area: 16%
+[18:13:24] [Server thread/INFO] (Minecraft) Time elapsed: 1365 ms
+[18:13:24] [Server thread/INFO] (Minecraft) Player422[local:E:051733bf] logged in with entity id 51 at (-2692.8558995539493, 60.92159999847412, 871.6999999880791)
+[18:13:24] [Server thread/INFO] (Minecraft) Player422 joined the game
+[18:13:24] [Server thread/INFO] (Minecraft) Player422 has completed the challenge [Cover Me in Debris]
+[18:13:24] [Render thread/INFO] (Minecraft) [System] [CHAT] Player422 has completed the challenge [Cover Me in Debris]
+[18:13:24] [Server thread/INFO] (Minecraft) Changing view distance to 24, from 10
+[18:13:24] [Server thread/INFO] (Minecraft) Changing simulation distance to 24, from 0
+[18:13:24] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[18:13:24] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[18:13:24] [Render thread/INFO] (Minecraft) Loaded 91 advancements
+[18:13:25] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[18:13:25] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[18:13:25] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[18:13:25] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[18:13:25] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[18:13:25] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[18:13:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[18:13:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[18:13:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[18:13:25] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[18:13:30] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[18:13:30] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[18:13:31] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[18:13:32] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[18:13:36] [Server thread/INFO] (Minecraft) Player422 has made the advancement [Take Aim]
+[18:13:36] [Render thread/INFO] (Minecraft) [System] [CHAT] Player422 has made the advancement [Take Aim]
+[18:13:36] [Render thread/INFO] (Minecraft) Loaded 96 advancements
+[18:14:34] [Render thread/INFO] (Minecraft) Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[18:14:56] [Render thread/INFO] (Minecraft) Resizing Chunk Sections UBO, capacity limit of 1024 reached during a single frame. New capacity will be 2048.
+[18:15:09] [Render thread/INFO] (Minecraft) Loaded 132 advancements
+[18:15:39] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[18:15:39] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[18:15:39] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[18:15:39] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[18:15:40] [Render thread/INFO] (Minecraft) Stopping!
+[18:15:40] [Server thread/INFO] (Minecraft) Player422 lost connection: Disconnected
+[18:15:40] [Server thread/INFO] (Minecraft) Player422 left the game
+[18:15:40] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[18:15:40] [Server thread/INFO] (Minecraft) Stopping server
+[18:15:40] [Server thread/INFO] (Minecraft) Saving players
+[18:15:40] [Server thread/INFO] (Minecraft) Saving worlds
+[18:15:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[18:15:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[18:15:40] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[18:15:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World (1)): All chunks are saved
+[18:15:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:15:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:15:40] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved

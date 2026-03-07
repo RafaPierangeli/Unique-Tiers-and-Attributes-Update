@@ -1,23 +1,5 @@
 {
   "stats": {
-    "minecraft:mined": {
-      "minecraft:granite": 2,
-      "minecraft:copper_ore": 1,
-      "minecraft:stone": 20
-    },
-    "minecraft:custom": {
-      "minecraft:sprint_one_cm": 2868,
-      "minecraft:time_since_rest": 4986,
-      "minecraft:walk_one_cm": 15456,
-      "minecraft:total_world_time": 5011,
-      "minecraft:leave_game": 1,
-      "minecraft:fly_one_cm": 1335,
-      "minecraft:crouch_one_cm": 79,
-      "minecraft:sneak_time": 185,
-      "minecraft:play_time": 4986,
-      "minecraft:jump": 14,
-      "minecraft:time_since_death": 4986
-    },
     "minecraft:picked_up": {
       "minecraft:cobblestone": 20,
       "minecraft:granite": 2,
@@ -26,8 +8,32 @@
     "minecraft:used": {
       "minecraft:stone": 25,
       "minecraft:grass_block": 2,
+      "minecraft:warden_spawn_egg": 5,
       "tiered:reforge_block": 2,
-      "minecraft:netherite_pickaxe": 23
+      "minecraft:netherite_pickaxe": 23,
+      "minecraft:bow": 39
+    },
+    "minecraft:killed": {
+      "minecraft:warden": 5
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 2868,
+      "minecraft:time_since_rest": 7973,
+      "minecraft:walk_one_cm": 18820,
+      "minecraft:total_world_time": 8038,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 1515,
+      "minecraft:mob_kills": 5,
+      "minecraft:crouch_one_cm": 79,
+      "minecraft:sneak_time": 185,
+      "minecraft:play_time": 7973,
+      "minecraft:jump": 16,
+      "minecraft:time_since_death": 7973
+    },
+    "minecraft:mined": {
+      "minecraft:granite": 2,
+      "minecraft:copper_ore": 1,
+      "minecraft:stone": 20
     }
   },
   "DataVersion": 4671

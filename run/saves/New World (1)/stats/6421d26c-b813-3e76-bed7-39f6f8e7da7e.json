@@ -3,28 +3,31 @@
     "minecraft:killed": {
       "minecraft:zombie": 2,
       "minecraft:skeleton": 2,
+      "minecraft:warden": 4,
       "minecraft:creeper": 3
+    },
+    "minecraft:used": {
+      "minecraft:warden_spawn_egg": 3,
+      "minecraft:netherite_sword": 7,
+      "minecraft:bow": 26
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 8175,
+      "minecraft:time_since_rest": 4812,
+      "minecraft:walk_one_cm": 7035,
+      "minecraft:total_world_time": 4922,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 755,
+      "minecraft:mob_kills": 11,
+      "minecraft:play_time": 4812,
+      "minecraft:damage_dealt": 1240,
+      "minecraft:jump": 10,
+      "minecraft:time_since_death": 4812
     },
     "minecraft:picked_up": {
       "minecraft:bone": 2,
       "minecraft:arrow": 1,
       "minecraft:rotten_flesh": 2
-    },
-    "minecraft:used": {
-      "minecraft:netherite_sword": 7
-    },
-    "minecraft:custom": {
-      "minecraft:sprint_one_cm": 8175,
-      "minecraft:time_since_rest": 3379,
-      "minecraft:walk_one_cm": 5340,
-      "minecraft:total_world_time": 3439,
-      "minecraft:leave_game": 1,
-      "minecraft:fly_one_cm": 755,
-      "minecraft:mob_kills": 7,
-      "minecraft:play_time": 3379,
-      "minecraft:damage_dealt": 1240,
-      "minecraft:jump": 10,
-      "minecraft:time_since_death": 3379
     }
   },
   "DataVersion": 4671
