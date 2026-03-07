@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_sword": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:open_chest": 2,
+      "minecraft:time_since_rest": 2547,
+      "minecraft:walk_one_cm": 416,
+      "minecraft:total_world_time": 2842,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 2547,
+      "minecraft:time_since_death": 2547
+    }
+  },
+  "DataVersion": 4671
+}

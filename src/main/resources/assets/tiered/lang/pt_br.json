@@ -244,8 +244,8 @@
 	"tiered:mythic.label": "Mítico",
 
 	"text.autoconfig.tiered.title": "Configurações do Tierify",
-	"text.autoconfig.tiered.category.default": "Ajustes do Tierify",
-	"text.autoconfig.tiered.category.client_settings": "Tierify do Cliente",
+	"text.autoconfig.tiered.category.default": "Ajustes Gerais",
+	"text.autoconfig.tiered.category.client_settings": "Tier do Cliente",
 	"text.autoconfig.tiered.option.lootContainerModifier": "Modificador de caixa de saque",
 	"text.autoconfig.tiered.option.entityItemModifier": "Modificador de Item de Entidade",
 	"text.autoconfig.tiered.option.craftingModifier": "Modificador de fabricação",
@@ -259,6 +259,10 @@
 	"text.autoconfig.tiered.option.yIconPosition": "Posição Y do ícone",
 	"text.autoconfig.tiered.option.tieredTooltip": "Dica de nível",
 	"text.autoconfig.tiered.option.centerName": "Centralizar nome",
+
+
+	"text.autoconfig.tiered.category.equipments_settings": "Equipamentos",
+	"text.autoconfig.tiered.option.maxLevelEquipment.@Tooltip": "Nível maxímo dos equipamentos.\nPadrão: 100",
 
 	"container.reforge": "Reforjar equipamento",
 	"screen.tiered.reforging_screen": "Reforjar equipamento",
@@ -353,5 +357,39 @@
 	"tiered.attribute.modifier": "%s",
 	"text.tiered.tooltip_mode.OFF": "Off",
 	"text.tiered.tooltip_mode.ALWAYS": "Always",
-	"text.tiered.tooltip_mode.ON_SHIFT": "On Shift"
+	"text.tiered.tooltip_mode.ON_SHIFT": "On Shift",
+
+
+	"tiered.arpg.level": "Nível: ",
+	"tiered.arpg.level.0": "0 (Adormecida)",
+	"tiered.arpg.awaken_progress": "Despertar: ",
+	"tiered.arpg.tendency": "Tendência: ",
+	"tiered.arpg.tendency.none": "Nenhuma",
+	"tiered.arpg.tendency.damage": "Dano",
+	"tiered.arpg.tendency.lethal": "Letal",
+	"tiered.arpg.tendency.light": "Leve",
+	"tiered.arpg.tendency.agile": "Ágil",
+	"tiered.arpg.affinity": "Afinidade: ",
+	"tiered.arpg.affinity.damage": "Dano Bruto",
+	"tiered.arpg.affinity.agile": "Agilidade",
+	"tiered.arpg.affinity.light": "Leveza",
+	"tiered.arpg.affinity.lethal": "Letalidade",
+	"tiered.arpg.affinity.unknown": "Desconhecida",
+	"tiered.arpg.xp": "XP: ",
+	"tiered.arpg.xp.max": "MÁXIMO",
+	"tiered.arpg.sockets": "Sockets: ",
+	"tiered.arpg.sockets.count": "Sockets (%s/%s):",
+	"tiered.arpg.sockets.filled": "Pergaminho Equipado",
+	"tiered.arpg.sockets.empty": "Slot Vazio",
+	"tiered.arpg.sockets.none": "Nenhum",
+	"tiered.arpg.message.awaken": "Sua arma despertou um novo poder!",
+	"tiered.arpg.message.levelup": "Seu equipamento subiu para o Nível %s!",
+	"tiered.arpg.bonus.damage": "Dano",
+	"tiered.arpg.bonus.agile": "Vel. Ataque",
+	"tiered.arpg.bonus.light": "Vel. Movimento",
+	"tiered.arpg.bonus.lethal": "Dano Crítico",
+	"tiered.arpg.bonus.critical": "% Chance Crítico",
+	"tiered.arpg.bonus.ranged_damage": "Dano à Distância",
+	"tiered.arpg.bonus.mining": "Vel. Mineração"
+
 }

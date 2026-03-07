@@ -60,4 +60,9 @@ public class TieredConfig implements ConfigData {
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
     @ConfigEntry.Gui.Tooltip(count = 4)
     public TooltipDisplayMode uniqueTooltipMode = TooltipDisplayMode.ALWAYS;
+
+
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int maxLevelEquipment = 100;
 }

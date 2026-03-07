@@ -6,6 +6,7 @@ import draylar.tiered.command.CommandInit;
 import draylar.tiered.config.ConfigInit;
 import draylar.tiered.data.AttributeDataLoader;
 import draylar.tiered.data.ReforgeDataLoader;
+import draylar.tiered.data.TieredDataComponents;
 import draylar.tiered.network.TieredServerPacket;
 import draylar.tiered.reforge.ReforgeScreenHandler;
 import net.fabricmc.api.ModInitializer;
@@ -55,6 +56,8 @@ public class Tiered implements ModInitializer {
         TieredItemTags.init();
         CustomEntityAttributes.init();
         CommandInit.init();
+        TieredDataComponents.init();
+
         BlockRegisters.registerModBlocks();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.ATTRIBUTE_DATA_LOADER);
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.REFORGE_DATA_LOADER);

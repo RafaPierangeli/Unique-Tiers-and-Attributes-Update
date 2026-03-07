@@ -245,6 +245,7 @@
   "text.autoconfig.tiered.title": "Tiered Config",
   "text.autoconfig.tiered.category.default": "Tiered Settings",
   "text.autoconfig.tiered.category.client_settings": "Client Settings",
+
   "text.autoconfig.tiered.option.lootContainerModifier": "Loot Container Modifier",
   "text.autoconfig.tiered.option.entityItemModifier": "Entity Item Modifier",
   "text.autoconfig.tiered.option.craftingModifier": "Crafting Modifier",
@@ -318,6 +319,10 @@
   "text.autoconfig.tiered.option.enableDefaultModifiers.@Tooltip": "If disabled, the mod will not load the default attributes (Unique, Legendary, etc).\nUseful for Modpack makers who want to use only their own Datapacks (using a custom namespace).",
 
 
+  "text.autoconfig.tiered.category.equipments_settings": "Equipments Settings",
+  "text.autoconfig.tiered.option.maxLevelEquipment.@Tooltip": "Max lvl to equipments.\nDefault: 100",
+
+
   "block.tiered.reforge_block": "Reforge",
   "screen.tiered.reforge_xp_missing": "Not enough XP (Requires %s points)",
   "screen.tiered.reforge_xp_cost": "Cost: %s XP Points",
@@ -346,5 +351,39 @@
   "tiered.tooltip.category.chestplate": "Chests",
   "tiered.tooltip.category.leggings": "Leggings",
   "tiered.tooltip.category.boots": "Boots",
-  "tiered.tooltip.durability": "Durability"
+  "tiered.tooltip.durability": "Durability",
+
+
+  "tiered.arpg.level": "Level: ",
+  "tiered.arpg.level.0": "0 (Unawakened)",
+  "tiered.arpg.awaken_progress": "Awakening: ",
+  "tiered.arpg.tendency": "Tendency: ",
+  "tiered.arpg.tendency.none": "None",
+  "tiered.arpg.tendency.damage": "Damage",
+  "tiered.arpg.tendency.lethal": "Lethal",
+  "tiered.arpg.tendency.light": "Light",
+  "tiered.arpg.tendency.agile": "Agile",
+  "tiered.arpg.affinity": "Affinity: ",
+  "tiered.arpg.affinity.damage": "Raw Damage",
+  "tiered.arpg.affinity.agile": "Agility",
+  "tiered.arpg.affinity.light": "Lightness",
+  "tiered.arpg.affinity.lethal": "Lethality",
+  "tiered.arpg.affinity.unknown": "Unknown",
+  "tiered.arpg.xp": "XP: ",
+  "tiered.arpg.xp.max": "MAX",
+  "tiered.arpg.sockets": "Sockets: ",
+  "tiered.arpg.sockets.count": "Sockets (%s/%s):",
+  "tiered.arpg.sockets.filled": "Equipped Scroll",
+  "tiered.arpg.sockets.empty": "Empty Slot",
+  "tiered.arpg.sockets.none": "None",
+  "tiered.arpg.message.awaken": "Your weapon has awakened a new power!",
+  "tiered.arpg.message.levelup": "Your equipment leveled up to Level %s!",
+  "tiered.arpg.bonus.damage": "Damage",
+  "tiered.arpg.bonus.agile": "Atk Speed",
+  "tiered.arpg.bonus.light": "Move Speed",
+  "tiered.arpg.bonus.lethal": "Crit Damage",
+  "tiered.arpg.bonus.critical": "% Crit Chance",
+  "tiered.arpg.bonus.ranged_damage": "Ranged Damage",
+  "tiered.arpg.bonus.mining": "Mining Speed"
+
 }

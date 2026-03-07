@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 3354,
+      "minecraft:walk_one_cm": 3666,
+      "minecraft:total_world_time": 3400,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 26,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:mob_kills": 10,
+      "minecraft:play_time": 3354,
+      "minecraft:jump": 5,
+      "minecraft:time_since_death": 3354
+    },
+    "minecraft:used": {
+      "minecraft:wither_skeleton_spawn_egg": 10,
+      "minecraft:bow": 24
+    },
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 10
+    },
+    "minecraft:crafted": {
+      "minecraft:bow": 1
+    }
+  },
+  "DataVersion": 4671
+}

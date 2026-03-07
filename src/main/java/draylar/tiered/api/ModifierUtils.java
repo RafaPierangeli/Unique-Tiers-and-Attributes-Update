@@ -2,6 +2,7 @@ package draylar.tiered.api;
 
 import draylar.tiered.Tiered;
 import draylar.tiered.config.ConfigInit;
+import draylar.tiered.data.TieredDataComponents;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
@@ -186,8 +187,33 @@ public class ModifierUtils {
                     // 🎰 RODA O CASSINO ARPG PRIMEIRO!
                     // Passamos o ID do tier para ele salvar no RG da arma depois
                     applyARPGModifiers(stack, potentialAttribute);
+
+                    initializeARPGData(stack);
                 }
             }
+        }
+    }
+
+    public static void initializeARPGData(ItemStack stack) {
+        if (stack.get(TieredDataComponents.ARPG_DATA) == null) {
+
+            double roll = Math.random();
+            int maxSlots = 0;
+            if (roll >= 0.85 && roll < 0.95) {
+                maxSlots = 1;
+            } else if (roll >= 0.95) {
+                maxSlots = 2;
+            }
+
+            ARPGEquipmentData newData = new ARPGEquipmentData(
+                    0, 0, 0, "unawakened",
+                    new java.util.HashMap<>(), // 🌟 Mapa de XP vazio, pronto para aprender!
+                    maxSlots,
+                    new java.util.ArrayList<>(),
+                    false
+            );
+
+            stack.set(TieredDataComponents.ARPG_DATA, newData);
         }
     }
 

@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_boots": 1,
+      "minecraft:diamond_spear": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 1083,
+      "minecraft:walk_one_cm": 151,
+      "minecraft:total_world_time": 1114,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 1083,
+      "minecraft:time_since_death": 1083
+    }
+  },
+  "DataVersion": 4671
+}
