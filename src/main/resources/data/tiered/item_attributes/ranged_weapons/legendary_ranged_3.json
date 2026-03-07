@@ -2,7 +2,7 @@
     "id": "tiered:legendary_ranged_3",
     "weight": 6,
     "style": {
-        "color": "dark_purple",
+        "color": "gold",
         "bold": false
     },
     "verifiers": [
