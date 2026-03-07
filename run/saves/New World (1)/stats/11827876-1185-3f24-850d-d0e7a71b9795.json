@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:wither_skeleton": 68
+    },
+    "minecraft:used": {
+      "minecraft:wither_skeleton_spawn_egg": 68,
+      "minecraft:diamond_sword": 132
+    },
+    "minecraft:picked_up": {
+      "minecraft:wither_skeleton_skull": 2,
+      "minecraft:coal": 29,
+      "minecraft:stone_sword": 9,
+      "minecraft:bone": 81
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 18,
+      "minecraft:time_since_rest": 2779,
+      "minecraft:walk_one_cm": 5039,
+      "minecraft:total_world_time": 2808,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 328,
+      "minecraft:mob_kills": 68,
+      "minecraft:play_time": 2779,
+      "minecraft:damage_dealt": 13550,
+      "minecraft:jump": 4,
+      "minecraft:time_since_death": 2779,
+      "minecraft:drop": 13
+    },
+    "minecraft:dropped": {
+      "minecraft:wither_skeleton_skull": 2,
+      "minecraft:stone_sword": 9,
+      "minecraft:bone": 81,
+      "minecraft:coal": 29
+    }
+  },
+  "DataVersion": 4671
+}

@@ -166,18 +166,24 @@ public class TieredTooltipCallback {
                             lines.add(Text.translatable("tiered.arpg.level").formatted(Formatting.GRAY)
                                     .append(Text.literal(String.valueOf(arpgData.level())).formatted(Formatting.YELLOW)));
 
-                            String affinityKey = switch (arpgData.affinity()) {
-                                case "damage" -> "tiered.arpg.affinity.damage";
-                                case "agile" -> "tiered.arpg.affinity.agile";
-                                case "light" -> "tiered.arpg.affinity.light";
-                                case "lethal" -> "tiered.arpg.affinity.lethal";
-                                default -> "tiered.arpg.affinity.unknown";
-                            };
+                            // 🌟 Puxa a cor psicológica da afinidade
+                            Formatting affinityColor = ARPGAffinityLogic.getAffinityColor(arpgData.affinity());
 
-                            // 🌟 Adiciona o bônus matemático logo após o nome da Afinidade!
+                            // 🌟 Cria a chave de tradução dinamicamente (ex: "tiered.arpg.affinity.damage")
+                            String affinityKey = "tiered.arpg.affinity." + arpgData.affinity();
+
                             lines.add(Text.translatable("tiered.arpg.affinity").formatted(Formatting.GRAY)
-                                    .append(Text.translatable(affinityKey).formatted(Formatting.GOLD))
+                                    .append(Text.translatable(affinityKey).formatted(affinityColor)) // Pinta o nome
                                     .append(ARPGAffinityLogic.getAffinityBonusText(arpgData.affinity(), arpgData.level(), arpgData.prestige())));
+
+                            // 🌟 NOVO: Linha de Prestígio (Só aparece se o jogador já resetou a arma pelo menos 1 vez)
+                            if (arpgData.prestige() > 0) {
+                                lines.add(Text.translatable("tiered.arpg.prestige").formatted(Formatting.GRAY)
+                                        // Usa o getStyle() do potentialAttribute para herdar EXATAMENTE a cor do Tier!
+                                        .append(Text.literal(String.valueOf(arpgData.prestige())).setStyle(potentialAttribute.getStyle())));
+                            }
+
+                            // Pinta o bônus
 
                             if (arpgData.level() < ARPGLevelingLogic.getMaxLevel()) {
                                 lines.add(Text.translatable("tiered.arpg.xp").formatted(Formatting.GRAY)
