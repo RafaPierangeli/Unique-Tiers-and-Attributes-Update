@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:sprint_one_cm": 2593,
+      "minecraft:time_since_rest": 7473,
+      "minecraft:walk_one_cm": 17405,
+      "minecraft:total_world_time": 7523,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 4227,
+      "minecraft:play_time": 7473,
+      "minecraft:jump": 26,
+      "minecraft:fish_caught": 1,
+      "minecraft:time_since_death": 7473
+    },
+    "minecraft:crafted": {
+      "minecraft:fishing_rod": 1
+    },
+    "minecraft:used": {
+      "minecraft:lava_bucket": 1,
+      "minecraft:stone_brick_slab": 40,
+      "minecraft:stone_bricks": 16,
+      "minecraft:lantern": 8,
+      "minecraft:fishing_rod": 2
+    },
+    "minecraft:picked_up": {
+      "minecraft:lantern": 3,
+      "minecraft:cod": 1
+    }
+  },
+  "DataVersion": 4671
+}

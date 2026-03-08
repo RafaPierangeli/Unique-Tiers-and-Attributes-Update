@@ -65,4 +65,57 @@ public class TieredConfig implements ConfigData {
     @ConfigEntry.Category("equipments_settings")
     @ConfigEntry.Gui.Tooltip
     public int maxLevelEquipment = 100;
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpBaseKillEntity = 2;
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpBaseMineBlock = 1;// XP base (pedra, terra, etc)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierCoal = 2;      // Carvão (x2)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierCopper = 2;    // Cobre (x2)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierQuartz = 2;    // Quartzo (x2)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierIron = 3;      // Ferro (x3)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierRedstone = 3;  // Redstone (x3)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierGold = 4;      // Ouro (x4)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierLapis = 4;     // Lápis-lazúli (x4)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierDiamond = 10;  // Diamante (x10) - Jackpot!
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierEmerald = 15;  // Esmeralda (x15)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpMultiplierNetherite = 20;// Detritos Ancestrais (x20) - O ápice!
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpBaseTakeDamage = 1; // XP que a armadura ganha ao receber um hit
+
+    // 🌟 XP Dinâmico: Ações da Vara de Pescar
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpBaseFishing = 5; // Pescar demora, então o XP base deve ser maior!
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpBaseCastRod = 1;   // XP ao arremessar a isca (Lure)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpBaseSwim = 1;      // XP por segundo nadando (Aquatic)
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
+    public int xpBaseSubmerge = 1;  // XP por segundo submerso (Oxygen)
 }

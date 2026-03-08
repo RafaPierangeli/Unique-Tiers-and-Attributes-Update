@@ -57,6 +57,7 @@ public class Tiered implements ModInitializer {
         CustomEntityAttributes.init();
         CommandInit.init();
         TieredDataComponents.init();
+        ARPGEventHandlers.register(); // 🌟 Registra os eventos do nosso ARPG!
 
         BlockRegisters.registerModBlocks();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.ATTRIBUTE_DATA_LOADER);

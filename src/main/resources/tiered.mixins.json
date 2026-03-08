@@ -4,6 +4,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "LivingEntityDeathMixin",
+    "LivingEntityDamageMixin",
+    "FishingBobberEntityMixin",
 
     "LivingEntityMixin",
     "TradeOutputSlotMixin",

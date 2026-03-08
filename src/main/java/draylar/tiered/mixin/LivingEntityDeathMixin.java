@@ -1,6 +1,7 @@
 package draylar.tiered.mixin;
 
 import draylar.tiered.api.EquipmentCategory;
+import draylar.tiered.config.ConfigInit; // 🌟 Importe sua config
 import draylar.tiered.util.ARPGXpHelper;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -16,21 +17,18 @@ public abstract class LivingEntityDeathMixin {
 
     @Inject(method = "onDeath", at = @At("HEAD"))
     private void onEntityDeathGiveARPGXp(DamageSource damageSource, CallbackInfo ci) {
-        // Verifica se quem causou o dano fatal foi um jogador (no lado do servidor)
         if (damageSource.getAttacker() instanceof ServerPlayerEntity player) {
 
-            // Pega o item que o jogador está segurando na mão principal
             ItemStack mainHandStack = player.getMainHandStack();
             EquipmentCategory category = EquipmentCategory.getCategory(mainHandStack);
 
-            // Se for arma Melee, ganha XP de "damage" (Força Bruta)
+            int xpAmount = ConfigInit.CONFIG.xpBaseKillEntity;
+
             if (category == EquipmentCategory.MELEE_WEAPON) {
-                // Dá 10 de XP por abate (você pode mudar esse valor depois)
-                ARPGXpHelper.addXp(mainHandStack, "damage", 10, player);
+                ARPGXpHelper.addXp(mainHandStack, "damage", xpAmount, player);
             }
-            // Se for arma à distância, ganha XP de "ranged_damage" (Tiro Pesado)
             else if (category == EquipmentCategory.RANGED_WEAPON) {
-                ARPGXpHelper.addXp(mainHandStack, "ranged_damage", 10, player);
+                ARPGXpHelper.addXp(mainHandStack, "ranged_damage", xpAmount, player);
             }
         }
     }

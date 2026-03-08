@@ -30,5 +30,22 @@
 	// Draws custom textures (corners and top icon) around the tooltip
 	"enableTierOrnaments": true,
 	"uniqueTooltipMode": "ALWAYS",
-	"maxLevelEquipment": 100
+	"maxLevelEquipment": 100,
+	"xpBaseKillEntity": 2,
+	"xpBaseMineBlock": 1,
+	"xpMultiplierCoal": 2,
+	"xpMultiplierCopper": 2,
+	"xpMultiplierQuartz": 2,
+	"xpMultiplierIron": 3,
+	"xpMultiplierRedstone": 3,
+	"xpMultiplierGold": 4,
+	"xpMultiplierLapis": 4,
+	"xpMultiplierDiamond": 10,
+	"xpMultiplierEmerald": 15,
+	"xpMultiplierNetherite": 20,
+	"xpBaseTakeDamage": 1,
+	"xpBaseFishing": 5,
+	"xpBaseCastRod": 15,
+	"xpBaseSwim": 1,
+	"xpBaseSubmerge": 1
 }

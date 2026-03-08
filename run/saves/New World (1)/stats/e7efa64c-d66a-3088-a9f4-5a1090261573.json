@@ -1,0 +1,83 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:skeleton": 1,
+      "minecraft:spider": 2
+    },
+    "minecraft:picked_up": {
+      "minecraft:quartz": 3,
+      "minecraft:wildflowers": 3,
+      "minecraft:raw_copper": 9,
+      "minecraft:redstone": 9,
+      "minecraft:gold_nugget": 14,
+      "minecraft:raw_iron": 2,
+      "minecraft:ancient_debris": 2,
+      "minecraft:coal": 2,
+      "minecraft:string": 1,
+      "minecraft:raw_gold": 6,
+      "minecraft:diamond": 6,
+      "minecraft:lapis_lazuli": 39,
+      "minecraft:emerald": 6
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 2639,
+      "minecraft:time_since_rest": 13061,
+      "minecraft:walk_one_cm": 76435,
+      "minecraft:total_world_time": 21146,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 2804,
+      "minecraft:mob_kills": 3,
+      "minecraft:play_time": 13061,
+      "minecraft:damage_dealt": 280,
+      "minecraft:jump": 28,
+      "minecraft:time_since_death": 13061
+    },
+    "minecraft:used": {
+      "minecraft:deepslate_coal_ore": 10,
+      "minecraft:copper_ore": 10,
+      "minecraft:grass_block": 98,
+      "minecraft:netherite_sword": 3,
+      "minecraft:deepslate_redstone_ore": 11,
+      "minecraft:ancient_debris": 11,
+      "minecraft:diamond_ore": 10,
+      "minecraft:deepslate_copper_ore": 10,
+      "minecraft:coal_ore": 10,
+      "minecraft:deepslate_diamond_ore": 10,
+      "minecraft:lapis_ore": 10,
+      "minecraft:redstone_ore": 10,
+      "minecraft:nether_quartz_ore": 10,
+      "minecraft:deepslate_gold_ore": 11,
+      "minecraft:stone_brick_slab": 3,
+      "minecraft:diamond_pickaxe": 40,
+      "minecraft:nether_gold_ore": 10,
+      "minecraft:gold_ore": 10,
+      "minecraft:deepslate_lapis_ore": 10,
+      "minecraft:deepslate_iron_ore": 10,
+      "minecraft:emerald_ore": 10,
+      "minecraft:iron_ore": 10,
+      "minecraft:deepslate_emerald_ore": 14
+    },
+    "minecraft:mined": {
+      "minecraft:deepslate_coal_ore": 1,
+      "minecraft:redstone_ore": 1,
+      "minecraft:emerald_ore": 3,
+      "minecraft:deepslate_emerald_ore": 3,
+      "minecraft:nether_quartz_ore": 3,
+      "minecraft:gold_ore": 3,
+      "minecraft:coal_ore": 1,
+      "minecraft:ancient_debris": 2,
+      "minecraft:deepslate_gold_ore": 3,
+      "minecraft:diamond_ore": 3,
+      "minecraft:nether_gold_ore": 3,
+      "minecraft:deepslate_lapis_ore": 3,
+      "minecraft:deepslate_diamond_ore": 3,
+      "minecraft:deepslate_iron_ore": 1,
+      "minecraft:deepslate_redstone_ore": 1,
+      "minecraft:deepslate_copper_ore": 1,
+      "minecraft:copper_ore": 1,
+      "minecraft:iron_ore": 1,
+      "minecraft:lapis_ore": 3
+    }
+  },
+  "DataVersion": 4671
+}

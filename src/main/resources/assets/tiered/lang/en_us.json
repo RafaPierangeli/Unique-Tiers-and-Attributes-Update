@@ -320,7 +320,25 @@
 
 
   "text.autoconfig.tiered.category.equipments_settings": "Equipments Settings",
+  "text.autoconfig.tiered.option.maxLevelEquipment": "Max lvl to equipments.",
   "text.autoconfig.tiered.option.maxLevelEquipment.@Tooltip": "Max lvl to equipments.\nDefault: 100",
+  "text.autoconfig.tiered.option.xpBaseKillEntity": "Base XP: Kill Monsters",
+  "text.autoconfig.tiered.option.xpBaseMineBlock": "Base XP: Mine Blocks",
+  "text.autoconfig.tiered.option.xpMultiplierCoal": "XP Multiplier: Coal",
+  "text.autoconfig.tiered.option.xpMultiplierCopper": "XP Multiplier: Copper",
+  "text.autoconfig.tiered.option.xpMultiplierQuartz": "XP Multiplier: Quartz",
+  "text.autoconfig.tiered.option.xpMultiplierIron": "XP Multiplier: Iron",
+  "text.autoconfig.tiered.option.xpMultiplierRedstone": "XP Multiplier: Redstone",
+  "text.autoconfig.tiered.option.xpMultiplierGold": "XP Multiplier: Gold",
+  "text.autoconfig.tiered.option.xpMultiplierLapis": "XP Multiplier: Lapis Lazuli",
+  "text.autoconfig.tiered.option.xpMultiplierDiamond": "XP Multiplier: Diamond",
+  "text.autoconfig.tiered.option.xpMultiplierEmerald": "XP Multiplier: Emerald",
+  "text.autoconfig.tiered.option.xpMultiplierNetherite": "XP Multiplier: Ancient Debris",
+  "text.autoconfig.tiered.option.xpBaseTakeDamage": "Base XP: Take Damage",
+  "text.autoconfig.tiered.option.xpBaseFishing": "Base XP: Fishing",
+  "text.autoconfig.tiered.option.xpBaseCastRod": "Base XP: Cast Rod",
+  "text.autoconfig.tiered.option.xpBaseSwim": "Base XP: Swimming (per sec)",
+  "text.autoconfig.tiered.option.xpBaseSubmerge": "Base XP: Submerged (per sec)",
 
 
   "block.tiered.reforge_block": "Reforge",
@@ -363,6 +381,20 @@
   "tiered.arpg.tendency.lethal": "Lethal",
   "tiered.arpg.tendency.light": "Light",
   "tiered.arpg.tendency.agile": "Agile",
+  "tiered.arpg.tendency.speed": "Momentum",
+  "tiered.arpg.tendency.critical": "True Strike",
+  "tiered.arpg.tendency.ranged_damage": "Heavy Shot",
+  "tiered.arpg.tendency.resistance": "Bulwark",
+  "tiered.arpg.tendency.vital": "Vitality",
+  "tiered.arpg.tendency.mining": "Hard Labor",
+  "tiered.arpg.tendency.fortune": "Midas Touch",
+  "tiered.arpg.tendency.interaction": "Long Reach",
+  "tiered.arpg.tendency.aquatic": "Swift Swimmer",
+  "tiered.arpg.tendency.oxygen": "Iron Lungs",
+  "tiered.arpg.tendency.luck_of_sea": "Sea's Blessing",
+  "tiered.arpg.tendency.lure": "Irresistible Bait",
+  "tiered.arpg.tendency.unknown": "Unknown",
+
   "tiered.arpg.affinity": "Affinity: ",
   "tiered.arpg.xp": "XP: ",
   "tiered.arpg.xp.max": "MAX",
@@ -407,5 +439,6 @@
   "tiered.arpg.bonus.luck_of_sea": "Sea Luck",
   "tiered.arpg.bonus.lure": "Lure",
   "tiered.arpg.prestige": "Prestige: "
+
 
 }

@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:fishing_rod": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 1980,
+      "minecraft:walk_one_cm": 3160,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 591,
+      "minecraft:play_time": 1980,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 1980,
+      "minecraft:sprint_one_cm": 3374,
+      "minecraft:swim_one_cm": 3194,
+      "minecraft:total_world_time": 2056,
+      "minecraft:fly_one_cm": 1635,
+      "minecraft:walk_on_water_one_cm": 1765,
+      "minecraft:sneak_time": 14
+    }
+  },
+  "DataVersion": 4671
+}
