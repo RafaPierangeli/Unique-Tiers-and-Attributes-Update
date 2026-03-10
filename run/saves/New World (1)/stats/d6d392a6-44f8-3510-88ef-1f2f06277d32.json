@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:damage_resisted": 126,
+      "minecraft:time_since_rest": 4450,
+      "minecraft:walk_one_cm": 3920,
+      "minecraft:total_world_time": 4522,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 28,
+      "minecraft:damage_taken": 223,
+      "minecraft:sneak_time": 1,
+      "minecraft:play_time": 4450,
+      "minecraft:damage_absorbed": 80,
+      "minecraft:time_since_death": 4450
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 10,
+      "minecraft:potion": 2,
+      "minecraft:zombie_spawn_egg": 2,
+      "minecraft:golden_carrot": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_chestplate": 1
+    }
+  },
+  "DataVersion": 4671
+}

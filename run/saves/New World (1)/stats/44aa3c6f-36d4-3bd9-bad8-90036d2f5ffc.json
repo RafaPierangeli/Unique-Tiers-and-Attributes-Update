@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 1520,
+      "minecraft:walk_one_cm": 7754,
+      "minecraft:total_world_time": 11530,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 121,
+      "minecraft:play_time": 1520,
+      "minecraft:time_since_death": 1520
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_pickaxe": 1
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 4
+    },
+    "minecraft:mined": {
+      "minecraft:emerald_ore": 1,
+      "minecraft:deepslate_emerald_ore": 1,
+      "minecraft:deepslate_iron_ore": 1,
+      "minecraft:stone": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:raw_iron": 1
+    }
+  },
+  "DataVersion": 4671
+}

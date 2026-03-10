@@ -1,0 +1,74 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:diamond_pickaxe": 35,
+      "minecraft:diamond_shovel": 36,
+      "minecraft:dirt": 8
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8118,
+      "minecraft:walk_one_cm": 22841,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 6924,
+      "minecraft:damage_taken": 60,
+      "minecraft:play_time": 8118,
+      "minecraft:jump": 40,
+      "minecraft:time_since_death": 8118,
+      "minecraft:drop": 11,
+      "minecraft:sprint_one_cm": 17654,
+      "minecraft:open_chest": 2,
+      "minecraft:fall_one_cm": 669,
+      "minecraft:total_world_time": 9392,
+      "minecraft:fly_one_cm": 7431,
+      "minecraft:walk_on_water_one_cm": 6405,
+      "minecraft:sneak_time": 51
+    },
+    "minecraft:dropped": {
+      "minecraft:raw_iron": 2,
+      "minecraft:gold_nugget": 10,
+      "minecraft:wildflowers": 7,
+      "minecraft:cobblestone": 6,
+      "minecraft:ancient_debris": 3,
+      "minecraft:quartz": 3,
+      "minecraft:lapis_lazuli": 29,
+      "minecraft:raw_gold": 4,
+      "minecraft:emerald": 2,
+      "minecraft:clay_ball": 92
+    },
+    "minecraft:picked_up": {
+      "minecraft:quartz": 3,
+      "minecraft:ancient_debris": 6,
+      "minecraft:dirt": 8,
+      "minecraft:raw_gold": 4,
+      "minecraft:clay_ball": 92,
+      "minecraft:cobblestone": 6,
+      "minecraft:diamond": 5,
+      "minecraft:wildflowers": 7,
+      "minecraft:lapis_lazuli": 29,
+      "minecraft:emerald": 2,
+      "minecraft:gold_nugget": 10,
+      "minecraft:raw_iron": 2
+    },
+    "minecraft:mined": {
+      "minecraft:emerald_ore": 1,
+      "minecraft:deepslate_emerald_ore": 1,
+      "minecraft:nether_quartz_ore": 3,
+      "minecraft:gold_ore": 2,
+      "minecraft:grass_block": 8,
+      "minecraft:ancient_debris": 3,
+      "minecraft:deepslate_gold_ore": 2,
+      "minecraft:diamond_ore": 3,
+      "minecraft:nether_gold_ore": 3,
+      "minecraft:fire": 1,
+      "minecraft:seagrass": 1,
+      "minecraft:deepslate_lapis_ore": 3,
+      "minecraft:deepslate_diamond_ore": 2,
+      "minecraft:deepslate_iron_ore": 2,
+      "minecraft:clay": 27,
+      "minecraft:stone": 7,
+      "minecraft:lapis_ore": 3
+    }
+  },
+  "DataVersion": 4671
+}

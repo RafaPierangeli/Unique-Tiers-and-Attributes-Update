@@ -1,0 +1,35 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:diamond_sword": 1
+    },
+    "minecraft:mined": {
+      "minecraft:fire": 2
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 6448,
+      "minecraft:walk_one_cm": 6410,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 53,
+      "minecraft:damage_taken": 102,
+      "minecraft:play_time": 6448,
+      "minecraft:damage_dealt": 10366,
+      "minecraft:jump": 14,
+      "minecraft:time_since_death": 6448,
+      "minecraft:sprint_one_cm": 4465,
+      "minecraft:fall_one_cm": 700,
+      "minecraft:total_world_time": 6485,
+      "minecraft:fly_one_cm": 4475,
+      "minecraft:sneak_time": 20
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 50
+    },
+    "minecraft:used": {
+      "minecraft:zombie_spawn_egg": 48,
+      "minecraft:diamond_sword": 105
+    }
+  },
+  "DataVersion": 4671
+}

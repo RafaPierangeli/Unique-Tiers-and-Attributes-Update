@@ -6,13 +6,40 @@
     },
     "minecraft:custom": {
       "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 10854,
+      "minecraft:walk_one_cm": 8705,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_taken": 306,
+      "minecraft:damage_dealt": 400,
+      "minecraft:play_time": 10854,
+      "minecraft:damage_absorbed": 41,
+      "minecraft:jump": 2,
+      "minecraft:time_since_death": 10854,
+      "minecraft:drop": 4,
       "minecraft:sprint_one_cm": 2830,
-      "minecraft:time_since_rest": 7724,
-      "minecraft:walk_one_cm": 3799,
-      "minecraft:total_world_time": 7774,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 7724,
-      "minecraft:time_since_death": 7724
+      "minecraft:total_world_time": 11172
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:spruce_fence": 1,
+      "minecraft:netherite_sword": 1,
+      "minecraft:zombie_spawn_egg": 1,
+      "minecraft:diamond_sword": 3,
+      "minecraft:golden_carrot": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:rotten_flesh": 4
+    },
+    "minecraft:mined": {
+      "minecraft:spruce_fence": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:spruce_fence": 1,
+      "minecraft:rotten_flesh": 4
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 2
     }
   },
   "DataVersion": 4671

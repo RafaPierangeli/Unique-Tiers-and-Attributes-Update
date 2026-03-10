@@ -1,21 +1,52 @@
 {
   "stats": {
+    "minecraft:killed": {
+      "minecraft:zombie": 15
+    },
     "minecraft:custom": {
-      "minecraft:interact_with_crafting_table": 1,
-      "minecraft:time_since_rest": 2070,
-      "minecraft:walk_one_cm": 922,
-      "minecraft:total_world_time": 2341,
-      "minecraft:leave_game": 2,
-      "minecraft:play_time": 2070,
-      "minecraft:time_since_death": 2070,
-      "minecraft:drop": 2
+      "minecraft:interact_with_crafting_table": 3,
+      "minecraft:time_since_rest": 13829,
+      "minecraft:walk_one_cm": 18771,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 16,
+      "minecraft:damage_dealt": 3072,
+      "minecraft:play_time": 13829,
+      "minecraft:jump": 40,
+      "minecraft:time_since_death": 13829,
+      "minecraft:drop": 15,
+      "minecraft:sprint_one_cm": 7612,
+      "minecraft:total_world_time": 26340,
+      "minecraft:fly_one_cm": 10367,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 162
+    },
+    "minecraft:mined": {
+      "minecraft:emerald_ore": 1,
+      "minecraft:deepslate_emerald_ore": 1,
+      "minecraft:deepslate_diamond_ore": 1,
+      "minecraft:copper_ore": 3
+    },
+    "minecraft:picked_up": {
+      "minecraft:diamond": 1,
+      "minecraft:emerald": 2,
+      "minecraft:raw_copper": 11
+    },
+    "minecraft:dropped": {
+      "minecraft:raw_copper": 11,
+      "minecraft:iron_chestplate": 2,
+      "minecraft:cod": 1,
+      "minecraft:emerald": 2
     },
     "minecraft:crafted": {
       "minecraft:iron_helmet": 2,
+      "minecraft:diamond_helmet": 2,
       "minecraft:iron_chestplate": 6
     },
-    "minecraft:dropped": {
-      "minecraft:iron_chestplate": 2
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 6,
+      "minecraft:netherite_sword": 9,
+      "minecraft:zombie_spawn_egg": 16,
+      "minecraft:diamond_sword": 25
     }
   },
   "DataVersion": 4671

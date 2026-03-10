@@ -5,13 +5,33 @@
     },
     "minecraft:custom": {
       "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 10138,
+      "minecraft:walk_one_cm": 4002,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 17,
+      "minecraft:damage_taken": 165,
+      "minecraft:damage_dealt": 3110,
+      "minecraft:play_time": 10138,
+      "minecraft:damage_absorbed": 30,
+      "minecraft:jump": 3,
+      "minecraft:time_since_death": 10138,
+      "minecraft:sprint_one_cm": 1246,
       "minecraft:open_chest": 1,
-      "minecraft:time_since_rest": 2118,
-      "minecraft:walk_one_cm": 344,
-      "minecraft:total_world_time": 2172,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 2118,
-      "minecraft:time_since_death": 2118
+      "minecraft:fall_one_cm": 800,
+      "minecraft:total_world_time": 11225,
+      "minecraft:fly_one_cm": 68
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:splash_potion": 4,
+      "minecraft:netherite_sword": 23,
+      "minecraft:zombie_spawn_egg": 11,
+      "minecraft:potion": 3,
+      "minecraft:golden_carrot": 1
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 15,
+      "minecraft:drowned": 1
     }
   },
   "DataVersion": 4671

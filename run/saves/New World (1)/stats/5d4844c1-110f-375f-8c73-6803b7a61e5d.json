@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 1576,
+      "minecraft:open_chest": 1,
+      "minecraft:time_since_rest": 3528,
+      "minecraft:walk_one_cm": 9311,
+      "minecraft:total_world_time": 3559,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 119,
+      "minecraft:play_time": 3528,
+      "minecraft:time_since_death": 3528
+    },
+    "minecraft:used": {
+      "minecraft:wet_sponge": 10,
+      "minecraft:bone_meal": 17,
+      "minecraft:sponge": 11,
+      "minecraft:diamond_hoe": 16,
+      "minecraft:wheat_seeds": 7
+    }
+  },
+  "DataVersion": 4671
+}

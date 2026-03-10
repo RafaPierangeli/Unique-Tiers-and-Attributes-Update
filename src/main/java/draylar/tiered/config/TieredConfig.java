@@ -67,6 +67,12 @@ public class TieredConfig implements ConfigData {
     public int maxLevelEquipment = 100;
     @ConfigEntry.Category("equipments_settings")
     @ConfigEntry.Gui.Tooltip
+
+    // 🌟 Multiplicador Global de XP do Mod
+    // 1.0 = Normal | 2.0 = Dobro de XP | 0.5 = Metade do XP (Hardcore)
+    public float globalXpMultiplier = 1.0f;
+    @ConfigEntry.Category("equipments_settings")
+    @ConfigEntry.Gui.Tooltip
     public int xpBaseKillEntity = 2;
     @ConfigEntry.Category("equipments_settings")
     @ConfigEntry.Gui.Tooltip

@@ -172,8 +172,12 @@ public class TieredTooltipCallback {
                             // 🌟 Cria a chave de tradução dinamicamente (ex: "tiered.arpg.affinity.damage")
                             String affinityKey = "tiered.arpg.affinity." + arpgData.affinity();
 
+                            // 🌟 Linha 1: Afinidade: [Nome Colorido]
                             lines.add(Text.translatable("tiered.arpg.affinity").formatted(Formatting.GRAY)
-                                    .append(Text.translatable(affinityKey).formatted(affinityColor)) // Pinta o nome
+                                    .append(Text.translatable(affinityKey).formatted(affinityColor)));
+
+                            // 🌟 Linha 2: Bônus: +[Valor] [Atributo]
+                            lines.add(Text.translatable("tiered.arpg.bonus.label").formatted(Formatting.GRAY)
                                     .append(ARPGAffinityLogic.getAffinityBonusText(arpgData.affinity(), arpgData.level(), arpgData.prestige())));
 
                             // 🌟 NOVO: Linha de Prestígio (Só aparece se o jogador já resetou a arma pelo menos 1 vez)

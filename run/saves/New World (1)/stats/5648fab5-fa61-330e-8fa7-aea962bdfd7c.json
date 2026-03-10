@@ -1,16 +1,26 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 3355,
-      "minecraft:walk_one_cm": 2189,
-      "minecraft:total_world_time": 4403,
-      "minecraft:leave_game": 2,
-      "minecraft:play_time": 3355,
-      "minecraft:jump": 1,
-      "minecraft:time_since_death": 3355
-    },
     "minecraft:used": {
-      "tiered:reforge_block": 3
+      "tiered:reforge_block": 3,
+      "minecraft:zombie_spawn_egg": 15,
+      "minecraft:diamond_sword": 49
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 11
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 168,
+      "minecraft:open_chest": 3,
+      "minecraft:time_since_rest": 7672,
+      "minecraft:walk_one_cm": 6868,
+      "minecraft:total_world_time": 8895,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 15,
+      "minecraft:sneak_time": 40,
+      "minecraft:play_time": 7672,
+      "minecraft:damage_dealt": 2388,
+      "minecraft:jump": 5,
+      "minecraft:time_since_death": 7672
     }
   },
   "DataVersion": 4671

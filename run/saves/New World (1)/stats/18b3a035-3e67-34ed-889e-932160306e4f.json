@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:open_chest": 1,
+      "minecraft:time_since_rest": 2349,
+      "minecraft:walk_one_cm": 2902,
+      "minecraft:total_world_time": 11280,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 2,
+      "minecraft:play_time": 2349,
+      "minecraft:time_since_death": 2349,
+      "minecraft:drop": 3
+    },
+    "minecraft:used": {
+      "minecraft:zombie_spawn_egg": 2,
+      "minecraft:bow": 6
+    },
+    "minecraft:picked_up": {
+      "minecraft:bow": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:bow": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:amethyst_shard": 1,
+      "minecraft:bow": 2
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 2
+    }
+  },
+  "DataVersion": 4671
+}

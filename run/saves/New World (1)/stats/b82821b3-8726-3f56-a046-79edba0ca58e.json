@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:gunpowder": 1
+    },
+    "minecraft:custom": {
+      "minecraft:damage_blocked_by_shield": 945,
+      "minecraft:time_since_rest": 6148,
+      "minecraft:walk_one_cm": 12946,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 217,
+      "minecraft:mob_kills": 8,
+      "minecraft:damage_taken": 18,
+      "minecraft:damage_dealt": 800,
+      "minecraft:play_time": 6148,
+      "minecraft:jump": 14,
+      "minecraft:time_since_death": 6148,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 7335,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 600,
+      "minecraft:total_world_time": 6188,
+      "minecraft:fly_one_cm": 1451,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 271
+    },
+    "minecraft:used": {
+      "minecraft:shield": 15,
+      "minecraft:netherite_sword": 7,
+      "minecraft:zombie_spawn_egg": 5,
+      "minecraft:creeper_spawn_egg": 7,
+      "minecraft:bow": 8
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 7,
+      "minecraft:skeleton": 1
+    }
+  },
+  "DataVersion": 4671
+}

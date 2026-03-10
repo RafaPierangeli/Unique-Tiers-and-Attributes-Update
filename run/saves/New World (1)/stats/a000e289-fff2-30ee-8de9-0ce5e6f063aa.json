@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:zombie": 6,
+      "minecraft:zombified_piglin": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond": 45,
+      "minecraft:diamond_chestplate": 2
+    },
+    "minecraft:used": {
+      "minecraft:zombie_spawn_egg": 6,
+      "minecraft:diamond_sword": 14,
+      "minecraft:golden_carrot": 2
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 4740,
+      "minecraft:walk_one_cm": 13229,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 7,
+      "minecraft:damage_taken": 143,
+      "minecraft:play_time": 4740,
+      "minecraft:damage_dealt": 1400,
+      "minecraft:jump": 25,
+      "minecraft:time_since_death": 4740,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 5900,
+      "minecraft:fall_one_cm": 2400,
+      "minecraft:total_world_time": 7421,
+      "minecraft:fly_one_cm": 2870,
+      "minecraft:sneak_time": 1
+    }
+  },
+  "DataVersion": 4671
+}

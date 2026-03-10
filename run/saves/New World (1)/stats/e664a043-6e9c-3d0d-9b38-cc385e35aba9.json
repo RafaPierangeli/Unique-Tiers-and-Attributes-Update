@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:diamond_shovel": 29
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 7710,
+      "minecraft:walk_one_cm": 9464,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 10,
+      "minecraft:play_time": 7710,
+      "minecraft:jump": 26,
+      "minecraft:time_since_death": 7710,
+      "minecraft:sprint_one_cm": 32427,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 400,
+      "minecraft:total_world_time": 7798,
+      "minecraft:fly_one_cm": 6909,
+      "minecraft:crouch_one_cm": 171,
+      "minecraft:sneak_time": 45
+    }
+  },
+  "DataVersion": 4671
+}
