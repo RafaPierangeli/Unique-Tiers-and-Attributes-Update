@@ -22,11 +22,11 @@ public class ARPGAffinityLogic {
 
             // 🛡️ 2. DEFENSIVO (Aqua)
             case "bulwark", "solid_foundation", "vital_guard", "wall", "immovable", "titan_heart", "unyielding_vigor", "life_blessing", "winds_of_life"
-                    -> Formatting.AQUA;
+                    -> Formatting.GREEN;
 
             // 🥾 3. MOBILIDADE (Verde Escuro)
             case "dancing_blade", "guiding_winds", "wayfarer", "swift_shadows", "long_strides", "light_steps", "aerial_boost", "mountain_walker", "gale", "acrobat", "quick_draw"
-                    -> Formatting.DARK_GREEN;
+                    -> Formatting.AQUA;
 
             // ⛏️ 4. MINERAÇÃO / ESCAVAÇÃO / INTERAÇÃO (Amarelo)
             case "hard_labor", "voracious_digger", "long_reach", "far_sight", "earth_reach", "soil_master", "bountiful_harvest"
@@ -38,7 +38,7 @@ public class ARPGAffinityLogic {
 
             // ✨ 6. EXPERIÊNCIA E SORTE (Verde Claro)
             case "ancient_wisdom", "midas_touch", "hidden_treasures", "demeter_blessing", "luck_of_sea", "lure"
-                    -> Formatting.GREEN;
+                    -> Formatting.LIGHT_PURPLE;
 
             default -> Formatting.GRAY;
         };

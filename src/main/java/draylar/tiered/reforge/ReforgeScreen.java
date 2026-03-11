@@ -126,7 +126,6 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
             ItemStack itemStack = this.getScreenHandler().getSlot(1).getStack();
             List<Text> tooltip = new ArrayList<Text>();
 
-            // Verifica se o item é Único e se a config bloqueia a reforja dele
             Identifier tierId = ModifierUtils.getAttributeId(itemStack);
             boolean isUniqueLocked = tierId != null && tierId.getPath().contains("unique") && !ConfigInit.CONFIG.uniqueReforge;
             boolean isMythicLocked = tierId != null && tierId.getPath().contains("mythic");
@@ -135,23 +134,48 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
                 // ESTADO 1: Mesa vazia
                 tooltip.add(Text.translatable("screen.tiered.reforge_insert_equipment").formatted(Formatting.YELLOW));
             }
+            // 🌟 NOVO: ESTADO DE PRESTÍGIO (Tem prioridade sobre os bloqueios de Único/Mítico)
+            else if (this.getScreenHandler().isPrestigeMode()) {
+                tooltip.add(Text.literal("✨ Ascensão de Prestígio ✨").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
+
+                ItemStack ingredient = this.getScreenHandler().getSlot(0).getStack();
+                if (ingredient.isEmpty() || !ingredient.isOf(net.minecraft.item.Items.NETHER_STAR)) {
+                    tooltip.add(Text.literal("Requer: ").formatted(Formatting.RED).append(net.minecraft.item.Items.NETHER_STAR.getName().copy().formatted(Formatting.GRAY)));
+                }
+
+                ItemStack addition = this.getScreenHandler().getSlot(2).getStack();
+                if (addition.isEmpty() || !addition.isOf(net.minecraft.item.Items.ECHO_SHARD)) {
+                    tooltip.add(Text.literal("Requer: ").formatted(Formatting.RED).append(net.minecraft.item.Items.ECHO_SHARD.getName().copy().formatted(Formatting.GRAY)));
+                }
+
+                if (this.client != null && this.client.player != null) {
+                    if (this.client.player.totalExperience < 500 && !this.client.player.isCreative()) {
+                        tooltip.add(Text.literal("Custo: 500 XP").formatted(Formatting.RED));
+                    } else {
+                        tooltip.add(Text.literal("Custo: 500 XP").formatted(Formatting.GREEN));
+                    }
+                }
+            }
             else if (itemStack.isIn(TieredItemTags.MODIFIER_RESTRICTED)) {
                 // ESTADO 2: Item proibido
                 tooltip.add(Text.translatable("screen.tiered.reforge_restricted").formatted(Formatting.RED));
             }
             else if (isUniqueLocked) {
-                // 🌟 ESTADO 3: ITEM ÚNICO BLOQUEADO!
-                // Mostra uma mensagem roxa e em negrito, e ignora o resto (XP, ingredientes)
+                // ESTADO 3: ITEM ÚNICO BLOQUEADO!
                 tooltip.add(Text.translatable("screen.tiered.reforge_unique_locked").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
             }
             else if (isMythicLocked) {
-                // 🌟 ESTADO 3: ITEM MITICO BLOQUEADO!
-                // Mostra uma mensagem VERMELHA e em negrito, e ignora o resto (XP, ingredientes)
+                // ESTADO 4: ITEM MITICO BLOQUEADO!
                 tooltip.add(Text.translatable("screen.tiered.reforge_mythic_locked").formatted(Formatting.AQUA, Formatting.BOLD));
             }
+            // 🌟 NOVO ESTADO: ARMA DESPERTADA BLOQUEADA!
+            else if (this.getScreenHandler().isAwakened(itemStack) && !this.getScreenHandler().isPrestigeMode()) {
+                tooltip.add(Text.literal("Arma Despertada!").formatted(Formatting.RED, Formatting.BOLD));
+                tooltip.add(Text.literal("Não é possível alterar a raridade").formatted(Formatting.GRAY));
+                tooltip.add(Text.literal("de uma arma que já possui afinidade.").formatted(Formatting.GRAY));
+            }
             else {
-                // ESTADO 4: Equipamento válido! Checa o que falta.
-
+                // ESTADO 5: Equipamento válido! Checa o que falta para a reforja normal.
                 if (itemStack != last) {
                     last = itemStack;
                     baseItems = new ArrayList<Item>();
@@ -280,6 +304,16 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
         int scaledHeight = (int) (textHeight * scale);
 
         if (mouseX >= textX && mouseX <= textX + scaledWidth && mouseY >= textY && mouseY <= textY + scaledHeight) {
+
+            // 🌟 NOVO: Se estiver no Modo Prestígio, muda a explicação da Sorte!
+            if (this.getScreenHandler().isPrestigeMode()) {
+                List<Text> tooltip = new ArrayList<>();
+                tooltip.add(Text.literal("✨ Modo Prestígio ✨").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
+                tooltip.add(Text.literal("A arma manterá sua raridade e afinidade,").formatted(Formatting.GRAY));
+                tooltip.add(Text.literal("mas retornará ao Nível 1 com +1 de Prestígio.").formatted(Formatting.GRAY));
+                context.drawTooltip(this.textRenderer, tooltip, mouseX, mouseY);
+                return; // Sai do método para não desenhar as chances normais de reforja
+            }
 
             List<Text> tooltip = new ArrayList<>();
             tooltip.add(Text.translatable("tiered.tooltip.reforge_chance").formatted(Formatting.GOLD, Formatting.ITALIC));
@@ -440,11 +474,62 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
 
 
 
+
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
         int i = (this.width - this.backgroundWidth) / 2;
         int j = (this.height - this.backgroundHeight) / 2;
         context.drawTexture(RenderPipelines.GUI_TEXTURED, TEXTURE, i, j, 0, 0, this.backgroundWidth, this.backgroundHeight, this.backgroundWidth, this.backgroundHeight);
+
+        // 🌟 DESENHO DOS ÍCONES FANTASMAS (GHOST ITEMS) DINÂMICOS
+        ItemStack weapon = this.handler.getSlot(1).getStack();
+
+        if (!weapon.isEmpty()) {
+            boolean isPrestige = this.handler.isPrestigeMode();
+
+            // Slot 0 (Esquerda - Material Base)
+            if (this.handler.getSlot(0).getStack().isEmpty()) {
+                ItemStack ghostBase = ItemStack.EMPTY;
+
+                if (isPrestige) {
+                    ghostBase = new ItemStack(net.minecraft.item.Items.NETHER_STAR);
+                } else {
+                    // Tenta descobrir qual é o minério base da arma
+                    List<Item> items = Tiered.REFORGE_DATA_LOADER.getReforgeBaseItems(weapon.getItem());
+                    if (!items.isEmpty()) {
+                        ghostBase = new ItemStack(items.get(0));
+                    } else {
+                        var repairable = weapon.get(DataComponentTypes.REPAIRABLE);
+                        if (repairable != null && repairable.items() != null && repairable.items().size() > 0) {
+                            ghostBase = new ItemStack(repairable.items().get(0).value());
+                        }
+                    }
+                }
+
+                if (!ghostBase.isEmpty()) {
+                    context.drawItemWithoutEntity(ghostBase, i + 45, j + 47);
+                    // Aplica uma máscara escura (preto com 60% de opacidade) para parecer um "fantasma"
+                    context.fill(i + 45, j + 47, i + 45 + 16, j + 47 + 16, 0x99000000);
+                }
+            }
+
+            // Slot 2 (Direita - Cristal/Adição)
+            if (this.handler.getSlot(2).getStack().isEmpty()) {
+                ItemStack ghostAddition = ItemStack.EMPTY;
+
+                if (isPrestige) {
+                    ghostAddition = new ItemStack(net.minecraft.item.Items.ECHO_SHARD);
+                } else {
+                    // Usa Ametista como padrão visual para o cristal de reforja
+                    ghostAddition = new ItemStack(net.minecraft.item.Items.AMETHYST_SHARD);
+                }
+
+                if (!ghostAddition.isEmpty()) {
+                    context.drawItemWithoutEntity(ghostAddition, i + 115, j + 47);
+                    context.fill(i + 115, j + 47, i + 115 + 16, j + 47 + 16, 0x99000000);
+                }
+            }
+        }
     }
 
     public class ReforgeButton extends ButtonWidget {

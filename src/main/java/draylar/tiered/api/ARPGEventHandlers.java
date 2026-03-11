@@ -101,7 +101,7 @@ public class ARPGEventHandlers {
                         // 2. Escavador Voraz (Terra, Areia, Cascalho)
                         else if (state.isIn(BlockTags.DIRT) || state.isIn(BlockTags.SAND) || state.isOf(Blocks.GRAVEL)) {
                             specificAffinity = "voracious_digger";
-                            specificAmount = 2;
+                            specificAmount = 200;
                         }
 
                         // Aplica o XP Base + XP Específico

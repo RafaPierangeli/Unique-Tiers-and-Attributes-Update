@@ -1,0 +1,33 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:rotten_flesh": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:arrow": 2,
+      "minecraft:rotten_flesh": 1
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 1,
+      "minecraft:stone_bricks": 46
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3231,
+      "minecraft:walk_one_cm": 8529,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 3231,
+      "minecraft:damage_dealt": 49,
+      "minecraft:jump": 27,
+      "minecraft:time_since_death": 3231,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 7349,
+      "minecraft:open_chest": 1,
+      "minecraft:total_world_time": 3257,
+      "minecraft:fly_one_cm": 4633,
+      "minecraft:walk_on_water_one_cm": 78,
+      "minecraft:crouch_one_cm": 15,
+      "minecraft:sneak_time": 9
+    }
+  },
+  "DataVersion": 4671
+}

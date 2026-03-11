@@ -20,7 +20,7 @@ public abstract class LivingEntityJumpMixin {
 
             if (!boots.isEmpty()) {
                 // 🥾 BOTAS: Impulso Aéreo (Pular) + Ação Base (1 XP)
-                ARPGXpHelper.grantXp(boots, "aerial_boost", 3, false, 0, player);
+                ARPGXpHelper.grantXp(boots, "aerial_boost", 2, false, 0, player);
             }
         }
     }

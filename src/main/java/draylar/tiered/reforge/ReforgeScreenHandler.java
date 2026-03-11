@@ -35,22 +35,18 @@ public class ReforgeScreenHandler extends ScreenHandler {
     private final PlayerEntity player;
     private BlockPos pos;
 
-    // 🌟 NOVO: Sistema nativo para sincronizar o botão (substitui o pacote antigo)
     private final PropertyDelegate propertyDelegate;
 
-    // 🌟 NOVO: Construtor do Cliente (Necessário para a 1.21.11)
     public ReforgeScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
 
-    // Construtor do Servidor
     public ReforgeScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
         super(Tiered.REFORGE_SCREEN_HANDLER_TYPE, syncId);
 
         this.context = context;
         this.player = playerInventory.player;
 
-        // Inicializa o sincronizador do botão
         this.propertyDelegate = new PropertyDelegate() {
             private int value = 0;
             @Override
@@ -62,16 +58,13 @@ public class ReforgeScreenHandler extends ScreenHandler {
         };
         this.addProperties(this.propertyDelegate);
 
-        // 🌟 MANTIVE SUAS COORDENADAS EM "V" AQUI!
-        // Slot 0: Ingrediente Base (Esquerda)
         this.addSlot(new Slot(this.inventory, 0, 45, 47));
-        // Slot 1: Item a ser reforjado (Centro/Topo)
         this.addSlot(new Slot(this.inventory, 1, 80, 35));
-        // Slot 2: Adição (Direita)
         this.addSlot(new Slot(this.inventory, 2, 115, 47) {
             @Override
             public boolean canInsert(ItemStack stack) {
-                return stack.isIn(TieredItemTags.REFORGE_ADDITION);
+                // 🌟 PERMITE INSERIR ECHO SHARD PARA O PRESTÍGIO
+                return stack.isIn(TieredItemTags.REFORGE_ADDITION) || stack.isOf(net.minecraft.item.Items.ECHO_SHARD);
             }
         });
 
@@ -97,49 +90,86 @@ public class ReforgeScreenHandler extends ScreenHandler {
         }
     }
 
+    // 🌟 NOVO: Verifica se o item no slot central está pronto para o Prestígio
+    public boolean isPrestigeMode() {
+        ItemStack stack = this.getSlot(1).getStack();
+        if (stack.contains(draylar.tiered.data.TieredDataComponents.ARPG_DATA)) {
+            draylar.tiered.api.ARPGEquipmentData data = stack.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
+            return data != null && data.level() >= 100 && data.prestige() < 3;
+        }
+        return false;
+    }
+
+    // 🌟 NOVO: Verifica se a arma já possui uma afinidade despertada
+    public boolean isAwakened(ItemStack stack) {
+        if (stack.contains(draylar.tiered.data.TieredDataComponents.ARPG_DATA)) {
+            draylar.tiered.api.ARPGEquipmentData data = stack.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
+            return data != null && !"unawakened".equals(data.affinity());
+        }
+        return false;
+    }
+
     private void updateResult() {
         boolean isReady = false;
         ItemStack stack = this.getSlot(1).getStack();
 
-        if (this.getSlot(0).hasStack() && this.getSlot(1).hasStack() && this.getSlot(2).hasStack()) {
-            Item item = stack.getItem();
-            if (!stack.isIn(TieredItemTags.MODIFIER_RESTRICTED) && ModifierUtils.getRandomAttributeIDFor(null, item, false) != null && !stack.isDamaged()) {
-                List<Item> items = Tiered.REFORGE_DATA_LOADER.getReforgeBaseItems(item);
-                ItemStack baseItem = this.getSlot(0).getStack();
+        if (isPrestigeMode()) {
+            // 🌟 LÓGICA DE VALIDAÇÃO DO PRESTÍGIO
+            ItemStack baseItem = this.getSlot(0).getStack();
+            ItemStack additionItem = this.getSlot(2).getStack();
 
-                if (!items.isEmpty()) {
-                    isReady = items.stream().anyMatch(it -> it == baseItem.getItem());
-                } else {
-                    var repairable = stack.get(DataComponentTypes.REPAIRABLE);
-                    if (repairable != null && repairable.items() != null) {
-                        isReady = repairable.items().contains(baseItem.getRegistryEntry());
+            // Exige Nether Star na esquerda e Echo Shard na direita
+            if (baseItem.isOf(net.minecraft.item.Items.NETHER_STAR) && additionItem.isOf(net.minecraft.item.Items.ECHO_SHARD)) {
+                isReady = true;
+            }
+
+            // Custo fixo de 500 pontos de XP para o Prestígio
+            if (isReady && this.player.totalExperience < 500 && !this.player.isCreative()) {
+                isReady = false;
+            }
+        } else {
+            // 🌟 LÓGICA NORMAL DE REFORJA
+            if (this.getSlot(0).hasStack() && this.getSlot(1).hasStack() && this.getSlot(2).hasStack()) {
+                Item item = stack.getItem();
+                if (!stack.isIn(TieredItemTags.MODIFIER_RESTRICTED) && ModifierUtils.getRandomAttributeIDFor(null, item, false) != null && !stack.isDamaged()) {
+                    List<Item> items = Tiered.REFORGE_DATA_LOADER.getReforgeBaseItems(item);
+                    ItemStack baseItem = this.getSlot(0).getStack();
+
+                    if (!items.isEmpty()) {
+                        isReady = items.stream().anyMatch(it -> it == baseItem.getItem());
                     } else {
-                        isReady = baseItem.isIn(TieredItemTags.REFORGE_BASE_ITEM);
+                        var repairable = stack.get(DataComponentTypes.REPAIRABLE);
+                        if (repairable != null && repairable.items() != null) {
+                            isReady = repairable.items().contains(baseItem.getRegistryEntry());
+                        } else {
+                            isReady = baseItem.isIn(TieredItemTags.REFORGE_BASE_ITEM);
+                        }
                     }
                 }
             }
+
+            if (isReady && !ConfigInit.CONFIG.uniqueReforge && ModifierUtils.getAttributeId(stack) != null && ModifierUtils.getAttributeId(stack).getPath().contains("unique")) {
+                isReady = false;
+            }
+
+            if (isReady && ModifierUtils.getAttributeId(stack) != null && ModifierUtils.getAttributeId(stack).getPath().contains("mythic")) {
+                isReady = false;
+            }
+
+            // 🌟 TRAVA DE AFINIDADE: Se já despertou, não pode reforjar a raridade!
+            if (isReady && isAwakened(stack)) {
+                isReady = false;
+            }
+
+            int xpCost = ConfigInit.CONFIG.reforgeXpCost;
+            if (isReady && this.player.totalExperience < xpCost && !this.player.isCreative()) {
+                isReady = false;
+            }
         }
 
-        if (isReady && !ConfigInit.CONFIG.uniqueReforge && ModifierUtils.getAttributeId(stack) != null && ModifierUtils.getAttributeId(stack).getPath().contains("unique")) {
-            isReady = false;
-        }
-
-        if (isReady && ModifierUtils.getAttributeId(stack) != null && ModifierUtils.getAttributeId(stack).getPath().contains("mythic")) {
-            isReady = false;
-        }
-
-        // 🌟 TRAVA DE XP: O botão não acende se tiver menos de 30 pontos de XP
-        // 🌟 TRAVA DE XP DINÂMICA
-        int xpCost = ConfigInit.CONFIG.reforgeXpCost;
-        if (isReady && this.player.totalExperience < xpCost && !this.player.isCreative()) {
-            isReady = false;
-        }
-
-        // Atualiza o estado do botão para a tela
         this.propertyDelegate.set(0, isReady ? 1 : 0);
     }
 
-    // 🌟 NOVO: Metodo que a Screen chama para saber se acende o botão
     public boolean isReforgeReady() {
         return this.propertyDelegate.get(0) == 1;
     }
@@ -175,7 +205,8 @@ public class ReforgeScreenHandler extends ScreenHandler {
                     return ItemStack.EMPTY;
                 }
             } else if (index >= 3 && index < 39) {
-                if (itemStack.isIn(TieredItemTags.REFORGE_ADDITION) && !this.insertItem(itemStack2, 2, 3, false)) {
+                // 🌟 PERMITE SHIFT-CLICK DO ECHO SHARD
+                if ((itemStack.isIn(TieredItemTags.REFORGE_ADDITION) || itemStack.isOf(net.minecraft.item.Items.ECHO_SHARD)) && !this.insertItem(itemStack2, 2, 3, false)) {
                     return ItemStack.EMPTY;
                 }
 
@@ -188,7 +219,8 @@ public class ReforgeScreenHandler extends ScreenHandler {
                         if (!this.insertItem(itemStack2, 0, 1, false)) {
                             return ItemStack.EMPTY;
                         }
-                    } else if (itemStack.isIn(TieredItemTags.REFORGE_BASE_ITEM) && !this.insertItem(itemStack2, 0, 1, false)) {
+                        // 🌟 PERMITE SHIFT-CLICK DA NETHER STAR
+                    } else if ((itemStack.isIn(TieredItemTags.REFORGE_BASE_ITEM) || itemStack.isOf(net.minecraft.item.Items.NETHER_STAR)) && !this.insertItem(itemStack2, 0, 1, false)) {
                         return ItemStack.EMPTY;
                     }
 
@@ -218,38 +250,69 @@ public class ReforgeScreenHandler extends ScreenHandler {
     }
 
     public void reforge() {
-        // 1. Pega o item que está no slot do meio
         ItemStack itemStack = this.getSlot(1).getStack();
 
-        // 2. Descobre qual é o Tier atual dele
+        if (isPrestigeMode()) {
+            // 🌟 O RITUAL DE PRESTÍGIO
+            if (!this.player.isCreative()) {
+                this.player.addExperience(-500); // Cobra 500 pontos de XP
+            }
+
+            draylar.tiered.api.ARPGEquipmentData data = itemStack.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
+            if (data != null) {
+                // 🌟 CORREÇÃO: Usando os 8 argumentos exatos do seu Record atualizado!
+                draylar.tiered.api.ARPGEquipmentData newData = new draylar.tiered.api.ARPGEquipmentData(
+                        1, // level: Reseta para Nível 1
+                        0, // currentXp: Zera o XP
+                        data.prestige() + 1, // prestige: Sobe o Prestígio
+                        data.affinity(), // affinity: Mantém a afinidade intacta
+                        java.util.Map.of(), // trainingXp: Zera o mapa de treinamento
+                        data.maxSlots(), // maxSlots: Mantém o limite de slots
+                        data.slots(), // slots: Mantém as runas/gemas já equipadas
+                        data.isBroken() // isBroken: Mantém o estado de durabilidade
+                );
+                itemStack.set(draylar.tiered.data.TieredDataComponents.ARPG_DATA, newData);
+            }
+
+            this.decrementStack(0);
+            this.decrementStack(2);
+
+            this.context.run((world, pos) -> {
+                // Toca um som de Level Up épico em vez do som normal da bigorna
+                world.playSound(null, pos, net.minecraft.sound.SoundEvents.ENTITY_PLAYER_LEVELUP, net.minecraft.sound.SoundCategory.BLOCKS, 1.0f, 0.5f);
+                world.syncWorldEvent(WorldEvents.ANVIL_USED, (BlockPos) pos, 0);
+            });
+            return; // Aborta a reforja normal para não rolar os status!
+        }
+
+        // 🌟 REFORJA NORMAL
+        // 🌟 TRAVA DE SEGURANÇA: Impede a execução se estiver despertada
+        if (isAwakened(itemStack)) {
+            return;
+        }
         net.minecraft.util.Identifier attrId = ModifierUtils.getAttributeId(itemStack);
 
-        // 🌟 TRAVA DUPLA: Bloqueia se for Único (e a config proibir) OU se for Mítico!
         if (attrId != null) {
             String tierName = attrId.getPath();
             boolean isUniqueLocked = !ConfigInit.CONFIG.uniqueReforge && tierName.contains("unique");
-            boolean isMythicLocked = tierName.contains("mythic"); // Mítico sempre bloqueado
+            boolean isMythicLocked = tierName.contains("mythic");
 
             if (isUniqueLocked || isMythicLocked) {
-                return; // Aborta a reforja!
+                return;
             }
         }
 
-        // 🌟 4. COBRANÇA DE XP DINÂMICA (Só cobra se passou pela trava acima)
         int xpCost = ConfigInit.CONFIG.reforgeXpCost;
         if (!this.player.isCreative()) {
-            this.player.addExperience(-xpCost); // Subtrai o valor da config
+            this.player.addExperience(-xpCost);
         }
 
-        // 5. Remove o Tier antigo e rola os dados para um Tier novo
         ModifierUtils.removeItemStackAttribute(itemStack);
         ModifierUtils.setItemStackAttribute(player, itemStack, true);
 
-        // 6. Gasta os ingredientes (Diamante e Ametista)
         this.decrementStack(0);
         this.decrementStack(2);
 
-        // 7. Toca o som da bigorna
         this.context.run((world, pos) -> world.syncWorldEvent(WorldEvents.ANVIL_USED, (BlockPos) pos, 0));
     }
 

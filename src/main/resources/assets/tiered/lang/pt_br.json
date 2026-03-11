@@ -551,6 +551,8 @@
 	"tiered.arpg.bonus.heavy_shot": "Tiro Pesado",
 	"tiered.arpg.bonus.quick_draw": "Saque Rápido",
 	"tiered.arpg.bonus.eagle_eye": "Olho de Águia",
-	"tiered.arpg.bonus.elite_shooter": "Atirador de Elite"
+	"tiered.arpg.bonus.elite_shooter": "Atirador de Elite",
+
+	"tiered.arpg.message.aoe_mode": "Area de interaçao: "
 
 }

@@ -546,7 +546,9 @@
   "tiered.arpg.bonus.heavy_shot": "attack Damage",
   "tiered.arpg.bonus.quick_draw": "Speed Shot",
   "tiered.arpg.bonus.eagle_eye": "Eagle Eye",
-  "tiered.arpg.bonus.elite_shooter": "Elite Shooter"
+  "tiered.arpg.bonus.elite_shooter": "Elite Shooter",
+
+  "tiered.arpg.message.aoe_mode": "Interaction area: "
 
 
 }
