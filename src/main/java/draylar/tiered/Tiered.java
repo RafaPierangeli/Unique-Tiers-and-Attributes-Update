@@ -9,8 +9,10 @@ import draylar.tiered.data.ReforgeDataLoader;
 import draylar.tiered.data.TieredDataComponents;
 import draylar.tiered.network.TieredServerPacket;
 import draylar.tiered.reforge.ReforgeScreenHandler;
+import draylar.tiered.util.AoEMiningHelper;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.component.ComponentType;
@@ -27,6 +29,8 @@ import net.minecraft.resource.ResourceType;
 import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
 
 import org.apache.logging.log4j.LogManager;
@@ -58,6 +62,14 @@ public class Tiered implements ModInitializer {
         CommandInit.init();
         TieredDataComponents.init();
         ARPGEventHandlers.register(); // 🌟 Registra os eventos do nosso ARPG!
+        draylar.tiered.util.AoEMiningHelper.registerToggleEvent();
+
+        // Coloque isso dentro do seu método onInitialize()
+        PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
+            if (!world.isClient() && player instanceof ServerPlayerEntity serverPlayer) {
+                AoEMiningHelper.processAoEMining((ServerWorld) world, serverPlayer, pos, state);
+            }
+        });
 
         BlockRegisters.registerModBlocks();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.ATTRIBUTE_DATA_LOADER);

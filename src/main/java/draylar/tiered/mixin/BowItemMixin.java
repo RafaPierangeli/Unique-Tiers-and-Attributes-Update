@@ -24,11 +24,11 @@ public abstract class BowItemMixin {
 
             // Se puxou quase até o fim (0.8 a 1.0), treina o Saque Rápido
             if (pullProgress >= 0.8f) {
-                ARPGXpHelper.grantXp(stack, "quick_draw", 2, true, 1, player);
+                ARPGXpHelper.grantXp(stack, "heavy_shot", 2, true, 1, player);
             }
             // Se deu um tirinho fraco, ganha só o XP base de uso
-            else if (pullProgress > 0.1f) {
-                ARPGXpHelper.grantXp(stack, null, 0, true, 1, player);
+            else if (pullProgress < 0.8f) {
+                ARPGXpHelper.grantXp(stack, "quick_draw", 3, true, 1, player);
             }
         }
     }

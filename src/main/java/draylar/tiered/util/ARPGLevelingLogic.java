@@ -5,7 +5,7 @@ import draylar.tiered.config.ConfigInit; // 🌟 Não esqueça de importar a sua
 public class ARPGLevelingLogic {
 
     public static int getBaseXp() { return 100; }
-    public static double getXpMultiplier() { return 0.05; }
+    public static double getXpMultiplier() { return 0.025; }
 
     // 🌟 AGORA É DINÂMICO! Puxa direto da configuração do jogador
     public static int getMaxLevel() {

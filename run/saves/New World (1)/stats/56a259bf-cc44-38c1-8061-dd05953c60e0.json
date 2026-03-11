@@ -1,12 +1,59 @@
 {
   "stats": {
     "minecraft:custom": {
-      "minecraft:time_since_rest": 5278,
-      "minecraft:walk_one_cm": 1754,
-      "minecraft:total_world_time": 5589,
-      "minecraft:leave_game": 2,
-      "minecraft:play_time": 5278,
-      "minecraft:time_since_death": 5278
+      "minecraft:interact_with_crafting_table": 4,
+      "minecraft:time_since_rest": 3137,
+      "minecraft:walk_one_cm": 23914,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 92,
+      "minecraft:damage_taken": 375,
+      "minecraft:damage_dealt": 20703,
+      "minecraft:play_time": 22456,
+      "minecraft:jump": 10,
+      "minecraft:time_since_death": 3052,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 4294,
+      "minecraft:open_chest": 2,
+      "minecraft:total_world_time": 24167,
+      "minecraft:fly_one_cm": 1932,
+      "minecraft:deaths": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:diamond_sword": 2,
+      "minecraft:spruce_fence": 1,
+      "minecraft:netherite_chestplate": 1,
+      "minecraft:arrow": 61,
+      "minecraft:netherite_boots": 1,
+      "minecraft:rotten_flesh": 32,
+      "minecraft:diamond_chestplate": 1,
+      "minecraft:phantom_membrane": 63,
+      "minecraft:netherite_leggings": 1,
+      "minecraft:netherite_ingot": 50,
+      "minecraft:warden_spawn_egg": 1,
+      "minecraft:elytra": 1,
+      "minecraft:golden_apple": 31,
+      "minecraft:netherite_sword": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_sword": 2
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 69,
+      "minecraft:warden": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_sword": 2
+    },
+    "minecraft:mined": {
+      "minecraft:spruce_fence": 1
+    },
+    "minecraft:used": {
+      "minecraft:spruce_fence": 1,
+      "minecraft:warden_spawn_egg": 1,
+      "minecraft:netherite_sword": 134,
+      "minecraft:zombie_spawn_egg": 78,
+      "minecraft:diamond_sword": 201,
+      "minecraft:bow": 6
     }
   },
   "DataVersion": 4671

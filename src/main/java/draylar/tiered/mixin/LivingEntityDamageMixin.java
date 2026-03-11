@@ -59,7 +59,6 @@ public abstract class LivingEntityDamageMixin {
                         if (source.getAttacker() instanceof LivingEntity attackerEntity) {
                             double thornsDamage = draylar.tiered.util.ARPGAffinityLogic.getBonusValue(data.affinity(), data.level(), data.prestige());
                             if (thornsDamage > 0) {
-                                // Usamos o 'world' que já vem no parâmetro do método na 1.21.11!
                                 attackerEntity.damage(world, defender.getDamageSources().thorns(defender), (float) thornsDamage);
                                 world.playSound(null, defender.getBlockPos(), net.minecraft.sound.SoundEvents.ENCHANT_THORNS_HIT, net.minecraft.sound.SoundCategory.PLAYERS, 0.5f, 1.0f);
                             }
@@ -132,50 +131,59 @@ public abstract class LivingEntityDamageMixin {
             if (!chestplate.isEmpty()) {
                 ARPGXpHelper.grantXp(chestplate, "retaliation", 3, false, 0, attacker);
             }
+            // 🪽 ELYTRA: Mergulho Mortal (Causar dano enquanto voa)
+            if (attacker.isGliding()) {
+                ItemStack elytra = attacker.getEquippedStack(EquipmentSlot.CHEST);
+                if (elytra.isOf(net.minecraft.item.Items.ELYTRA)) {
+                    ARPGXpHelper.grantXp(elytra, "deadly_dive", 30, false, 0, attacker);
+                }
+            }
 
             // ⚔️ ARMAS CORPO A CORPO
             ItemStack weapon = attacker.getMainHandStack();
             if (weapon.isIn(net.minecraft.registry.tag.ItemTags.SWORDS) || weapon.isIn(net.minecraft.registry.tag.ItemTags.AXES)) {
-                String specificAffinity = null;
-                int specificAmount = 0;
-                int baseAmount = 1;
 
-                // 🌟 CORREÇÃO CRÍTICA: No RETURN, a vida já foi tirada. Checamos se está morto!
                 boolean isKill = target.isDead();
-                if (isKill) {
-                    baseAmount = ConfigInit.CONFIG.xpBaseKillEntity;
-                }
+                // Se matou, o XP base é maior (ex: 2), se só bateu, é 1.
+                int baseAmount = isKill ? ConfigInit.CONFIG.xpBaseKillEntity : 1;
 
                 boolean isVanillaCrit = !attacker.isOnGround() && attacker.fallDistance > 0.0F &&
                         !attacker.isClimbing() && !attacker.isTouchingWater() &&
                         !attacker.hasVehicle() && !attacker.hasStatusEffect(net.minecraft.entity.effect.StatusEffects.BLINDNESS);
 
-                boolean isCritical = isVanillaCrit || AttributeHelper.shouldMeeleCrit(attacker);
+                boolean isCritical = isVanillaCrit || draylar.tiered.util.AttributeHelper.shouldMeeleCrit(attacker);
 
                 long currentTick = world.getTime();
-                long lastTick = ARPGXpHelper.lastDamageTick.getOrDefault(attacker.getUuid(), 0L);
+                long lastTick = draylar.tiered.util.ARPGXpHelper.lastDamageTick.getOrDefault(attacker.getUuid(), 0L);
                 boolean isSweep = (currentTick - lastTick) <= 1;
-                ARPGXpHelper.lastDamageTick.put(attacker.getUuid(), currentTick);
+                draylar.tiered.util.ARPGXpHelper.lastDamageTick.put(attacker.getUuid(), currentTick);
 
-                if (isKill && attacker.getHealth() < (attacker.getMaxHealth() * 0.5f)) {
-                    specificAffinity = "bloodthirst";
-                    specificAmount = 3;
-                }
-                else if (isSweep) {
-                    specificAffinity = "dancing_blade";
-                    specificAmount = 3;
-                }
-                else if (isCritical) {
-                    specificAffinity = "true_strike";
-                    specificAmount = 3;
-                }
-                else if (isKill) {
-                    specificAffinity = "brute_force";
-                    specificAmount = 3;
+                // 🌟 1. AÇÃO BASE: Causar dano (ou matar) sempre dá o XP Base 1 única vez!
+                draylar.tiered.util.ARPGXpHelper.grantXp(weapon, "brute_force", 2, true, baseAmount, attacker);
+
+                // 🌟 2. AÇÕES ESPECÍFICAS: Dão apenas XP Específico (isBaseAction = false, baseAmount = 0)
+
+                // Sede de Sangue
+                if (attacker.getHealth() < (attacker.getMaxHealth() * 0.5f)) {
+                    draylar.tiered.util.ARPGXpHelper.grantXp(weapon, "bloodthirst", 4, false, 0, attacker);
                 }
 
-                ARPGXpHelper.grantXp(weapon, specificAffinity, specificAmount, true, baseAmount, attacker);
+                // Lâmina Dançante
+                if (isSweep) {
+                    draylar.tiered.util.ARPGXpHelper.grantXp(weapon, "dancing_blade", 3, false, 0, attacker);
+                }
 
+                // Golpe Certeiro
+                if (isCritical) {
+                    draylar.tiered.util.ARPGXpHelper.grantXp(weapon, "true_strike", 3, false, 0, attacker);
+                }
+
+                // Força Bruta
+                if (isKill) {
+                    draylar.tiered.util.ARPGXpHelper.grantXp(weapon, "brute_force", 3, true, 1, attacker);
+                }
+
+                // 🩸 LÓGICA DE ROUBO DE VIDA (Mantida intacta)
                 draylar.tiered.api.ARPGEquipmentData data = weapon.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
                 if (data != null && !data.isBroken() && data.level() > 0 && "bloodthirst".equals(data.affinity())) {
                     double lifestealPercentage = draylar.tiered.util.ARPGAffinityLogic.getBonusValue(data.affinity(), data.level(), data.prestige());
@@ -194,54 +202,42 @@ public abstract class LivingEntityDamageMixin {
             // 🏹 ARMAS À DISTÂNCIA (Arco e Besta) - O Impacto
             if (source.getSource() instanceof net.minecraft.entity.projectile.PersistentProjectileEntity arrow) {
 
-                // 🌟 CORREÇÃO CRÍTICA: A flecha guarda uma CÓPIA da arma.
-                // Se dermos XP para a cópia, o arco no inventário do jogador não muda!
-                // Precisamos pegar o arco real que está fisicamente na mão do jogador.
                 ItemStack rangedWeapon = attacker.getMainHandStack();
                 if (!(rangedWeapon.getItem() instanceof net.minecraft.item.BowItem || rangedWeapon.getItem() instanceof net.minecraft.item.CrossbowItem)) {
                     rangedWeapon = attacker.getOffHandStack();
                 }
 
-                // Se ele realmente estiver segurando um arco/besta quando a flecha acertar
                 if (rangedWeapon.getItem() instanceof net.minecraft.item.BowItem || rangedWeapon.getItem() instanceof net.minecraft.item.CrossbowItem) {
-                    String specificAffinity = null;
-                    int specificAmount = 0;
-                    int baseAmount = 1;
 
-                    // Checa se o alvo morreu (no RETURN, a vida já foi tirada, então isDead() funciona perfeitamente)
                     boolean isKill = target.isDead();
-                    if (isKill) {
-                        baseAmount = ConfigInit.CONFIG.xpBaseKillEntity;
-                    }
-
                     boolean isVanillaCrit = arrow.isCritical();
                     boolean isArpgCrit = draylar.tiered.util.AttributeHelper.shouldMeeleCrit(attacker);
                     double distance = attacker.distanceTo(target);
 
-                    // 🌟 HIERARQUIA DE INTENÇÃO DE TIRO
-                    if (distance >= 20.0) {
-                        // 1. Sniper (Tiro de muito longe, matando ou não) = Atirador de Elite
-                        specificAffinity = "elite_shooter";
-                        specificAmount = 3;
-                    }
-                    else if (isVanillaCrit || isArpgCrit) {
-                        // 3. Tiro Crítico ou Tiro Longo = Olho de Águia
-                        specificAffinity = "eagle_eye";
-                        specificAmount = 3;
-                    }
-                    else if (amount >= 9.0f) {
-                        // 2. Dano Massivo (Arco totalmente puxado dá 9.0) = Tiro Pesado
-                        specificAffinity = "heavy_shot";
-                        specificAmount = 3;
-                    }
-                    else if (isKill) {
-                        // 4. Matar normalmente = Atirador de Elite
-                        specificAffinity = "elite_shooter";
-                        specificAmount = 3; // ⚠️ Voltei para 3. Você tinha colocado 50 nos testes!
+                    // 🌟 CORREÇÃO: Como a puxada do arco já dá o XP Base em outro Mixin,
+                    // o impacto da flecha serve APENAS para XP Específico.
+                    // isBaseAction = false | baseAmount = 0
+
+                    // 1. Sniper (Tiro longo)
+                    if (distance >= 15.0) {
+                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "elite_shooter", 7, false, 0, attacker);
                     }
 
-                    // Aplica o XP na arma real do jogador!
-                    draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, specificAffinity, specificAmount, true, baseAmount, attacker);
+                    // 2. Tiro Crítico
+                    if (isVanillaCrit || isArpgCrit) {
+                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "eagle_eye", 4, false, 0, attacker);
+                    }
+
+                    // 3. Dano Massivo
+                    if (amount >= 9.0f) {
+                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "heavy_shot", 3, false, 0, attacker);
+                    }
+
+                    // 4. Abate
+                    if (isKill) {
+                        // Abate alimenta o Atirador de Elite
+                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "eagle_eye", 3, false, 0, attacker);
+                    }
                 }
             }
         }

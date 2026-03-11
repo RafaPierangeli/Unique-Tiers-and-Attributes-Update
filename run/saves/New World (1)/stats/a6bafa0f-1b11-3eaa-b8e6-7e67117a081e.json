@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 6523,
+      "minecraft:walk_one_cm": 4928,
+      "minecraft:total_world_time": 14729,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 7382,
+      "minecraft:mob_kills": 6,
+      "minecraft:sneak_time": 13,
+      "minecraft:play_time": 6523,
+      "minecraft:jump": 5,
+      "minecraft:time_since_death": 6523
+    },
+    "minecraft:used": {
+      "minecraft:warden_spawn_egg": 1,
+      "minecraft:crossbow": 18,
+      "minecraft:bow": 5,
+      "minecraft:skeleton_spawn_egg": 5
+    },
+    "minecraft:killed": {
+      "minecraft:skeleton": 5,
+      "minecraft:warden": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:bone": 6,
+      "minecraft:arrow": 7
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,47 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 2624,
+      "minecraft:walk_one_cm": 4145,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 546,
+      "minecraft:play_time": 3267,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 2536,
+      "minecraft:aviate_one_cm": 203210,
+      "minecraft:sprint_one_cm": 3502,
+      "minecraft:fall_one_cm": 4729,
+      "minecraft:total_world_time": 3314,
+      "minecraft:fly_one_cm": 231,
+      "minecraft:deaths": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:stick": 10,
+      "minecraft:fishing_rod": 1,
+      "minecraft:diamond_boots": 1,
+      "minecraft:netherite_chestplate": 1,
+      "minecraft:bow": 2,
+      "minecraft:bone": 10,
+      "minecraft:netherite_boots": 1,
+      "minecraft:diamond_pickaxe": 1,
+      "minecraft:iron_ingot": 54,
+      "minecraft:diamond_chestplate": 1,
+      "minecraft:crossbow": 3,
+      "minecraft:string": 5,
+      "minecraft:firework_rocket": 52,
+      "minecraft:netherite_leggings": 1,
+      "minecraft:shield": 1,
+      "minecraft:diamond": 5,
+      "minecraft:netherite_ingot": 60,
+      "minecraft:amethyst_shard": 55,
+      "minecraft:elytra": 1,
+      "minecraft:gunpowder": 4,
+      "minecraft:golden_apple": 34,
+      "minecraft:netherite_sword": 1
+    },
+    "minecraft:used": {
+      "minecraft:firework_rocket": 15
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 879,
+      "minecraft:fall_one_cm": 300,
+      "minecraft:walk_one_cm": 4955,
+      "minecraft:total_world_time": 916,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 28,
+      "minecraft:sneak_time": 99,
+      "minecraft:play_time": 879,
+      "minecraft:jump": 3,
+      "minecraft:time_since_death": 879
+    },
+    "minecraft:picked_up": {
+      "minecraft:diorite": 5,
+      "minecraft:cobblestone": 36,
+      "minecraft:flint": 6,
+      "minecraft:gravel": 44
+    },
+    "minecraft:mined": {
+      "minecraft:gravel": 56,
+      "minecraft:diorite": 5,
+      "minecraft:cobblestone": 35,
+      "minecraft:stone": 1
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 41,
+      "minecraft:diamond_shovel": 56,
+      "minecraft:cobblestone": 4
+    }
+  },
+  "DataVersion": 4671
+}

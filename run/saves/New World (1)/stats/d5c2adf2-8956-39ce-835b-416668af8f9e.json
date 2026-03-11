@@ -1,22 +1,49 @@
 {
   "stats": {
+    "minecraft:mined": {
+      "minecraft:stone_bricks": 45,
+      "minecraft:stone": 46
+    },
+    "minecraft:dropped": {
+      "minecraft:stone_bricks": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond": 63
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 17727,
+      "minecraft:walk_one_cm": 70467,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 5,
+      "minecraft:walk_under_water_one_cm": 51,
+      "minecraft:damage_dealt": 2000,
+      "minecraft:play_time": 17727,
+      "minecraft:jump": 30,
+      "minecraft:time_since_death": 17727,
+      "minecraft:aviate_one_cm": 48,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 8603,
+      "minecraft:total_world_time": 18935,
+      "minecraft:fly_one_cm": 2457,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 954,
+      "minecraft:crouch_one_cm": 51,
+      "minecraft:sneak_time": 244
+    },
     "minecraft:killed": {
       "minecraft:hoglin": 5
     },
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 803,
-      "minecraft:walk_one_cm": 107,
-      "minecraft:total_world_time": 853,
-      "minecraft:leave_game": 1,
-      "minecraft:mob_kills": 5,
-      "minecraft:play_time": 803,
-      "minecraft:damage_dealt": 2000,
-      "minecraft:jump": 5,
-      "minecraft:time_since_death": 803
-    },
     "minecraft:used": {
       "minecraft:hoglin_spawn_egg": 5,
-      "minecraft:netherite_sword": 24
+      "minecraft:diamond_pickaxe": 91,
+      "minecraft:netherite_sword": 24,
+      "minecraft:stone_bricks": 398,
+      "minecraft:cobblestone": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:stone_bricks": 46,
+      "minecraft:cobblestone": 45
     }
   },
   "DataVersion": 4671

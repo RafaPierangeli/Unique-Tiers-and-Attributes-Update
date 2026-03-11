@@ -1,0 +1,35 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 5875,
+      "minecraft:walk_one_cm": 13525,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 3,
+      "minecraft:play_time": 5875,
+      "minecraft:damage_dealt": 200,
+      "minecraft:jump": 7,
+      "minecraft:time_since_death": 5875,
+      "minecraft:drop": 2,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 3146,
+      "minecraft:open_chest": 2,
+      "minecraft:total_world_time": 13256,
+      "minecraft:fly_one_cm": 6373
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 3
+    },
+    "minecraft:dropped": {
+      "minecraft:spruce_fence": 1,
+      "minecraft:bow": 1
+    },
+    "minecraft:used": {
+      "minecraft:spruce_fence": 3,
+      "minecraft:netherite_sword": 2,
+      "minecraft:zombie_spawn_egg": 4,
+      "minecraft:bow": 6
+    }
+  },
+  "DataVersion": 4671
+}

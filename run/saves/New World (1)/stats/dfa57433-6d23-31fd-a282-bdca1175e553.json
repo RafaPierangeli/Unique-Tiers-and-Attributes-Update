@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:sprint_one_cm": 1619,
+      "minecraft:time_since_rest": 5222,
+      "minecraft:walk_one_cm": 6104,
+      "minecraft:total_world_time": 5276,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 8,
+      "minecraft:play_time": 5222,
+      "minecraft:damage_dealt": 35,
+      "minecraft:time_since_death": 5222,
+      "minecraft:drop": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:bow": 1,
+      "minecraft:crossbow": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:bow": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:arrow": 1
+    },
+    "minecraft:killed": {
+      "minecraft:skeleton": 8
+    },
+    "minecraft:used": {
+      "minecraft:crossbow": 4,
+      "minecraft:bow": 9,
+      "minecraft:skeleton_spawn_egg": 8
+    }
+  },
+  "DataVersion": 4671
+}

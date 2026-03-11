@@ -15,4 +15,20 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityDeathMixin {
 
+    @Inject(method = "onDeath", at = @At("HEAD"))
+    private void onEntityDeathGiveARPGXp(DamageSource damageSource, CallbackInfo ci) {
+        if (damageSource.getAttacker() instanceof ServerPlayerEntity player) {
+
+            ItemStack mainHandStack = player.getMainHandStack();
+            EquipmentCategory category = EquipmentCategory.getCategory(mainHandStack);
+
+            int xpAmount = ConfigInit.CONFIG.xpBaseKillEntity;
+
+            if (category == EquipmentCategory.RANGED_WEAPON) {
+                ARPGXpHelper.grantXp(mainHandStack, "heavy_shot", 0, true, 0, player);
+
+            }
+        }
+    }
+
 }

@@ -1,0 +1,47 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:dirt": 9,
+      "minecraft:diorite": 5,
+      "minecraft:grass_block": 43,
+      "minecraft:cobblestone": 4,
+      "minecraft:stone": 5
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 4306,
+      "minecraft:walk_one_cm": 28250,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 95,
+      "minecraft:damage_taken": 10,
+      "minecraft:play_time": 4306,
+      "minecraft:jump": 16,
+      "minecraft:time_since_death": 4306,
+      "minecraft:aviate_one_cm": 8166,
+      "minecraft:sprint_one_cm": 1189,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 451,
+      "minecraft:total_world_time": 5434,
+      "minecraft:fly_one_cm": 268,
+      "minecraft:walk_on_water_one_cm": 117,
+      "minecraft:crouch_one_cm": 2,
+      "minecraft:sneak_time": 7
+    },
+    "minecraft:picked_up": {
+      "minecraft:diorite": 5,
+      "minecraft:dirt": 49,
+      "minecraft:cobblestone": 9
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 14,
+      "minecraft:diorite": 15,
+      "minecraft:diamond_shovel": 52,
+      "minecraft:firework_rocket": 2,
+      "minecraft:cobblestone": 50
+    },
+    "minecraft:crafted": {
+      "minecraft:diamond_shovel": 1
+    }
+  },
+  "DataVersion": 4671
+}

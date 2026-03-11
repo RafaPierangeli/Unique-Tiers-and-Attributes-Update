@@ -434,6 +434,7 @@
   "tiered.arpg.tendency.quick_draw": "Quick Draw",
   "tiered.arpg.tendency.eagle_eye": "Eagle Eye",
   "tiered.arpg.tendency.elite_shooter": "Elite Shooter",
+  "tiered.arpg.tendency.deadly_dive": "Mergulho Mortal",
 
   "tiered.arpg.affinity": "Affinity: ",
   "tiered.arpg.xp": "XP: ",
@@ -521,6 +522,7 @@
   "tiered.arpg.affinity.quick_draw": "Quick Draw",
   "tiered.arpg.affinity.eagle_eye": "Eagle Eye",
   "tiered.arpg.affinity.elite_shooter": "Elite Shooter",
+  "tiered.arpg.affinity.deadly_dive": "Mergulho Mortal",
 
   "tiered.arpg.bonus.block_power": "Block Power",
   "tiered.arpg.bonus.thorns_damage": "Thorns Damage",
@@ -541,8 +543,8 @@
   "tiered.arpg.bonus.thorns": "Thorns",
   "tiered.arpg.bonus.lifesteal": "Life Steal",
   "tiered.arpg.bonus.flight_speed": "Flight Speed",
-  "tiered.arpg.bonus.heavy_shot": "Heavy Shot",
-  "tiered.arpg.bonus.quick_draw": "Quick Draw",
+  "tiered.arpg.bonus.heavy_shot": "attack Damage",
+  "tiered.arpg.bonus.quick_draw": "Speed Shot",
   "tiered.arpg.bonus.eagle_eye": "Eagle Eye",
   "tiered.arpg.bonus.elite_shooter": "Elite Shooter"
 

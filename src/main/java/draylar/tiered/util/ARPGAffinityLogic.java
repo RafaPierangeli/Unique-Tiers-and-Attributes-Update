@@ -17,7 +17,7 @@ public class ARPGAffinityLogic {
         return switch (affinity) {
 
             // ⚔️ 1. OFENSIVO (Vermelho)
-            case "brute_force", "true_strike", "bloodthirst", "retaliation", "focused_mind", "spiked_vengeance"
+            case "brute_force", "true_strike", "bloodthirst", "retaliation", "focused_mind", "spiked_vengeance", "eagle_eye", "heavy_shot", "elite_shooter"
                     -> Formatting.RED;
 
             // 🛡️ 2. DEFENSIVO (Aqua)
@@ -25,7 +25,7 @@ public class ARPGAffinityLogic {
                     -> Formatting.AQUA;
 
             // 🥾 3. MOBILIDADE (Verde Escuro)
-            case "dancing_blade", "guiding_winds", "wayfarer", "swift_shadows", "long_strides", "light_steps", "aerial_boost", "mountain_walker", "gale", "acrobat"
+            case "dancing_blade", "guiding_winds", "wayfarer", "swift_shadows", "long_strides", "light_steps", "aerial_boost", "mountain_walker", "gale", "acrobat", "quick_draw"
                     -> Formatting.DARK_GREEN;
 
             // ⛏️ 4. MINERAÇÃO / ESCAVAÇÃO / INTERAÇÃO (Amarelo)
@@ -61,7 +61,7 @@ public class ARPGAffinityLogic {
                     case "bulwark", "solid_foundation", "wall" -> 6.0;
                     case "midas_touch", "hidden_treasures", "demeter_blessing", "oxygen", "luck_of_sea" -> 10.0;
                     case "long_reach", "far_sight", "earth_reach" -> 2.0;
-                    case "spiked_vengeance" -> 5.0;
+                    case "spiked_vengeance", "soil_master" -> 5.0;
                     default -> 0.0;
                 };
             }

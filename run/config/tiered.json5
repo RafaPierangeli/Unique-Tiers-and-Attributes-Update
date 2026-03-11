@@ -33,7 +33,7 @@
 	"maxLevelEquipment": 100,
 	"globalXpMultiplier": 1.0,
 	"xpBaseKillEntity": 2,
-	"xpBaseMineBlock": 1,
+	"xpBaseMineBlock": 100,
 	"xpMultiplierCoal": 2,
 	"xpMultiplierCopper": 2,
 	"xpMultiplierQuartz": 2,

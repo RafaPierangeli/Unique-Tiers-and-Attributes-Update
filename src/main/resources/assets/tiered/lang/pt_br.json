@@ -440,6 +440,7 @@
 	"tiered.arpg.tendency.quick_draw": "Saque Rápido",
 	"tiered.arpg.tendency.eagle_eye": "Olho de Águia",
 	"tiered.arpg.tendency.elite_shooter": "Atirador de Elite",
+	"tiered.arpg.tendency.deadly_dive": "Mergulho Mortal",
 
 	"tiered.arpg.affinity": "Afinidade: ",
 	"tiered.arpg.xp": "XP: ",
@@ -527,6 +528,8 @@
 	"tiered.arpg.affinity.quick_draw": "Saque Rápido",
 	"tiered.arpg.affinity.eagle_eye": "Olho de Águia",
 	"tiered.arpg.affinity.elite_shooter": "Atirador de Elite",
+	"tiered.arpg.affinity.deadly_dive": "Mergulho Mortal",
+
 
 
 	"tiered.arpg.bonus.crit_chance": "Chance de Crítico",
