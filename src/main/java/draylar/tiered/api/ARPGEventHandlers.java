@@ -101,7 +101,7 @@ public class ARPGEventHandlers {
                         // 2. Escavador Voraz (Terra, Areia, Cascalho)
                         else if (state.isIn(BlockTags.DIRT) || state.isIn(BlockTags.SAND) || state.isOf(Blocks.GRAVEL)) {
                             specificAffinity = "voracious_digger";
-                            specificAmount = 200;
+                            specificAmount = 2;
                         }
 
                         // Aplica o XP Base + XP Específico
@@ -214,7 +214,7 @@ public class ARPGEventHandlers {
                             if (serverPlayer.isSneaking()) {
                                 boolean hasMonsters = !serverPlayer.getEntityWorld().getEntitiesByClass(
                                         net.minecraft.entity.mob.HostileEntity.class,
-                                        serverPlayer.getBoundingBox().expand(16.0),
+                                        serverPlayer.getBoundingBox().expand(10.0),
                                         e -> true
                                 ).isEmpty();
 
@@ -231,7 +231,7 @@ public class ARPGEventHandlers {
                                 net.minecraft.block.BlockState stateBelow = serverPlayer.getEntityWorld().getBlockState(pos.down());
 
                                 // Checamos se o caminho de terra está no pé dele (bloco incompleto) OU embaixo dele (caso ele esteja pulando baixinho)
-                                if (stateAtFeet.isOf(Blocks.DIRT_PATH) || stateBelow.isOf(Blocks.DIRT_PATH)) {
+                                if (stateAtFeet.isOf(Blocks.DIRT_PATH) || stateBelow.isOf(Blocks.DIRT_PATH) || stateAtFeet.isOf(Blocks.SOUL_SAND)) {
                                     specificAffinity = "wayfarer";
                                     specificAmount = 3;
                                 }
@@ -263,7 +263,6 @@ public class ARPGEventHandlers {
                         else if (serverPlayer.isClimbing()) {
                             ARPGXpHelper.grantXp(boots, "mountain_walker", 3, false, 0, serverPlayer);
                         }
-                        // Nota: O Dano de Queda (solid_foundation) já está implementado no LivingEntityDamageMixin!
                     }
                 }
             }

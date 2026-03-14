@@ -47,8 +47,13 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
     private boolean expectingReforge = false;
     private int lastIngredientCount = 0;
     private Identifier lastTier = null;
+    private int lastPrestige = -1;
+    private int lastLevel = -1;
     private Text floatingText = null;
     private int floatingTick = 0;
+
+    // 🌟 ADICIONE ESTA LINHA AQUI PARA PARAR O ERRO DE COMPILAÇÃO:
+    private int syncDelay = 0;
 
     public ReforgeScreen(ReforgeScreenHandler handler, PlayerInventory playerInventory, Text title) {
         super(handler, playerInventory, title);
@@ -71,7 +76,13 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
                 TieredClientPacket.writeC2SReforgePacket();
                 this.expectingReforge = true;
                 this.lastIngredientCount = this.handler.getSlot(0).getStack().getCount();
-                this.lastTier = ModifierUtils.getAttributeId(this.handler.getSlot(1).getStack());
+
+                ItemStack weapon = this.handler.getSlot(1).getStack();
+                this.lastTier = ModifierUtils.getAttributeId(weapon);
+
+                draylar.tiered.api.ARPGEquipmentData data = weapon.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
+                this.lastPrestige = data != null ? data.prestige() : -1;
+                this.lastLevel = data != null ? data.level() : -1;
             }
         }));
     }
@@ -85,29 +96,49 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
             this.reforgeButton.setDisabled(!this.handler.isReforgeReady());
         }
 
-        // 🌟 LÓGICA DE SUCESSO OU FALHA
+        // 🌟 FASE 1: Espera o ingrediente ser consumido
         if (this.expectingReforge) {
             ItemStack currentIngredient = this.handler.getSlot(0).getStack();
-            ItemStack currentWeapon = this.handler.getSlot(1).getStack();
 
-            // Se a quantidade de ingredientes diminuiu, o servidor processou a reforja!
+            // Se a Nether Star sumiu, o servidor processou!
             if (currentIngredient.getCount() < this.lastIngredientCount || (this.lastIngredientCount > 0 && currentIngredient.isEmpty())) {
-                Identifier currentTier = ModifierUtils.getAttributeId(currentWeapon);
-
-                // Compara o Tier novo com o Tier da "foto"
-                if (currentTier != null && !currentTier.equals(this.lastTier)) {
-                    // SUCESSO! O Tier mudou.
-                    this.floatingText = Text.literal("✨ ").append(currentWeapon.getName()).append(" ✨");
-                } else {
-                    // FALHA! Gastou o item mas o Tier continuou o mesmo.
-                    this.floatingText = Text.literal("✨ ").append(currentWeapon.getName()).append(" ✨");
-                }
-
-                this.floatingTick = 40; // Inicia a animação (2 segundos)
-                this.expectingReforge = false; // Desliga a espera
+                this.expectingReforge = false; // Desliga a espera do ingrediente
+                this.syncDelay = 1; // 🌟 Inicia o delay de 5 ticks para esperar o pacote da arma chegar pela rede
             }
         }
 
+        // 🌟 FASE 2: O Delay de Sincronização
+        if (this.syncDelay > 0) {
+            this.syncDelay--;
+
+            // Quando o delay acaba (chegou a zero), nós julgamos o resultado!
+            if (this.syncDelay == 0) {
+                ItemStack currentWeapon = this.handler.getSlot(1).getStack();
+                Identifier currentTier = ModifierUtils.getAttributeId(currentWeapon);
+                draylar.tiered.api.ARPGEquipmentData data = currentWeapon.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
+                int currentPrestige = data != null ? data.prestige() : -1;
+
+                if (this.lastLevel >= 100 && this.lastPrestige < 3) {
+                    // 🌟 FOI UMA TENTATIVA DE PRESTÍGIO
+                    if (currentPrestige > this.lastPrestige) {
+                        this.floatingText = Text.translatable("tiered.arpg.reforge.prestige_success").formatted(Formatting.LIGHT_PURPLE, Formatting.ITALIC);
+                    } else {
+                        this.floatingText = Text.translatable("tiered.arpg.reforge.prestige_fail").formatted(Formatting.RED, Formatting.BOLD);
+                    }
+                } else {
+                    // 🌟 FOI UMA REFORJA NORMAL
+                    if (currentTier != null && !currentTier.equals(this.lastTier)) {
+                        this.floatingText = Text.literal("✨ ").append(currentWeapon.getName()).append(" ✨").formatted(Formatting.YELLOW);
+                    } else {
+                        this.floatingText = Text.literal("✨ ").append(currentWeapon.getName()).append(" ✨").formatted(Formatting.GRAY);
+                    }
+                }
+
+                this.floatingTick = 40; // Inicia a animação do texto subindo
+            }
+        }
+
+        // Animação do texto flutuante
         if (this.floatingTick > 0) {
             this.floatingTick--;
         }
@@ -136,23 +167,36 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
             }
             // 🌟 NOVO: ESTADO DE PRESTÍGIO (Tem prioridade sobre os bloqueios de Único/Mítico)
             else if (this.getScreenHandler().isPrestigeMode()) {
-                tooltip.add(Text.literal("✨ Ascensão de Prestígio ✨").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
+                tooltip.add(Text.translatable("tiered.arpg.reforge.prestige_ascension.title").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
 
                 ItemStack ingredient = this.getScreenHandler().getSlot(0).getStack();
                 if (ingredient.isEmpty() || !ingredient.isOf(net.minecraft.item.Items.NETHER_STAR)) {
-                    tooltip.add(Text.literal("Requer: ").formatted(Formatting.RED).append(net.minecraft.item.Items.NETHER_STAR.getName().copy().formatted(Formatting.GRAY)));
+                    tooltip.add(Text.translatable("tiered.arpg.reforge.requires").formatted(Formatting.RED).append(net.minecraft.item.Items.NETHER_STAR.getName().copy().formatted(Formatting.GRAY)));
                 }
 
                 ItemStack addition = this.getScreenHandler().getSlot(2).getStack();
                 if (addition.isEmpty() || !addition.isOf(net.minecraft.item.Items.ECHO_SHARD)) {
-                    tooltip.add(Text.literal("Requer: ").formatted(Formatting.RED).append(net.minecraft.item.Items.ECHO_SHARD.getName().copy().formatted(Formatting.GRAY)));
+                    tooltip.add(Text.translatable("tiered.arpg.reforge.requires").formatted(Formatting.RED).append(net.minecraft.item.Items.ECHO_SHARD.getName().copy().formatted(Formatting.GRAY)));
                 }
 
+                // 🌟 LÓGICA DINÂMICA DE TOOLTIP
+                draylar.tiered.api.ARPGEquipmentData data = itemStack.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
+                int currentPrestige = data != null ? data.prestige() : 0;
+                int xpCost = this.getScreenHandler().getPrestigeXpCost(currentPrestige);
+
+                // 🌟 CORREÇÃO: Passamos o jogador do Client para a tela mostrar a chance real!
+                int chance = this.getScreenHandler().getPrestigeSuccessChance(currentPrestige, this.client.player);
+
+                // Se o jogador tiver sorte extra, podemos até mudar a cor para verde para dar um feedback visual!
+                Formatting chanceColor = chance > this.getScreenHandler().getPrestigeSuccessChance(currentPrestige, null) ? Formatting.GREEN : Formatting.YELLOW;
+                tooltip.add(Text.translatable("tiered.arpg.reforge.success_chance", chance).formatted(chanceColor));
+
+
                 if (this.client != null && this.client.player != null) {
-                    if (this.client.player.totalExperience < 500 && !this.client.player.isCreative()) {
-                        tooltip.add(Text.literal("Custo: 500 XP").formatted(Formatting.RED));
+                    if (this.client.player.totalExperience < xpCost && !this.client.player.isCreative()) {
+                        tooltip.add(Text.translatable("tiered.arpg.reforge.cost_xp", xpCost).formatted(Formatting.RED));
                     } else {
-                        tooltip.add(Text.literal("Custo: 500 XP").formatted(Formatting.GREEN));
+                        tooltip.add(Text.translatable("tiered.arpg.reforge.cost_xp", xpCost).formatted(Formatting.GREEN));
                     }
                 }
             }
@@ -170,9 +214,9 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
             }
             // 🌟 NOVO ESTADO: ARMA DESPERTADA BLOQUEADA!
             else if (this.getScreenHandler().isAwakened(itemStack) && !this.getScreenHandler().isPrestigeMode()) {
-                tooltip.add(Text.literal("Arma Despertada!").formatted(Formatting.RED, Formatting.BOLD));
-                tooltip.add(Text.literal("Não é possível alterar a raridade").formatted(Formatting.GRAY));
-                tooltip.add(Text.literal("de uma arma que já possui afinidade.").formatted(Formatting.GRAY));
+                tooltip.add(Text.translatable("tiered.arpg.reforge.awakened.title").formatted(Formatting.RED, Formatting.BOLD));
+                tooltip.add(Text.translatable("tiered.arpg.reforge.awakened.line1").formatted(Formatting.GRAY));
+                tooltip.add(Text.translatable("tiered.arpg.reforge.awakened.line2").formatted(Formatting.GRAY));
             }
             else {
                 // ESTADO 5: Equipamento válido! Checa o que falta para a reforja normal.
@@ -305,15 +349,17 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
 
         if (mouseX >= textX && mouseX <= textX + scaledWidth && mouseY >= textY && mouseY <= textY + scaledHeight) {
 
-            // 🌟 NOVO: Se estiver no Modo Prestígio, muda a explicação da Sorte!
             if (this.getScreenHandler().isPrestigeMode()) {
                 List<Text> tooltip = new ArrayList<>();
-                tooltip.add(Text.literal("✨ Modo Prestígio ✨").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
-                tooltip.add(Text.literal("A arma manterá sua raridade e afinidade,").formatted(Formatting.GRAY));
-                tooltip.add(Text.literal("mas retornará ao Nível 1 com +1 de Prestígio.").formatted(Formatting.GRAY));
+                tooltip.add(Text.translatable("tiered.arpg.reforge.prestige_mode.title").formatted(Formatting.LIGHT_PURPLE, Formatting.BOLD));
+                tooltip.add(Text.translatable("tiered.arpg.reforge.prestige_mode.line1").formatted(Formatting.GRAY));
+                tooltip.add(Text.translatable("tiered.arpg.reforge.prestige_mode.line2").formatted(Formatting.GRAY));
                 context.drawTooltip(this.textRenderer, tooltip, mouseX, mouseY);
-                return; // Sai do método para não desenhar as chances normais de reforja
+                return; // Sai do metodo para não desenhar as chances normais de reforja
             }
+
+
+
 
             List<Text> tooltip = new ArrayList<>();
             tooltip.add(Text.translatable("tiered.tooltip.reforge_chance").formatted(Formatting.GOLD, Formatting.ITALIC));

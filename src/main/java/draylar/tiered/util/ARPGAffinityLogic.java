@@ -50,36 +50,43 @@ public class ARPGAffinityLogic {
         double absoluteBonus = 0.0;
 
         if (prestige >= 3) {
-            prestigeMultiplier = 1.5;
+            prestigeMultiplier = 1.25;
 
             if (level >= ARPGLevelingLogic.getMaxLevel()) {
                 absoluteBonus = switch (affinity) {
-                    case "brute_force", "retaliation", "focused_mind" -> 5.0;
+                    case "brute_force", "retaliation", "focused_mind", "heavy_shot" -> 8.75;
                     case "true_strike", "ancient_wisdom", "life_blessing", "bloodthirst" -> 10.0;
-                    case "hard_labor", "voracious_digger" -> 5.0;
+                    case "hard_labor", "voracious_digger" -> 10.0;
                     case "titan_heart", "unyielding_vigor", "vital_guard", "winds_of_life" -> 5.0;
                     case "bulwark", "solid_foundation", "wall" -> 6.0;
-                    case "midas_touch", "hidden_treasures", "demeter_blessing", "oxygen", "luck_of_sea" -> 10.0;
+                    case "mountain_walker" -> 0.9;
+                    case "midas_touch", "hidden_treasures", "demeter_blessing", "soil_master", "bountiful_harvest", "elite_shooter" -> 12.5;
+                    case "oxygen", "luck_of_sea" -> 10.0;
                     case "long_reach", "far_sight", "earth_reach" -> 2.0;
-                    case "spiked_vengeance", "soil_master" -> 5.0;
+                    case "spiked_vengeance" -> 5.0;
+                    case "swift_shadows" -> 37.5;
+                    case "acrobat" -> 1.5;
                     default -> 0.0;
                 };
             }
         }
 
         double baseValue = switch (affinity) {
-            case "brute_force", "retaliation", "focused_mind", "spiked_vengeance", "heavy_shot", "elite_shooter" -> (level * 0.25);
+            case "brute_force", "retaliation", "focused_mind", "spiked_vengeance", "heavy_shot" -> (level * 0.25);
             case "hard_labor", "voracious_digger" -> (level * 0.5);
-            case "dancing_blade", "aerial_boost", "acrobat", "mountain_walker", "long_strides", "wayfarer", "swift_shadows", "immovable", "gale", "quick_draw", "eagle_eye" -> (level * 0.02);
+            case "dancing_blade", "acrobat", "mountain_walker", "long_strides", "immovable", "gale",  "eagle_eye" -> (level * 0.02);
+            case "" -> (level * 0.501);
+            case "aerial_boost" -> (level * 1.0);
             case "guiding_winds", "light_steps" -> (level * 0.001); // Velocidade de movimento é muito sensível
-            case "true_strike", "ancient_wisdom", "life_blessing", "oxygen", "luck_of_sea", "midas_touch", "hidden_treasures", "demeter_blessing" -> (level * 1.0);
+            case "true_strike", "ancient_wisdom", "life_blessing", "oxygen", "quick_draw", "luck_of_sea" -> (level * 1.0);
+            case "midas_touch", "hidden_treasures", "demeter_blessing", "bountiful_harvest", "soil_master", "elite_shooter" -> (level * 0.7);
             // 🌟 1. Deixe o Vigor Inabalável (Fome) sozinho no 0.5
             case "unyielding_vigor" -> (level * 0.5);
             // 🌟 2. Crie uma nova linha para a Sede de Sangue com 0.1 (Máximo de 10% no Nível 100 base)
             case "bloodthirst" -> (level * 0.2);
-            case "titan_heart", "vital_guard", "winds_of_life" -> (level * 0.5);
+            case "titan_heart", "vital_guard", "winds_of_life", "wayfarer", "swift_shadows" -> (level * 0.5);
             case "bulwark", "solid_foundation", "wall" -> (level * 0.1);
-            case "aquatic", "lure", "soil_master", "bountiful_harvest" -> (level * 0.05);
+            case "aquatic", "lure" -> (level * 0.05);
             case "long_reach", "far_sight", "earth_reach" -> (level * 0.1);
             default -> 0.0;
         };
@@ -87,7 +94,7 @@ public class ARPGAffinityLogic {
         return (baseValue * prestigeMultiplier) + absoluteBonus;
     }
 
-    // 📝 3. O Texto da Tooltip (Agora com a cor dinâmica!)
+    // 📝 3. O Texto da Tooltip (Agora com a cor dinâmica e a Coroa do Absoluto!)
     public static MutableText getAffinityBonusText(String affinity, int level, int prestige) {
         double bonusValue = getBonusValue(affinity, level, prestige);
 
@@ -96,7 +103,7 @@ public class ARPGAffinityLogic {
         }
 
         boolean isPercentage = switch (affinity) {
-            case "true_strike", "ancient_wisdom", "life_blessing", "bloodthirst", "unyielding_vigor" -> true;
+            case "true_strike", "ancient_wisdom", "life_blessing", "bloodthirst", "unyielding_vigor", "aerial_boost", "wayfarer", "midas_touch", "hidden_treasures", "demeter_blessing", "soil_master", "quick_draw", "bountiful_harvest", "elite_shooter" -> true;
             default -> false;
         };
 
@@ -112,10 +119,10 @@ public class ARPGAffinityLogic {
             case "ancient_wisdom" -> "tiered.arpg.bonus.xp_increase";
             case "guiding_winds", "light_steps" -> "tiered.arpg.bonus.speed";
             case "far_sight", "long_reach", "earth_reach" -> "tiered.arpg.bonus.interaction";
-            case "titan_heart", "vital_guard", "winds_of_life" -> "tiered.arpg.bonus.vital";
+            case "titan_heart", "winds_of_life" -> "tiered.arpg.bonus.vital";
             case "unyielding_vigor" -> "tiered.arpg.bonus.stamina";
             case "bulwark", "solid_foundation", "wall" -> "tiered.arpg.bonus.resistance";
-            case "life_blessing" -> "tiered.arpg.bonus.healing_increase";
+            case "life_blessing", "vital_guard" -> "tiered.arpg.bonus.healing_increase";
             case "aerial_boost", "acrobat" -> "tiered.arpg.bonus.jump_height";
             case "mountain_walker", "long_strides" -> "tiered.arpg.bonus.step_height";
             case "wayfarer" -> "tiered.arpg.bonus.path_speed";
@@ -139,11 +146,19 @@ public class ARPGAffinityLogic {
             default -> "tiered.arpg.bonus.unknown";
         };
 
-        // 🌟 Pega a cor da afinidade e pinta o texto do bônus com ela!
+        // Pega a cor da afinidade
         Formatting color = getAffinityColor(affinity);
 
-        return Text.literal("+" + formattedValue + " ")
+        // Monta o texto base
+        MutableText finalText = Text.literal("+" + formattedValue + " ")
                 .append(Text.translatable(translationKey))
                 .formatted(color);
+
+        // 🌟 A COROA DO ENDGAME: Se atingiu o ápice, adiciona a marca do Absoluto!
+        if (prestige >= 3 && level >= ARPGLevelingLogic.getMaxLevel()) {
+            finalText.append(Text.literal(" [✦]").formatted(Formatting.GOLD, Formatting.BOLD));
+        }
+
+        return finalText;
     }
 }

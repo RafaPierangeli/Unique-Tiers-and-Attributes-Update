@@ -1,0 +1,59 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:obsidian": 3,
+      "minecraft:cobblestone": 143,
+      "minecraft:stone": 2
+    },
+    "minecraft:picked_up": {
+      "minecraft:diamond_chestplate": 3,
+      "minecraft:diamond_sword": 3,
+      "minecraft:cobblestone": 145,
+      "minecraft:obsidian": 3,
+      "minecraft:nether_star": 60,
+      "minecraft:netherite_leggings": 1,
+      "minecraft:diamond": 62,
+      "minecraft:echo_shard": 60,
+      "minecraft:iron_ingot": 1,
+      "minecraft:zombie_spawn_egg": 98,
+      "minecraft:rotten_flesh": 143
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 156,
+      "minecraft:zombie_spawn_egg": 122,
+      "minecraft:diamond_sword": 319,
+      "minecraft:obsidian": 41,
+      "minecraft:cobblestone": 145
+    },
+    "minecraft:killed_by": {
+      "minecraft:zombie": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 11238,
+      "minecraft:walk_one_cm": 37887,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 131,
+      "minecraft:damage_taken": 273,
+      "minecraft:damage_dealt": 24706,
+      "minecraft:play_time": 15968,
+      "minecraft:jump": 23,
+      "minecraft:time_since_death": 11159,
+      "minecraft:drop": 3,
+      "minecraft:sprint_one_cm": 10233,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 450,
+      "minecraft:total_world_time": 21124,
+      "minecraft:fly_one_cm": 2166,
+      "minecraft:crouch_one_cm": 800,
+      "minecraft:sneak_time": 185,
+      "minecraft:deaths": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:rotten_flesh": 143
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 116
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:zombie": 13
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1996,
+      "minecraft:walk_one_cm": 1243,
+      "minecraft:total_world_time": 2033,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 19,
+      "minecraft:play_time": 1996,
+      "minecraft:damage_dealt": 3309,
+      "minecraft:time_since_death": 1996
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:zombie_spawn_egg": 20,
+      "minecraft:diamond_sword": 82
+    }
+  },
+  "DataVersion": 4671
+}

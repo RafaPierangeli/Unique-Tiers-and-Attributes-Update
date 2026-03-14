@@ -25,6 +25,8 @@ public class TieredClient implements ClientModInitializer {
         HandledScreens.<ReforgeScreenHandler, ReforgeScreen>register(Tiered.REFORGE_SCREEN_HANDLER_TYPE, ReforgeScreen::new);
         TieredClientPacket.init();
         draylar.tiered.client.TieredTooltipCallback.register();
+        // 🌟 Registra o Motor de Partículas
+        draylar.tiered.client.ARPGParticleEngine.register();
     }
 
 }

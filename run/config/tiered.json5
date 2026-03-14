@@ -17,7 +17,7 @@
 	// Modify the biggest weights by this modifier per luck
 	"luckReforgeModifier": 0.019999999552965164,
 	"reforgeXpCost": 50,
-	"uniqueReforge": false,
+	"uniqueReforge": true,
 	"showReforgingTab": true,
 	"xIconPosition": 0,
 	"yIconPosition": 0,
@@ -33,7 +33,7 @@
 	"maxLevelEquipment": 100,
 	"globalXpMultiplier": 1.0,
 	"xpBaseKillEntity": 2,
-	"xpBaseMineBlock": 100,
+	"xpBaseMineBlock": 1000,
 	"xpMultiplierCoal": 2,
 	"xpMultiplierCopper": 2,
 	"xpMultiplierQuartz": 2,

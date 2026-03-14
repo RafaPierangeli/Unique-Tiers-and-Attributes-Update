@@ -427,7 +427,7 @@
 	"tiered.arpg.tendency.demeter_blessing": "Bênção de Deméter",
 	"tiered.arpg.tendency.vital_guard": "Guarda Vital",
 	"tiered.arpg.tendency.wall": "Muralha",
-	"tiered.arpg.tendency.immovable": "Montanha Inamovível",
+	"tiered.arpg.tendency.immovable": "Imovível",
 	"tiered.arpg.tendency.spiked_vengeance": "Vingança Farpada",
 	"tiered.arpg.tendency.true_strike": "Golpe Certeiro",
 	"tiered.arpg.tendency.bloodthirst": "Sede de Sangue",
@@ -512,7 +512,7 @@
 	"tiered.arpg.affinity.demeter_blessing": "Bênção de Deméter",
 	"tiered.arpg.affinity.vital_guard": "Guarda Vital",
 	"tiered.arpg.affinity.wall": "Muralha",
-	"tiered.arpg.affinity.immovable": "Montanha Inamovível",
+	"tiered.arpg.affinity.immovable": "Imovível",
 	"tiered.arpg.affinity.spiked_vengeance": "Vingança Farpada",
 	"tiered.arpg.affinity.true_strike": "Golpe Certeiro",
 	"tiered.arpg.affinity.bloodthirst": "Sede de Sangue",
@@ -542,17 +542,34 @@
 	"tiered.arpg.bonus.swift_sneak": "Esgueira Veloz",
 	"tiered.arpg.bonus.xp_increase": "Bônus de XP",
 	"tiered.arpg.bonus.excavation": "Vel. Escavação",
-	"tiered.arpg.bonus.area_tilling": "Arada em Área",
-	"tiered.arpg.bonus.area_harvesting": "Colheita em Área",
+	"tiered.arpg.bonus.area_tilling": "Bonus de Colheita",
+	"tiered.arpg.bonus.area_harvesting": "Bonus de Colheita",
 	"tiered.arpg.bonus.knockback_resistance": "Resistência a Empurrão",
 	"tiered.arpg.bonus.thorns": "Espinhos",
 	"tiered.arpg.bonus.lifesteal": "Roubo de Vida",
 	"tiered.arpg.bonus.flight_speed": "Vel. de Voo",
-	"tiered.arpg.bonus.heavy_shot": "Tiro Pesado",
+	"tiered.arpg.bonus.heavy_shot": "Dano a Distancia",
 	"tiered.arpg.bonus.quick_draw": "Saque Rápido",
 	"tiered.arpg.bonus.eagle_eye": "Olho de Águia",
 	"tiered.arpg.bonus.elite_shooter": "Atirador de Elite",
 
-	"tiered.arpg.message.aoe_mode": "Area de interaçao: "
+
+	"tiered.arpg.message.aoe_mode": "§eÁrea de interação: §b%s",
+	"tiered.arpg.tooltip.soulbound": "Vínculo de Alma",
+	"tiered.arpg.tooltip.eternal": "Eterno",
+	"tiered.arpg.reforge.prestige_mode.title": "✨ Modo Prestígio ✨",
+	"tiered.arpg.reforge.prestige_mode.line1": "A arma manterá sua raridade e afinidade,",
+	"tiered.arpg.reforge.prestige_mode.line2": "mas retornará ao Nível 1 com +1 de Prestígio.",
+
+	"tiered.arpg.reforge.awakened.title": "Arma Despertada!",
+	"tiered.arpg.reforge.awakened.line1": "Não é possível alterar a raridade",
+	"tiered.arpg.reforge.awakened.line2": "de uma arma que já possui afinidade.",
+
+	"tiered.arpg.reforge.prestige_ascension.title": "✨ Ascensão de Prestígio ✨",
+	"tiered.arpg.reforge.requires": "Requer: ",
+	"tiered.arpg.reforge.cost_xp": "Custo: %s XP",
+	"tiered.arpg.reforge.success_chance": "Chance de Sucesso: %s%%",
+	"tiered.arpg.reforge.prestige_success": "✨ Ascensão Concluída! ✨",
+	"tiered.arpg.reforge.prestige_fail": "❌ Falha na Ascensão! ❌"
 
 }

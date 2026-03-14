@@ -16,6 +16,13 @@
     "CrossbowItemMixin",
     "ServerPlayerEntityMixin",
     "FireworkRocketItemMixin",
+    "ItemEntityMixin",
+    "BlockDropMixin",
+    "LivingEntityRangedMixin",
+    "ProjectileEntityMixin",
+
+
+    "PlayerInventoryMixin",
 
     "LivingEntityMixin",
     "TradeOutputSlotMixin",

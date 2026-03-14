@@ -39,7 +39,7 @@ public abstract class LivingEntityDamageMixin {
                     int baseAmount = 1;
 
                     if (amount >= 3.0f) {
-                        specificAffinity = "bulwark";
+                        specificAffinity = "immovable";
                         specificAmount = 3;
                     }
                     else if (source.getSource() instanceof net.minecraft.entity.projectile.PersistentProjectileEntity) {
@@ -220,7 +220,7 @@ public abstract class LivingEntityDamageMixin {
 
                     // 1. Sniper (Tiro longo)
                     if (distance >= 15.0) {
-                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "elite_shooter", 7, false, 0, attacker);
+                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "elite_shooter", 7, false, 1, attacker);
                     }
 
                     // 2. Tiro Crítico
@@ -236,7 +236,7 @@ public abstract class LivingEntityDamageMixin {
                     // 4. Abate
                     if (isKill) {
                         // Abate alimenta o Atirador de Elite
-                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "eagle_eye", 3, false, 0, attacker);
+                        draylar.tiered.util.ARPGXpHelper.grantXp(rangedWeapon, "eagle_eye", 3, false, 2, attacker);
                     }
                 }
             }

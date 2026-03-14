@@ -10,26 +10,26 @@
       "minecraft:air": 0,
       "minecraft:emerald": 22
     },
+    "minecraft:killed": {
+      "minecraft:villager": 1
+    },
     "minecraft:custom": {
       "minecraft:traded_with_villager": 68,
       "minecraft:talked_to_villager": 16,
-      "minecraft:time_since_rest": 10935,
-      "minecraft:walk_one_cm": 19879,
-      "minecraft:leave_game": 2,
+      "minecraft:time_since_rest": 15297,
+      "minecraft:walk_one_cm": 20127,
+      "minecraft:leave_game": 3,
       "minecraft:mob_kills": 1,
       "minecraft:damage_dealt": 200,
-      "minecraft:play_time": 10935,
+      "minecraft:play_time": 15297,
       "minecraft:jump": 11,
-      "minecraft:time_since_death": 10935,
+      "minecraft:time_since_death": 15297,
       "minecraft:drop": 65,
       "minecraft:sprint_one_cm": 505,
-      "minecraft:total_world_time": 11011,
+      "minecraft:total_world_time": 15699,
       "minecraft:fly_one_cm": 2259,
       "minecraft:sneak_time": 17,
       "minecraft:interact_with_blast_furnace": 1
-    },
-    "minecraft:killed": {
-      "minecraft:villager": 1
     },
     "minecraft:dropped": {
       "minecraft:diamond_boots": 4,

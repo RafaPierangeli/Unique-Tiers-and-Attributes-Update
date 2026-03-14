@@ -1,0 +1,47 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:spider": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_pickaxe": 1,
+      "minecraft:diamond_sword": 1
+    },
+    "minecraft:mined": {
+      "minecraft:stone_bricks": 1,
+      "minecraft:obsidian": 2,
+      "minecraft:cobblestone": 4
+    },
+    "minecraft:picked_up": {
+      "minecraft:diamond_sword": 1,
+      "minecraft:stone_bricks": 1,
+      "minecraft:cobblestone": 4,
+      "minecraft:obsidian": 2,
+      "minecraft:diamond_pickaxe": 1,
+      "minecraft:rotten_flesh": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 4629,
+      "minecraft:walk_one_cm": 6619,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_dealt": 160,
+      "minecraft:play_time": 4629,
+      "minecraft:jump": 39,
+      "minecraft:time_since_death": 4629,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 7460,
+      "minecraft:fall_one_cm": 240,
+      "minecraft:total_world_time": 4829,
+      "minecraft:fly_one_cm": 1606,
+      "minecraft:walk_on_water_one_cm": 234
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 7,
+      "minecraft:stone_bricks": 1,
+      "minecraft:diamond_sword": 1,
+      "minecraft:obsidian": 2
+    }
+  },
+  "DataVersion": 4671
+}

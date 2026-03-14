@@ -1,0 +1,17 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 429,
+      "minecraft:walk_one_cm": 675,
+      "minecraft:total_world_time": 515,
+      "minecraft:leave_game": 1,
+      "minecraft:sneak_time": 44,
+      "minecraft:play_time": 429,
+      "minecraft:time_since_death": 429
+    },
+    "minecraft:used": {
+      "minecraft:diamond_hoe": 3
+    }
+  },
+  "DataVersion": 4671
+}

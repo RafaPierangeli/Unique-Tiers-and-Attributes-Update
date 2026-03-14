@@ -1,0 +1,39 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:wildflowers": 7,
+      "minecraft:cobblestone": 2
+    },
+    "minecraft:mined": {
+      "minecraft:stone_bricks": 2,
+      "minecraft:cobblestone": 2,
+      "minecraft:stone": 2
+    },
+    "minecraft:picked_up": {
+      "minecraft:stone_bricks": 2,
+      "minecraft:cobblestone": 4
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 336,
+      "minecraft:walk_one_cm": 4572,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 720,
+      "minecraft:play_time": 3618,
+      "minecraft:jump": 16,
+      "minecraft:time_since_death": 299,
+      "minecraft:drop": 9,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 5142,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 1675,
+      "minecraft:total_world_time": 3641,
+      "minecraft:fly_one_cm": 5088,
+      "minecraft:deaths": 3
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 6,
+      "minecraft:cobblestone": 2
+    }
+  },
+  "DataVersion": 4671
+}

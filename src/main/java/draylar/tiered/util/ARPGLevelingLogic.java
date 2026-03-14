@@ -1,6 +1,6 @@
 package draylar.tiered.util;
 
-import draylar.tiered.config.ConfigInit; // 🌟 Não esqueça de importar a sua config!
+import draylar.tiered.config.ConfigInit;
 
 public class ARPGLevelingLogic {
 
@@ -27,9 +27,13 @@ public class ARPGLevelingLogic {
             return Integer.MAX_VALUE;
         }
 
+        // Calcula o XP base do nível atual
         int baseForLevel = (int) Math.round(getBaseXp() * Math.pow(1.0 + getXpMultiplier(), currentLevel));
-        int prestigeMultiplier = (int) Math.pow(2, prestige);
 
-        return baseForLevel * prestigeMultiplier;
+        // 🌟 CORREÇÃO DA CURVA: Agora multiplica por 1.5 a cada prestígio (em vez de dobrar)
+        double prestigeMultiplier = Math.pow(1.5, prestige);
+
+        // Multiplica e arredonda para o número inteiro mais próximo
+        return (int) Math.round(baseForLevel * prestigeMultiplier);
     }
 }

@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 13382,
+      "minecraft:walk_one_cm": 15435,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 36,
+      "minecraft:damage_taken": 804,
+      "minecraft:damage_dealt": 6751,
+      "minecraft:play_time": 13382,
+      "minecraft:damage_absorbed": 280,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 13382,
+      "minecraft:drop": 5,
+      "minecraft:open_chest": 2,
+      "minecraft:total_world_time": 15781,
+      "minecraft:fly_one_cm": 64
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 34,
+      "minecraft:wandering_trader": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:rotten_flesh": 2,
+      "minecraft:glass_bottle": 3
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 8,
+      "minecraft:zombie_spawn_egg": 27,
+      "minecraft:potion": 2,
+      "minecraft:diamond_sword": 180
+    },
+    "minecraft:picked_up": {
+      "minecraft:glass_bottle": 1,
+      "minecraft:rotten_flesh": 2
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 14851,
+      "minecraft:walk_one_cm": 33224,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 11,
+      "minecraft:play_time": 14851,
+      "minecraft:damage_dealt": 2518,
+      "minecraft:jump": 21,
+      "minecraft:time_since_death": 14851,
+      "minecraft:drop": 3,
+      "minecraft:open_enderchest": 4,
+      "minecraft:sprint_one_cm": 15133,
+      "minecraft:open_chest": 3,
+      "minecraft:total_world_time": 19154,
+      "minecraft:fly_one_cm": 4198
+    },
+    "minecraft:picked_up": {
+      "minecraft:sculk_catalyst": 9
+    },
+    "minecraft:dropped": {
+      "minecraft:diamond_block": 1,
+      "minecraft:sculk_catalyst": 2
+    },
+    "minecraft:killed": {
+      "minecraft:warden": 11
+    },
+    "minecraft:used": {
+      "minecraft:diamond_block": 7,
+      "minecraft:warden_spawn_egg": 11,
+      "minecraft:bow": 85
+    }
+  },
+  "DataVersion": 4671
+}

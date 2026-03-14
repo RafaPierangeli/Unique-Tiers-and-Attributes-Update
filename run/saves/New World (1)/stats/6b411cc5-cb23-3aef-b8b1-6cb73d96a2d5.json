@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 11328,
+      "minecraft:walk_one_cm": 63860,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 530,
+      "minecraft:play_time": 11328,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 11328,
+      "minecraft:drop": 6,
+      "minecraft:sprint_one_cm": 3351,
+      "minecraft:open_chest": 1,
+      "minecraft:total_world_time": 11608,
+      "minecraft:fly_one_cm": 56,
+      "minecraft:walk_on_water_one_cm": 1080,
+      "minecraft:crouch_one_cm": 61,
+      "minecraft:sneak_time": 39
+    },
+    "minecraft:used": {
+      "minecraft:bone_meal": 192,
+      "minecraft:diamond_hoe": 127,
+      "minecraft:diamond_pickaxe": 14,
+      "minecraft:wheat_seeds": 87
+    },
+    "minecraft:picked_up": {
+      "minecraft:wheat_seeds": 95,
+      "minecraft:wildflowers": 38,
+      "minecraft:wheat": 34,
+      "minecraft:raw_iron": 29
+    },
+    "minecraft:dropped": {
+      "minecraft:raw_iron": 6
+    },
+    "minecraft:mined": {
+      "minecraft:short_grass": 6,
+      "minecraft:wildflowers": 15,
+      "minecraft:deepslate_iron_ore": 5,
+      "minecraft:wheat": 35,
+      "minecraft:iron_ore": 9
+    }
+  },
+  "DataVersion": 4671
+}

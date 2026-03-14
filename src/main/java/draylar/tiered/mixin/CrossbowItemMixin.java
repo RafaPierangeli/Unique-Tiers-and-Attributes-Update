@@ -28,7 +28,7 @@ public abstract class CrossbowItemMixin {
 
             if (chargedProjectiles != null && !chargedProjectiles.isEmpty()) {
                 // A besta sempre atira com força máxima, então sempre treina Saque Rápido
-                ARPGXpHelper.grantXp(stack, "quick_draw", 3, true, 1, player);
+                ARPGXpHelper.grantXp(stack, "quick_draw", 3, true, 2, player);
             }
         }
     }

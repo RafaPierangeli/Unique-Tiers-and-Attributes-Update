@@ -11,6 +11,7 @@ import draylar.tiered.network.TieredServerPacket;
 import draylar.tiered.reforge.ReforgeScreenHandler;
 import draylar.tiered.util.AoEMiningHelper;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
@@ -36,6 +37,7 @@ import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Map;
 import java.util.function.UnaryOperator;
 
 
@@ -63,6 +65,7 @@ public class Tiered implements ModInitializer {
         TieredDataComponents.init();
         ARPGEventHandlers.register(); // 🌟 Registra os eventos do nosso ARPG!
         draylar.tiered.util.AoEMiningHelper.registerToggleEvent();
+        AoEMiningHelper.registerTillingEvent();
 
         // Coloque isso dentro do seu método onInitialize()
         PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
@@ -74,6 +77,27 @@ public class Tiered implements ModInitializer {
         BlockRegisters.registerModBlocks();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.ATTRIBUTE_DATA_LOADER);
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.REFORGE_DATA_LOADER);
+
+        // Coloque isso DENTRO do seu método onInitialize()
+        ServerPlayerEvents.COPY_FROM.register((oldPlayer, newPlayer, alive) -> {
+            // alive = false significa que o jogador morreu (não é só uma viagem pelo portal do The End)
+            if (!alive) {
+                Map<Integer, ItemStack> soulboundItems = ((SoulboundAccessor) oldPlayer).tiered$getSoulboundItems();
+
+                for (Map.Entry<Integer, ItemStack> entry : soulboundItems.entrySet()) {
+                    int slot = entry.getKey();
+                    ItemStack stack = entry.getValue();
+
+                    // Tenta devolver exatamente no mesmo slot que estava antes de morrer
+                    if (newPlayer.getInventory().getStack(slot).isEmpty()) {
+                        newPlayer.getInventory().setStack(slot, stack);
+                    } else {
+                        // Se por algum motivo bizarro o slot estiver ocupado, joga no inventário geral
+                        newPlayer.getInventory().insertStack(stack);
+                    }
+                }
+            }
+        });
 
 
 

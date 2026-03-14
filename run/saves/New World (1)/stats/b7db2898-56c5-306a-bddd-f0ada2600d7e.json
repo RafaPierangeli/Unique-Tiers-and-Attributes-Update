@@ -4,15 +4,15 @@
       "tiered:reforge_block": 1
     },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 4727,
+      "minecraft:time_since_rest": 4926,
       "minecraft:walk_one_cm": 11352,
-      "minecraft:total_world_time": 10288,
-      "minecraft:leave_game": 2,
+      "minecraft:total_world_time": 13138,
+      "minecraft:leave_game": 3,
       "minecraft:crouch_one_cm": 3465,
       "minecraft:sneak_time": 853,
-      "minecraft:play_time": 4727,
+      "minecraft:play_time": 4926,
       "minecraft:jump": 12,
-      "minecraft:time_since_death": 4727
+      "minecraft:time_since_death": 4926
     }
   },
   "DataVersion": 4671

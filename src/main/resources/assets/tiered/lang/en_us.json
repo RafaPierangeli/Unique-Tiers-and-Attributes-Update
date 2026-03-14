@@ -421,7 +421,7 @@
   "tiered.arpg.tendency.demeter_blessing": "Demeter's Blessing",
   "tiered.arpg.tendency.vital_guard": "Vital Guard",
   "tiered.arpg.tendency.wall": "Wall",
-  "tiered.arpg.tendency.immovable": "Immovable Mountain",
+  "tiered.arpg.tendency.immovable": "Immovable",
   "tiered.arpg.tendency.spiked_vengeance": "Spiked Vengeance",
   "tiered.arpg.tendency.true_strike": "True Strike",
   "tiered.arpg.tendency.bloodthirst": "Bloodthirst",
@@ -509,7 +509,7 @@
   "tiered.arpg.affinity.demeter_blessing": "Demeter's Blessing",
   "tiered.arpg.affinity.vital_guard": "Vital Guard",
   "tiered.arpg.affinity.wall": "Wall",
-  "tiered.arpg.affinity.immovable": "Immovable Mountain",
+  "tiered.arpg.affinity.immovable": "Immovable",
   "tiered.arpg.affinity.spiked_vengeance": "Spiked Vengeance",
   "tiered.arpg.affinity.true_strike": "True Strike",
   "tiered.arpg.affinity.bloodthirst": "Bloodthirst",
@@ -537,18 +537,34 @@
   "tiered.arpg.bonus.swift_sneak": "Swift Sneak",
   "tiered.arpg.bonus.xp_increase": "XP Bonus",
   "tiered.arpg.bonus.excavation": "Excavation Speed",
-  "tiered.arpg.bonus.area_tilling": "Area Tilling",
-  "tiered.arpg.bonus.area_harvesting": "Area Harvesting",
+  "tiered.arpg.bonus.area_tilling": "Harvesting Bonus",
+  "tiered.arpg.bonus.area_harvesting": "Harvesting Bonus",
   "tiered.arpg.bonus.knockback_resistance": "Knockback Resistance",
   "tiered.arpg.bonus.thorns": "Thorns",
   "tiered.arpg.bonus.lifesteal": "Life Steal",
   "tiered.arpg.bonus.flight_speed": "Flight Speed",
-  "tiered.arpg.bonus.heavy_shot": "attack Damage",
+  "tiered.arpg.bonus.heavy_shot": "Range Damage",
   "tiered.arpg.bonus.quick_draw": "Speed Shot",
   "tiered.arpg.bonus.eagle_eye": "Eagle Eye",
   "tiered.arpg.bonus.elite_shooter": "Elite Shooter",
 
-  "tiered.arpg.message.aoe_mode": "Interaction area: "
+  "tiered.arpg.message.aoe_mode": "§eInteraction Area: §b%s",
+  "tiered.arpg.tooltip.soulbound": "Soulbound",
+  "tiered.arpg.tooltip.eternal": "Eternal",
+  "tiered.arpg.reforge.prestige_mode.title": "✨ Prestige Mode ✨",
+  "tiered.arpg.reforge.prestige_mode.line1": "The weapon will keep its rarity and affinity,",
+  "tiered.arpg.reforge.prestige_mode.line2": "but will return to Level 1 with +1 Prestige.",
+
+  "tiered.arpg.reforge.awakened.title": "Awakened Weapon!",
+  "tiered.arpg.reforge.awakened.line1": "It is not possible to change the rarity",
+  "tiered.arpg.reforge.awakened.line2": "of a weapon that already has an affinity.",
+
+  "tiered.arpg.reforge.prestige_ascension.title": "✨ Prestige Ascension ✨",
+  "tiered.arpg.reforge.requires": "Requires: ",
+  "tiered.arpg.reforge.cost_xp": "Cost: %s XP",
+  "tiered.arpg.reforge.success_chance": "Success Chance: %s%%",
+  "tiered.arpg.reforge.prestige_success": "✨ Ascension Complete! ✨",
+  "tiered.arpg.reforge.prestige_fail": "❌ Ascension Failed! ❌"
 
 
 }

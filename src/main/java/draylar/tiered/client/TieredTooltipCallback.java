@@ -186,6 +186,18 @@ public class TieredTooltipCallback {
                                         // Usa o getStyle() do potentialAttribute para herdar EXATAMENTE a cor do Tier!
                                         .append(Text.literal(String.valueOf(arpgData.prestige())).setStyle(potentialAttribute.getStyle())));
                             }
+                            // =================================================================
+                            // 🌟 INJEÇÃO DE PRESTÍGIO (SOULBOUND E ETERNAL)
+                            // =================================================================
+                            // Inserimos na ordem inversa para que o Eternal fique em cima do Soulbound
+                            if (arpgData.prestige() >= 2) {
+                                lines.add(Text.translatable("tiered.arpg.tooltip.eternal").formatted(Formatting.AQUA, Formatting.ITALIC));
+                                }
+
+                            if (arpgData.prestige() >= 1) {
+                                    lines.add(Text.translatable("tiered.arpg.tooltip.soulbound").formatted(Formatting.AQUA, Formatting.ITALIC));
+                                }
+
 
                             // Pinta o bônus
 
@@ -194,7 +206,7 @@ public class TieredTooltipCallback {
                                         .append(Text.literal(arpgData.currentXp() + " / " + requiredXp).formatted(Formatting.GREEN)));
                             } else {
                                 lines.add(Text.translatable("tiered.arpg.xp").formatted(Formatting.GRAY)
-                                        .append(Text.translatable("tiered.arpg.xp.max").formatted(Formatting.GOLD, Formatting.BOLD)));
+                                        .append(Text.translatable("tiered.arpg.xp.max").formatted(Formatting.GOLD)));
                             }
                         }
 
@@ -343,7 +355,8 @@ public class TieredTooltipCallback {
                             Identifier modId = modifier.id();
                             RegistryEntry<EntityAttribute> attributeEntry = entry.attribute();
 
-                            if (modId.getNamespace().equals("tiered") && !drawnModifiers.contains(modId)) {
+                            // 🌟 Ignora os modificadores do ARPG para não duplicar o texto na tela!
+                            if (modId.getNamespace().equals("tiered") && !modId.getPath().startsWith("arpg_") && !drawnModifiers.contains(modId)) {
 
                                 if (!addedHeader) {
                                     lines.add(Text.empty());

@@ -1,41 +1,43 @@
 {
   "stats": {
-    "minecraft:mined": {
-      "minecraft:dirt": 1,
-      "minecraft:stone": 25
-    },
     "minecraft:dropped": {
       "minecraft:raw_iron": 1,
-      "minecraft:cobblestone": 15,
+      "minecraft:cobblestone": 18,
       "minecraft:diamond_pickaxe": 1,
       "minecraft:dirt": 1
     },
-    "minecraft:custom": {
-      "minecraft:interact_with_crafting_table": 2,
-      "minecraft:time_since_rest": 5199,
-      "minecraft:walk_one_cm": 8219,
-      "minecraft:leave_game": 2,
-      "minecraft:play_time": 5199,
-      "minecraft:jump": 35,
-      "minecraft:time_since_death": 5199,
-      "minecraft:drop": 12,
-      "minecraft:sprint_one_cm": 8007,
-      "minecraft:open_chest": 3,
-      "minecraft:fall_one_cm": 850,
-      "minecraft:total_world_time": 5651,
-      "minecraft:fly_one_cm": 7095,
-      "minecraft:walk_on_water_one_cm": 500
-    },
     "minecraft:picked_up": {
       "minecraft:dirt": 1,
-      "minecraft:cobblestone": 14
+      "minecraft:cobblestone": 16
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 2,
+      "minecraft:time_since_rest": 13881,
+      "minecraft:walk_one_cm": 56326,
+      "minecraft:leave_game": 3,
+      "minecraft:play_time": 13881,
+      "minecraft:jump": 70,
+      "minecraft:time_since_death": 13881,
+      "minecraft:drop": 15,
+      "minecraft:sprint_one_cm": 19115,
+      "minecraft:open_chest": 3,
+      "minecraft:fall_one_cm": 850,
+      "minecraft:total_world_time": 14430,
+      "minecraft:fly_one_cm": 12573,
+      "minecraft:walk_on_water_one_cm": 2139,
+      "minecraft:sneak_time": 100
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 26,
+      "minecraft:cobblestone": 394
     },
     "minecraft:crafted": {
       "minecraft:diamond": 9,
       "minecraft:diamond_pickaxe": 2
     },
-    "minecraft:used": {
-      "minecraft:diamond_pickaxe": 26
+    "minecraft:mined": {
+      "minecraft:dirt": 1,
+      "minecraft:stone": 25
     }
   },
   "DataVersion": 4671

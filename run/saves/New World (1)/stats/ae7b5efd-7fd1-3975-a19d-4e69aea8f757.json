@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "minecraft:mined": {
+      "minecraft:stone_bricks": 5,
+      "minecraft:stone_brick_stairs": 1,
+      "minecraft:stone": 11
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 7963,
+      "minecraft:walk_one_cm": 9584,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 40,
+      "minecraft:damage_taken": 100,
+      "minecraft:damage_dealt": 7201,
+      "minecraft:play_time": 7963,
+      "minecraft:jump": 5,
+      "minecraft:time_since_death": 7963,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 498,
+      "minecraft:open_chest": 2,
+      "minecraft:total_world_time": 8015,
+      "minecraft:fly_one_cm": 26,
+      "minecraft:sneak_time": 1
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 31
+    },
+    "minecraft:used": {
+      "minecraft:stone_brick_wall": 4,
+      "minecraft:stone_brick_stairs": 1,
+      "minecraft:diamond_pickaxe": 17,
+      "minecraft:stone_bricks": 5,
+      "minecraft:zombie_spawn_egg": 44,
+      "minecraft:diamond_sword": 202,
+      "minecraft:cobblestone": 11
+    },
+    "minecraft:picked_up": {
+      "minecraft:stone_bricks": 5,
+      "minecraft:cobblestone": 11,
+      "minecraft:stone_brick_stairs": 1
+    }
+  },
+  "DataVersion": 4671
+}

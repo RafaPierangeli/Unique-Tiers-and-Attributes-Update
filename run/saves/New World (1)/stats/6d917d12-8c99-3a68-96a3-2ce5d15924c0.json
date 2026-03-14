@@ -3,31 +3,47 @@
     "minecraft:killed": {
       "minecraft:wither_skeleton": 2
     },
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 4126,
-      "minecraft:walk_one_cm": 7300,
-      "minecraft:leave_game": 2,
-      "minecraft:mob_kills": 2,
-      "minecraft:play_time": 4126,
-      "minecraft:damage_dealt": 400,
-      "minecraft:jump": 4,
-      "minecraft:time_since_death": 4126,
-      "minecraft:sprint_one_cm": 1918,
-      "minecraft:fall_one_cm": 225,
-      "minecraft:total_world_time": 5579,
-      "minecraft:fly_one_cm": 713,
-      "minecraft:interact_with_anvil": 1
-    },
-    "minecraft:mined": {
-      "minecraft:stone": 6
-    },
-    "minecraft:picked_up": {
-      "minecraft:cobblestone": 1
-    },
     "minecraft:used": {
+      "minecraft:cooked_beef": 2,
+      "minecraft:water_bucket": 3,
+      "minecraft:diamond_hoe": 20,
       "minecraft:diamond_pickaxe": 6,
       "minecraft:netherite_sword": 3,
-      "minecraft:wither_skeleton_spawn_egg": 2
+      "minecraft:wither_skeleton_spawn_egg": 2,
+      "minecraft:wheat_seeds": 2
+    },
+    "minecraft:picked_up": {
+      "minecraft:cobblestone": 1,
+      "minecraft:cooked_beef": 1,
+      "minecraft:wheat_seeds": 5,
+      "minecraft:wildflowers": 7,
+      "minecraft:wheat": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 8339,
+      "minecraft:walk_one_cm": 21722,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_dealt": 400,
+      "minecraft:play_time": 8339,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 8339,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 7807,
+      "minecraft:fall_one_cm": 225,
+      "minecraft:total_world_time": 10378,
+      "minecraft:fly_one_cm": 1235,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:crouch_one_cm": 200,
+      "minecraft:sneak_time": 65
+    },
+    "minecraft:dropped": {
+      "minecraft:cooked_beef": 1
+    },
+    "minecraft:mined": {
+      "minecraft:wildflowers": 2,
+      "minecraft:wheat": 1,
+      "minecraft:stone": 6
     }
   },
   "DataVersion": 4671

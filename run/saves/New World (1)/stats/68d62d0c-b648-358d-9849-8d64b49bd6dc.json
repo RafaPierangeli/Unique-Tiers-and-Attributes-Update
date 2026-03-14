@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:wheat_seeds": 22,
+      "minecraft:wheat": 8
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 1107,
+      "minecraft:walk_one_cm": 3278,
+      "minecraft:total_world_time": 7107,
+      "minecraft:leave_game": 1,
+      "minecraft:sneak_time": 14,
+      "minecraft:play_time": 1107,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 1107
+    },
+    "minecraft:mined": {
+      "minecraft:wheat": 5
+    },
+    "minecraft:used": {
+      "minecraft:diamond_hoe": 8
+    }
+  },
+  "DataVersion": 4671
+}

@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:golden_apple": 3,
+      "minecraft:cooked_beef": 3,
+      "minecraft:splash_potion": 8,
+      "minecraft:shield": 3,
+      "minecraft:potion": 2,
+      "minecraft:zombie_spawn_egg": 10,
+      "minecraft:diamond_sword": 10
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 10
+    },
+    "minecraft:custom": {
+      "minecraft:damage_blocked_by_shield": 50,
+      "minecraft:time_since_rest": 11002,
+      "minecraft:walk_one_cm": 6470,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 10,
+      "minecraft:damage_taken": 392,
+      "minecraft:play_time": 11002,
+      "minecraft:damage_dealt": 1680,
+      "minecraft:time_since_death": 11002,
+      "minecraft:open_enderchest": 3,
+      "minecraft:open_chest": 2,
+      "minecraft:total_world_time": 25458,
+      "minecraft:fly_one_cm": 27
+    }
+  },
+  "DataVersion": 4671
+}
