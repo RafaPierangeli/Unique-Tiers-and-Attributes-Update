@@ -371,12 +371,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:old_growth_birch_forest": "2026-03-02 12:49:59 -0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2026-03-02 12:49:58 -0300"
@@ -416,6 +410,31 @@
   "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
     "criteria": {
       "has_iron_ingot": "2026-03-02 12:49:58 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_birch_forest": "2026-03-02 12:49:59 -0300",
+      "minecraft:forest": "2026-03-14 13:14:57 -0300",
+      "minecraft:sunflower_plains": "2026-03-14 13:16:16 -0300",
+      "minecraft:river": "2026-03-14 13:15:02 -0300",
+      "minecraft:swamp": "2026-03-14 13:15:19 -0300",
+      "minecraft:windswept_hills": "2026-03-14 13:15:18 -0300",
+      "minecraft:windswept_savanna": "2026-03-14 13:15:32 -0300",
+      "minecraft:plains": "2026-03-14 13:15:12 -0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/tools/recovery_compass": {
+    "criteria": {
+      "has_echo_shard": "2026-03-14 13:12:03 -0300"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2026-03-14 13:12:03 -0300"
     },
     "done": true
   },

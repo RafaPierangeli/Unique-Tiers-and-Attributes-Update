@@ -1,11 +1,18 @@
 {
   "stats": {
+    "minecraft:used": {
+      "minecraft:firework_rocket": 3
+    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 2667,
-      "minecraft:total_world_time": 2758,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 2667,
-      "minecraft:time_since_death": 2667
+      "minecraft:time_since_rest": 4579,
+      "minecraft:walk_one_cm": 1433,
+      "minecraft:total_world_time": 8142,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 44,
+      "minecraft:play_time": 4579,
+      "minecraft:jump": 3,
+      "minecraft:time_since_death": 4579,
+      "minecraft:aviate_one_cm": 386559
     }
   },
   "DataVersion": 4671

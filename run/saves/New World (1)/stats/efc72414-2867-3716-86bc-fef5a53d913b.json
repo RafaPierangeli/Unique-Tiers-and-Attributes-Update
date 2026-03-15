@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:zombie": 33
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 4871,
+      "minecraft:walk_one_cm": 7570,
+      "minecraft:leave_game": 1,
+      "minecraft:mob_kills": 34,
+      "minecraft:damage_taken": 19,
+      "minecraft:play_time": 4871,
+      "minecraft:damage_dealt": 6174,
+      "minecraft:jump": 2,
+      "minecraft:time_since_death": 4871,
+      "minecraft:aviate_one_cm": 794252,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 767,
+      "minecraft:open_chest": 1,
+      "minecraft:total_world_time": 4890,
+      "minecraft:fly_one_cm": 27
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:netherite_sword": 67,
+      "minecraft:zombie_spawn_egg": 30,
+      "minecraft:firework_rocket": 3
+    }
+  },
+  "DataVersion": 4671
+}

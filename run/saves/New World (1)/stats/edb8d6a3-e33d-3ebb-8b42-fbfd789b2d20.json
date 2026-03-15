@@ -1,13 +1,35 @@
 {
   "stats": {
+    "minecraft:used": {
+      "minecraft:firework_rocket": 43
+    },
+    "minecraft:picked_up": {
+      "minecraft:diamond_chestplate": 1,
+      "minecraft:phantom_membrane": 13,
+      "minecraft:firework_rocket": 21,
+      "minecraft:shield": 1,
+      "minecraft:diamond_helmet": 1,
+      "minecraft:warden_spawn_egg": 1,
+      "minecraft:amethyst_shard": 23,
+      "minecraft:elytra": 1,
+      "minecraft:netherite_sword": 1
+    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 931,
-      "minecraft:walk_one_cm": 342,
-      "minecraft:total_world_time": 6908,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 931,
-      "minecraft:jump": 1,
-      "minecraft:time_since_death": 931
+      "minecraft:time_since_rest": 908,
+      "minecraft:walk_one_cm": 9600,
+      "minecraft:leave_game": 2,
+      "minecraft:damage_taken": 216,
+      "minecraft:play_time": 5517,
+      "minecraft:jump": 4,
+      "minecraft:time_since_death": 880,
+      "minecraft:aviate_one_cm": 71262,
+      "minecraft:open_enderchest": 2,
+      "minecraft:sprint_one_cm": 4687,
+      "minecraft:open_chest": 3,
+      "minecraft:fall_one_cm": 2105,
+      "minecraft:total_world_time": 11560,
+      "minecraft:fly_one_cm": 1861,
+      "minecraft:deaths": 1
     }
   },
   "DataVersion": 4671

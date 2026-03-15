@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 24125,
+      "minecraft:walk_one_cm": 23159,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 587,
+      "minecraft:play_time": 24125,
+      "minecraft:jump": 18,
+      "minecraft:time_since_death": 24125,
+      "minecraft:drop": 1,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 6531,
+      "minecraft:total_world_time": 25476,
+      "minecraft:fly_one_cm": 2370,
+      "minecraft:interact_with_anvil": 3,
+      "minecraft:walk_on_water_one_cm": 1650,
+      "minecraft:sneak_time": 2,
+      "minecraft:fish_caught": 38
+    },
+    "minecraft:picked_up": {
+      "minecraft:enchanted_book": 1,
+      "minecraft:name_tag": 1,
+      "minecraft:salmon": 10,
+      "minecraft:cod": 20,
+      "minecraft:pufferfish": 8,
+      "minecraft:saddle": 1
+    },
+    "minecraft:used": {
+      "minecraft:fishing_rod": 86
+    },
+    "minecraft:dropped": {
+      "minecraft:fishing_rod": 1
+    }
+  },
+  "DataVersion": 4671
+}

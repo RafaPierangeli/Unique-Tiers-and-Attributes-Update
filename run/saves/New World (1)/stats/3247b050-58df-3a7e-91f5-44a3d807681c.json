@@ -1,0 +1,24 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:firework_rocket": 46
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3220,
+      "minecraft:walk_one_cm": 2033,
+      "minecraft:leave_game": 1,
+      "minecraft:damage_taken": 173,
+      "minecraft:play_time": 3220,
+      "minecraft:jump": 6,
+      "minecraft:time_since_death": 3220,
+      "minecraft:aviate_one_cm": 204416,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 2682,
+      "minecraft:fall_one_cm": 900,
+      "minecraft:total_world_time": 3240,
+      "minecraft:fly_one_cm": 973
+    }
+  },
+  "DataVersion": 4671
+}

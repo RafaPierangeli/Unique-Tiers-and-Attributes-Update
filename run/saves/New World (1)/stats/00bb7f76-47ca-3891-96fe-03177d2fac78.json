@@ -1,27 +1,39 @@
 {
   "stats": {
-    "minecraft:killed": {
-      "minecraft:warden": 2,
-      "minecraft:hoglin": 5,
-      "minecraft:zoglin": 1
-    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 6773,
-      "minecraft:walk_one_cm": 805,
-      "minecraft:total_world_time": 7817,
-      "minecraft:leave_game": 1,
-      "minecraft:mob_kills": 8,
-      "minecraft:damage_taken": 5,
-      "minecraft:play_time": 6773,
-      "minecraft:damage_dealt": 12380,
-      "minecraft:jump": 9,
-      "minecraft:time_since_death": 6773
+      "minecraft:time_since_rest": 2934,
+      "minecraft:walk_one_cm": 6061,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 51,
+      "minecraft:damage_taken": 1383,
+      "minecraft:damage_dealt": 20975,
+      "minecraft:play_time": 13659,
+      "minecraft:jump": 15,
+      "minecraft:time_since_death": 2889,
+      "minecraft:aviate_one_cm": 507402,
+      "minecraft:total_world_time": 14791,
+      "minecraft:fly_one_cm": 2895,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:deaths": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:nether_star": 44,
+      "minecraft:netherite_sword": 1
     },
     "minecraft:used": {
       "minecraft:hoglin_spawn_egg": 6,
-      "minecraft:warden_spawn_egg": 2,
+      "minecraft:golden_apple": 1,
       "minecraft:cooked_beef": 1,
-      "minecraft:netherite_sword": 38
+      "minecraft:warden_spawn_egg": 2,
+      "minecraft:netherite_sword": 129,
+      "minecraft:zombie_spawn_egg": 36,
+      "minecraft:firework_rocket": 30
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 43,
+      "minecraft:warden": 2,
+      "minecraft:hoglin": 5,
+      "minecraft:zoglin": 1
     }
   },
   "DataVersion": 4671

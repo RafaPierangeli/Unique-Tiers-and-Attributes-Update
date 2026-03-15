@@ -251,12 +251,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/shoot_arrow": {
-    "criteria": {
-      "shot_arrow": "2026-03-11 17:04:35 -0300"
-    },
-    "done": true
-  },
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2026-03-11 17:03:20 -0300"
@@ -329,12 +323,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/kill_all_mobs": {
-    "criteria": {
-      "minecraft:zombie": "2026-03-11 17:05:27 -0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/combat/diamond_spear": {
     "criteria": {
       "has_diamond": "2026-03-11 17:03:20 -0300"
@@ -380,12 +368,6 @@
   "minecraft:recipes/decorations/candle": {
     "criteria": {
       "has_string": "2026-03-11 17:03:20 -0300"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/root": {
-    "criteria": {
-      "consumed_item": "2026-03-11 17:03:49 -0300"
     },
     "done": true
   },
@@ -671,12 +653,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_something": "2026-03-11 17:05:27 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
       "has_string": "2026-03-11 17:03:20 -0300"
@@ -725,20 +701,6 @@
     },
     "done": true
   },
-  "minecraft:adventure/kill_a_mob": {
-    "criteria": {
-      "minecraft:zombie": "2026-03-11 17:05:27 -0300"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:old_growth_birch_forest": "2026-03-11 17:03:36 -0300",
-      "minecraft:river": "2026-03-11 17:03:21 -0300",
-      "minecraft:birch_forest": "2026-03-11 17:06:41 -0300"
-    },
-    "done": false
-  },
   "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
     "criteria": {
       "has_cobblestone": "2026-03-11 17:03:20 -0300"
@@ -768,12 +730,6 @@
       "has_gunpowder": "2026-03-11 17:03:20 -0300"
     },
     "done": true
-  },
-  "minecraft:husbandry/balanced_diet": {
-    "criteria": {
-      "golden_apple": "2026-03-11 17:03:49 -0300"
-    },
-    "done": false
   },
   "minecraft:recipes/tools/netherite_pickaxe_smithing": {
     "criteria": {
@@ -868,6 +824,64 @@
   "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
     "criteria": {
       "has_iron_ingot": "2026-03-11 17:03:20 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_birch_forest": "2026-03-11 17:03:36 -0300",
+      "minecraft:dark_forest": "2026-03-14 12:46:43 -0300",
+      "minecraft:forest": "2026-03-14 12:47:04 -0300",
+      "minecraft:river": "2026-03-11 17:03:21 -0300",
+      "minecraft:birch_forest": "2026-03-11 17:06:41 -0300"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2026-03-11 17:03:49 -0300"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "golden_apple": "2026-03-11 17:03:49 -0300"
+    },
+    "done": false
+  },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2026-03-11 17:04:35 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:zombie": "2026-03-11 17:05:27 -0300"
+    },
+    "done": false
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-03-11 17:05:27 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie": "2026-03-11 17:05:27 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2026-03-14 12:46:28 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/recovery_compass": {
+    "criteria": {
+      "has_echo_shard": "2026-03-14 12:46:28 -0300"
     },
     "done": true
   },

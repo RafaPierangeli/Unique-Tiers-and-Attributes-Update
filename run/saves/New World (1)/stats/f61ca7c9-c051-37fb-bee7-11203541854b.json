@@ -1,11 +1,24 @@
 {
   "stats": {
+    "minecraft:picked_up": {
+      "minecraft:pufferfish": 1
+    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 1046,
-      "minecraft:total_world_time": 1070,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 1046,
-      "minecraft:time_since_death": 1046
+      "minecraft:sprint_one_cm": 3900,
+      "minecraft:open_chest": 1,
+      "minecraft:time_since_rest": 2512,
+      "minecraft:fall_one_cm": 225,
+      "minecraft:walk_one_cm": 450,
+      "minecraft:total_world_time": 2561,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 482,
+      "minecraft:play_time": 2512,
+      "minecraft:jump": 1,
+      "minecraft:fish_caught": 1,
+      "minecraft:time_since_death": 2512
+    },
+    "minecraft:used": {
+      "minecraft:fishing_rod": 4
     }
   },
   "DataVersion": 4671

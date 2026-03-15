@@ -26,7 +26,7 @@ public abstract class FireworkRocketItemMixin {
             ItemStack elytra = player.getEquippedStack(EquipmentSlot.CHEST);
             if (elytra.isOf(Items.ELYTRA)) {
                 // Vendaval: Impulso com foguete
-                ARPGXpHelper.grantXp(elytra, "gale", 3, true, 1, player);
+                ARPGXpHelper.grantXp(elytra, "gale", 3, true, 3, player);
             }
         }
     }

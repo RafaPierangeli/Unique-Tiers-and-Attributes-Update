@@ -60,8 +60,9 @@ public class ARPGAffinityLogic {
                     case "titan_heart", "unyielding_vigor", "vital_guard", "winds_of_life" -> 5.0;
                     case "bulwark", "solid_foundation", "wall" -> 6.0;
                     case "mountain_walker" -> 0.9;
-                    case "midas_touch", "hidden_treasures", "demeter_blessing", "soil_master", "bountiful_harvest", "elite_shooter" -> 12.5;
-                    case "oxygen", "luck_of_sea" -> 10.0;
+                    case "gale" -> 25.0;
+                    case "midas_touch", "hidden_treasures", "demeter_blessing", "soil_master", "bountiful_harvest", "elite_shooter", "lure", "luck_of_sea" -> 12.5;
+                    case "oxygen" -> 10.0;
                     case "long_reach", "far_sight", "earth_reach" -> 2.0;
                     case "spiked_vengeance" -> 5.0;
                     case "swift_shadows" -> 37.5;
@@ -74,19 +75,19 @@ public class ARPGAffinityLogic {
         double baseValue = switch (affinity) {
             case "brute_force", "retaliation", "focused_mind", "spiked_vengeance", "heavy_shot" -> (level * 0.25);
             case "hard_labor", "voracious_digger" -> (level * 0.5);
-            case "dancing_blade", "acrobat", "mountain_walker", "long_strides", "immovable", "gale",  "eagle_eye" -> (level * 0.02);
+            case "dancing_blade", "acrobat", "mountain_walker", "long_strides", "immovable",  "eagle_eye" -> (level * 0.02);
             case "" -> (level * 0.501);
-            case "aerial_boost" -> (level * 1.0);
+            case "aerial_boost", "gale" -> (level * 1.0);
             case "guiding_winds", "light_steps" -> (level * 0.001); // Velocidade de movimento é muito sensível
-            case "true_strike", "ancient_wisdom", "life_blessing", "oxygen", "quick_draw", "luck_of_sea" -> (level * 1.0);
-            case "midas_touch", "hidden_treasures", "demeter_blessing", "bountiful_harvest", "soil_master", "elite_shooter" -> (level * 0.7);
+            case "true_strike", "ancient_wisdom", "life_blessing", "oxygen", "quick_draw" -> (level * 1.0);
+            case "midas_touch", "hidden_treasures", "demeter_blessing", "bountiful_harvest", "soil_master", "elite_shooter", "lure", "luck_of_sea" -> (level * 0.7);
             // 🌟 1. Deixe o Vigor Inabalável (Fome) sozinho no 0.5
             case "unyielding_vigor" -> (level * 0.5);
             // 🌟 2. Crie uma nova linha para a Sede de Sangue com 0.1 (Máximo de 10% no Nível 100 base)
             case "bloodthirst" -> (level * 0.2);
             case "titan_heart", "vital_guard", "winds_of_life", "wayfarer", "swift_shadows" -> (level * 0.5);
             case "bulwark", "solid_foundation", "wall" -> (level * 0.1);
-            case "aquatic", "lure" -> (level * 0.05);
+            case "aquatic" -> (level * 0.05);
             case "long_reach", "far_sight", "earth_reach" -> (level * 0.1);
             default -> 0.0;
         };
@@ -103,7 +104,7 @@ public class ARPGAffinityLogic {
         }
 
         boolean isPercentage = switch (affinity) {
-            case "true_strike", "ancient_wisdom", "life_blessing", "bloodthirst", "unyielding_vigor", "aerial_boost", "wayfarer", "midas_touch", "hidden_treasures", "demeter_blessing", "soil_master", "quick_draw", "bountiful_harvest", "elite_shooter" -> true;
+            case "true_strike", "ancient_wisdom", "life_blessing", "bloodthirst", "unyielding_vigor", "aerial_boost", "wayfarer", "midas_touch", "hidden_treasures", "demeter_blessing", "soil_master", "quick_draw", "bountiful_harvest", "gale", "luck_of_sea", "lure", "elite_shooter" -> true;
             default -> false;
         };
 

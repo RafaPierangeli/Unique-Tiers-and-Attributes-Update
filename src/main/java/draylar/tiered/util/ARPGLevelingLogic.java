@@ -31,7 +31,7 @@ public class ARPGLevelingLogic {
         int baseForLevel = (int) Math.round(getBaseXp() * Math.pow(1.0 + getXpMultiplier(), currentLevel));
 
         // 🌟 CORREÇÃO DA CURVA: Agora multiplica por 1.5 a cada prestígio (em vez de dobrar)
-        double prestigeMultiplier = Math.pow(1.5, prestige);
+        double prestigeMultiplier = Math.pow(1.2, prestige);
 
         // Multiplica e arredonda para o número inteiro mais próximo
         return (int) Math.round(baseForLevel * prestigeMultiplier);

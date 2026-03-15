@@ -45,8 +45,8 @@
 	"xpMultiplierEmerald": 15,
 	"xpMultiplierNetherite": 20,
 	"xpBaseTakeDamage": 1,
-	"xpBaseFishing": 5,
-	"xpBaseCastRod": 15,
+	"xpBaseFishing": 5000,
+	"xpBaseCastRod": 5000,
 	"xpBaseSwim": 1,
 	"xpBaseSubmerge": 1
 }
