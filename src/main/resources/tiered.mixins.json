@@ -21,6 +21,7 @@
     "LivingEntityRangedMixin",
     "ProjectileEntityMixin",
     "PlayerElytraMixin",
+    "AnvilScreenHandlerMixin",
 
 
     "PlayerInventoryMixin",

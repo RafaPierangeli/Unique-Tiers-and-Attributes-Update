@@ -1,30 +1,24 @@
 {
   "stats": {
-    "minecraft:crafted": {
-      "minecraft:chainmail_boots": 2,
-      "minecraft:chainmail_leggings": 9,
-      "minecraft:iron_chestplate": 14,
-      "minecraft:air": 0,
-      "minecraft:iron_leggings": 1
-    },
-    "minecraft:used": {
-      "minecraft:villager_spawn_egg": 1,
-      "minecraft:blast_furnace": 1
+    "minecraft:picked_up": {
+      "minecraft:diamond_pickaxe": 4
     },
     "minecraft:custom": {
       "minecraft:traded_with_villager": 26,
       "minecraft:talked_to_villager": 6,
-      "minecraft:time_since_rest": 6901,
+      "minecraft:time_since_rest": 7372,
       "minecraft:walk_one_cm": 7214,
-      "minecraft:total_world_time": 7505,
-      "minecraft:leave_game": 2,
-      "minecraft:play_time": 6901,
-      "minecraft:time_since_death": 6901,
+      "minecraft:total_world_time": 8009,
+      "minecraft:leave_game": 3,
+      "minecraft:interact_with_anvil": 2,
+      "minecraft:play_time": 7372,
+      "minecraft:time_since_death": 7372,
       "minecraft:drop": 29,
       "minecraft:open_enderchest": 1
     },
-    "minecraft:picked_up": {
-      "minecraft:diamond_pickaxe": 4
+    "minecraft:used": {
+      "minecraft:villager_spawn_egg": 1,
+      "minecraft:blast_furnace": 1
     },
     "minecraft:dropped": {
       "minecraft:cobblestone": 1,
@@ -32,6 +26,13 @@
       "minecraft:iron_chestplate": 14,
       "minecraft:blast_furnace": 1,
       "minecraft:diamond_pickaxe": 4
+    },
+    "minecraft:crafted": {
+      "minecraft:chainmail_boots": 2,
+      "minecraft:chainmail_leggings": 9,
+      "minecraft:iron_chestplate": 14,
+      "minecraft:air": 0,
+      "minecraft:iron_leggings": 1
     }
   },
   "DataVersion": 4671

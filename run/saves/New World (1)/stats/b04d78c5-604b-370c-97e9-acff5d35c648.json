@@ -1,0 +1,19 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "tiered:attribute_scroll": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 59,
+      "minecraft:time_since_rest": 615,
+      "minecraft:walk_one_cm": 46,
+      "minecraft:total_world_time": 640,
+      "minecraft:leave_game": 1,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:play_time": 615,
+      "minecraft:time_since_death": 615,
+      "minecraft:drop": 1
+    }
+  },
+  "DataVersion": 4671
+}
