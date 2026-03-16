@@ -285,6 +285,8 @@
 	"text.autoconfig.tiered.option.xpBaseSubmerge": "XP Base: Submerso (por seg)",
 
 	"container.reforge": "Reforjar equipamento",
+	"block.tiered.reforge_magic_block": "Reforja Magica",
+	"container.tiered.magic_reforge": "Reforja Magica de Pergaminhos",
 	"screen.tiered.reforging_screen": "Reforjar equipamento",
 	"screen.tiered.reforge_ingredient": "Requer ingrediente:",
 	"screen.tiered.reforge_damaged": "Requer durabilidade completa",
@@ -574,6 +576,7 @@
 
 	"item.tiered.magic_piercer": "Furador Magico",
 	"item.tiered.magic_extractor": "Extrator Magico",
+	"attribute.name.empty": "Slot Vazio",
 
 
 	"item.tiered.attribute_scroll": "Pergaminho de Atributo",
@@ -583,5 +586,33 @@
 	"item.tiered.attribute_scroll.epic": "Pergaminho de Atributo Épico de %s",
 	"item.tiered.attribute_scroll.legendary": "Pergaminho de Atributo Lendário de %s",
 	"item.tiered.attribute_scroll.unique": "Pergaminho de Atributo Único de %s",
-	"item.tiered.attribute_scroll.mythic": "Pergaminho de Atributo Mítico de %s"
+	"item.tiered.attribute_scroll.mythic": "Pergaminho de Atributo Mítico de %s",
+
+	"tiered.magic_station.pierce.success": "Furação Bem Sucedida!",
+	"tiered.magic_station.pierce.fail": "Furação Falhou!",
+	"tiered.magic_station.insert.success": "Inserção Bem Sucedida!",
+	"tiered.magic_station.insert.fail": "Inserção Falhou!",
+	"tiered.magic_station.extract.success": "Extração Bem Sucedida!",
+	"tiered.magic_station.extract.fail": "Extração Falhou!",
+
+	"tiered.magic_station.insert_equipment": "Insira um Equipamento",
+	"tiered.magic_station.incompatible_item": "Item incompatível",
+	"tiered.magic_station.mode.pierce": "Modo: Furação",
+	"tiered.magic_station.max_slots": "Máximo de furos atingido!",
+	"tiered.magic_station.requires_prestige": "O 3º slot requer Prestígio 3.",
+	"tiered.magic_station.mode.insert": "Modo: Inserção",
+	"tiered.magic_station.insert_scrolls": "Insira pergaminhos nos slots abaixo.",
+	"tiered.magic_station.mode.extract": "Modo: Extração",
+	"tiered.magic_station.click_to_extract": "Clique em um pergaminho abaixo para extrair.",
+	"tiered.magic_station.extracting_slot": "Extraindo slot %s",
+	"tiered.magic_station.insert_magic_item": "Insira um item mágico no slot central:",
+	"tiered.magic_station.item.piercer": "- Perfurador Mágico (Furar)",
+	"tiered.magic_station.item.amethyst": "- Fragmento de Ametista (Inserir)",
+	"tiered.magic_station.item.extractor": "- Extrator Mágico (Remover)",
+	"tiered.magic_station.requires": "Requer: ",
+	"tiered.magic_station.success_chance": "Chance de Sucesso: %s%%",
+	"tiered.magic_station.cost_xp": "Custo: %s XP",
+	"tiered.magic_station.empty_slot_selected": "Selecione um slot com pergaminho!",
+	"tiered.magic_station.luck_bonus.title": "Bônus de Sorte",
+	"tiered.magic_station.luck_bonus.desc": "+%s%% de Chance de Sucesso"
 }

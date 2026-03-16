@@ -1,9 +1,5 @@
 {
   "stats": {
-    "minecraft:killed": {
-      "minecraft:skeleton": 1,
-      "minecraft:spider": 2
-    },
     "minecraft:picked_up": {
       "minecraft:quartz": 3,
       "minecraft:wildflowers": 3,
@@ -18,19 +14,6 @@
       "minecraft:diamond": 6,
       "minecraft:lapis_lazuli": 39,
       "minecraft:emerald": 6
-    },
-    "minecraft:custom": {
-      "minecraft:sprint_one_cm": 2639,
-      "minecraft:time_since_rest": 13061,
-      "minecraft:walk_one_cm": 76435,
-      "minecraft:total_world_time": 21146,
-      "minecraft:leave_game": 1,
-      "minecraft:fly_one_cm": 2804,
-      "minecraft:mob_kills": 3,
-      "minecraft:play_time": 13061,
-      "minecraft:damage_dealt": 280,
-      "minecraft:jump": 28,
-      "minecraft:time_since_death": 13061
     },
     "minecraft:used": {
       "minecraft:deepslate_coal_ore": 10,
@@ -56,6 +39,23 @@
       "minecraft:emerald_ore": 10,
       "minecraft:iron_ore": 10,
       "minecraft:deepslate_emerald_ore": 14
+    },
+    "minecraft:killed": {
+      "minecraft:skeleton": 1,
+      "minecraft:spider": 2
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 2639,
+      "minecraft:time_since_rest": 17255,
+      "minecraft:walk_one_cm": 76764,
+      "minecraft:total_world_time": 27669,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 2804,
+      "minecraft:mob_kills": 3,
+      "minecraft:play_time": 17255,
+      "minecraft:damage_dealt": 280,
+      "minecraft:jump": 28,
+      "minecraft:time_since_death": 17255
     },
     "minecraft:mined": {
       "minecraft:deepslate_coal_ore": 1,

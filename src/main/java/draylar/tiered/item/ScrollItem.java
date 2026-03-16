@@ -48,12 +48,13 @@ public class ScrollItem extends Item {
     // 🎨 Retorna a cor ARGB baseada no Tier (Para a Layer 0 - O Papel)
     public static int getTierHexColor(String tier) {
         return switch (tier.toLowerCase()) {
-            case "common" -> 0xFFFFFFFF; // Branco
+            // 🌟 Trocamos o Branco por um Bege de Pergaminho Antigo!
+            case "common" -> 0xFFEAD1A7; // Bege Claro/Papiro
             case "uncommon" -> 0xFF55FF55; // Verde
             case "rare" -> 0xFF5555FF; // Azul
             case "epic" -> 0xFFAA00AA; // Roxo
             case "legendary" -> 0xFFFFAA00; // Dourado
-            case "unique" -> 0xFFFF55FF; // Roxo
+            case "unique" -> 0xFFFF55FF; // Roxo claro
             case "mythic" -> 0xFF55FFFF; // Aqua
             default -> 0xFFAAAAAA; // Cinza (Fallback)
         };

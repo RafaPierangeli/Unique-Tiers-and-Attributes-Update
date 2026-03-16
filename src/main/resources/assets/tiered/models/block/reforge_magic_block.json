@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "tiered:block/reforge_magic_block_top",
+    "east": "tiered:block/reforge_magic_block",
+    "west": "tiered:block/reforge_magic_block",
+    "north": "tiered:block/reforge_magic_block",
+    "down": "tiered:block/reforge_magic_block",
+    "south": "tiered:block/reforge_magic_block",
+    "particle": "tiered:block/reforge_magic_block"
+  }
+}
+
+

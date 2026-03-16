@@ -189,28 +189,70 @@ public class TieredTooltipCallback {
                         lines.add(Text.empty());
 
                         // =================================================================
-                        // 🌟 LÓGICA DOS SLOTS (ATUALIZADA PARA SCROLLDATA)
+                        // 🌟 LÓGICA DOS SLOTS (ATUALIZADA COM EXTRATOR DE ÍCONES)
                         // =================================================================
                         if (arpgData.maxSlots() > 0) {
-                            lines.add(Text.translatable("tiered.arpg.sockets.count", arpgData.slots().size(), arpgData.maxSlots()).formatted(Formatting.GRAY));
+
+                            // Conta quantos pergaminhos REAIS estão equipados
+                            int filledCount = 0;
+                            if (arpgData.slots() != null) {
+                                for (ScrollData s : arpgData.slots()) {
+                                    if (s != null && !s.attributeId().equals("empty")) {
+                                        filledCount++;
+                                    }
+                                }
+                            }
+
+                            lines.add(Text.translatable("tiered.arpg.sockets.count", filledCount, arpgData.maxSlots()).formatted(Formatting.GRAY));
 
                             for (int i = 0; i < arpgData.maxSlots(); i++) {
-                                if (i < arpgData.slots().size()) {
-                                    // 🌟 Slot Cheio: Lê o ScrollData
+
+                                if (arpgData.slots() != null && i < arpgData.slots().size() && !arpgData.slots().get(i).attributeId().equals("empty")) {
+
                                     ScrollData scroll = arpgData.slots().get(i);
-
-                                    // Formata o valor (tira o .0 se for inteiro)
                                     String valueStr = (scroll.value() % 1 == 0) ? String.valueOf((int)scroll.value()) : String.valueOf(scroll.value());
+                                    Formatting tierColor = draylar.tiered.item.ScrollItem.getTierColor(scroll.tier());
 
-                                    // Pega a cor baseada no tier do pergaminho
-                                    Formatting tierColor = ScrollItem.getTierColor(scroll.tier());
+                                    // 🌟 A MÁGICA DO ÍCONE: Passa a chave pelo seu extrator!
+                                    String attrKey = "attribute.name." + scroll.attributeId().replace(":", ".");
+                                    String[] iconAndName = extractIconAndName(attrKey);
+                                    String icon = iconAndName[0];
+                                    String nameWithoutIcon = iconAndName[1];
 
-                                    // Monta a linha: [✦] +X NomeDoAtributo (Tudo na cor do Tier)
-                                    lines.add(Text.literal(" [✦] +" + valueStr + " ")
-                                            .append(Text.translatable("attribute.name." + scroll.attributeId().replace(":", ".")))
-                                            .formatted(tierColor));
+                                    // 🌟 VERIFICA SE É PORCENTAGEM
+                                    net.minecraft.util.Identifier attrId = net.minecraft.util.Identifier.tryParse(scroll.attributeId());
+                                    String path = attrId != null ? attrId.getPath() : "";
+
+                                    boolean isPercentage = path.equals("movement_speed") ||
+                                            path.equals("jump_strength") ||
+                                            path.equals("mining_efficiency") ||
+                                            path.equals("critical_chance") ||
+                                            path.equals("knockback_resistance") ||
+                                            path.equals("movement_efficiency") ||
+                                            path.equals("sneaking_speed");
+
+                                    String suffix = isPercentage ? "%" : "";
+
+                                    // 1. Começa com uma linha vazia
+                                    net.minecraft.text.MutableText scrollLine = Text.empty();
+
+                                    // 2. Adiciona o nosso ícone de pergaminho (Na cor do Tier)
+                                    scrollLine.append(Text.literal(" [✦] ").formatted(tierColor));
+
+                                    // 3. Se tiver ícone do Resource Pack, adiciona forçando a cor BRANCA!
+                                    if (!icon.isEmpty()) {
+                                        scrollLine.append(Text.literal(icon + " ").formatted(Formatting.WHITE));
+                                    }
+
+                                    // 4. Adiciona o valor (+7%) e o nome limpo na cor do Tier
+                                    scrollLine.append(Text.literal("+" + valueStr + suffix + " ").formatted(tierColor))
+                                            .append(Text.literal(nameWithoutIcon).formatted(tierColor));
+
+                                    // Adiciona a linha finalizada na Tooltip
+                                    lines.add(scrollLine);
+
                                 } else {
-                                    // 🌟 Slot Vazio
+                                    // Slot Vazio
                                     lines.add(Text.literal(" [  ] ").formatted(Formatting.DARK_GRAY)
                                             .append(Text.translatable("tiered.arpg.sockets.empty").formatted(Formatting.DARK_GRAY)));
                                 }
@@ -335,7 +377,7 @@ public class TieredTooltipCallback {
                             Identifier modId = modifier.id();
                             RegistryEntry<EntityAttribute> attributeEntry = entry.attribute();
 
-                            if (modId.getNamespace().equals("tiered") && !modId.getPath().startsWith("arpg_") && !drawnModifiers.contains(modId)) {
+                            if (modId.getNamespace().equals("tiered") && !modId.getPath().startsWith("arpg_") && !modId.getPath().startsWith("scroll_") && !drawnModifiers.contains(modId)) {
 
                                 if (!addedHeader) {
                                     lines.add(Text.empty());

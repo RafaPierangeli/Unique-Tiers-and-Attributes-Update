@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tiered:block/reforge_magic_block"
+    }
+  }
+}

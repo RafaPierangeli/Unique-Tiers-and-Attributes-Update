@@ -9,6 +9,7 @@ import draylar.tiered.data.ReforgeDataLoader;
 import draylar.tiered.data.TieredDataComponents;
 import draylar.tiered.item.ItemsRegisters;
 import draylar.tiered.network.TieredServerPacket;
+import draylar.tiered.reforge.MagicStationScreenHandler;
 import draylar.tiered.reforge.ReforgeScreenHandler;
 import draylar.tiered.util.AoEMiningHelper;
 import net.fabricmc.api.ModInitializer;
@@ -51,6 +52,8 @@ public class Tiered implements ModInitializer {
     public static final ReforgeDataLoader REFORGE_DATA_LOADER = new ReforgeDataLoader();
 
     public static ScreenHandlerType<ReforgeScreenHandler> REFORGE_SCREEN_HANDLER_TYPE;
+
+    public static ScreenHandlerType<MagicStationScreenHandler> MAGIC_STATION_SCREEN_HANDLER_TYPE;
 
     public static final ComponentType<TierComponent> TIER = registerComponent("tiered:tier", builder -> builder.codec(TierComponent.CODEC).packetCodec(TierComponent.PACKET_CODEC));
 
@@ -109,6 +112,9 @@ public class Tiered implements ModInitializer {
 
         REFORGE_SCREEN_HANDLER_TYPE = Registry.register(Registries.SCREEN_HANDLER, "tiered:reforge",
                 new ScreenHandlerType<>((syncId, inventory) -> new ReforgeScreenHandler(syncId, inventory, ScreenHandlerContext.EMPTY), FeatureFlags.VANILLA_FEATURES));
+
+        MAGIC_STATION_SCREEN_HANDLER_TYPE = Registry.register(Registries.SCREEN_HANDLER, "tiered:magic_station",
+                new ScreenHandlerType<>((syncId, inventory) -> new MagicStationScreenHandler(syncId, inventory, ScreenHandlerContext.EMPTY), FeatureFlags.VANILLA_FEATURES));
 
         TieredServerPacket.init();
 

@@ -344,6 +344,7 @@
 
 
   "block.tiered.reforge_block": "Reforge",
+  "block.tiered.reforge_magic_block": "Magic Scroll Reforge",
   "screen.tiered.reforge_xp_missing": "Not enough XP (Requires %s points)",
   "screen.tiered.reforge_xp_cost": "Cost: %s XP Points",
   "screen.tiered.reforge_addition": "Missing Catalyst: - Amethyst Shard",
@@ -353,6 +354,7 @@
   "screen.tiered.reforge_unique_locked": "Unique items cannot be reforged!",
   "screen.tiered.reforge_mythic_locked": "Mythic items cannot be reforged!",
   "container.tiered.reforge": "Reforge Table",
+  "container.tiered.magic_reforge": "Magic Scroll Reforge Table",
   "tiered.tooltip.category.global": "All Equipment",
   "tiered.tooltip.category.armor": "Armors",
   "tiered.tooltip.category.sword": "Swords",
@@ -569,6 +571,7 @@
   "item.tiered.magic_piercer": "Magic Piercer",
   "item.tiered.magic_extractor": "Magic Extrator",
   "item.tiered.attribute_scroll": "Attribute Scroll",
+  "attribute.name.empty": "Empty Slot",
 
   "item.tiered.attribute_scroll.common": "Common Attribute Scroll of %s",
   "item.tiered.attribute_scroll.uncommon": "Uncommon Attribute Scroll of %s",
@@ -576,5 +579,33 @@
   "item.tiered.attribute_scroll.epic": "Epic Attribute Scroll of %s",
   "item.tiered.attribute_scroll.legendary": "Legendary Attribute Scroll of %s",
   "item.tiered.attribute_scroll.unique": "Unique Attribute Scroll of %s",
-  "item.tiered.attribute_scroll.mythic": "Mythic Attribute Scroll of %s"
+  "item.tiered.attribute_scroll.mythic": "Mythic Attribute Scroll of %s",
+
+  "tiered.magic_station.pierce.success": "Slot Addition Successful!",
+  "tiered.magic_station.pierce.fail": "Slot Addition Failed!",
+  "tiered.magic_station.insert.success": "Scroll Insertion Successful!",
+  "tiered.magic_station.insert.fail": "Scroll Insertion Failed!",
+  "tiered.magic_station.extract.success": "Scroll Extraction Successful!",
+  "tiered.magic_station.extract.fail": "Scroll Extraction Failed!",
+
+  "tiered.magic_station.insert_equipment": "Insert Equipment",
+  "tiered.magic_station.incompatible_item": "Incompatible Item",
+  "tiered.magic_station.mode.pierce": "Mode: Piercing",
+  "tiered.magic_station.max_slots": "Maximum slots reached!",
+  "tiered.magic_station.requires_prestige": "The 3rd slot requires Prestige 3.",
+  "tiered.magic_station.mode.insert": "Mode: Insertion",
+  "tiered.magic_station.insert_scrolls": "Insert scrolls in the slots below.",
+  "tiered.magic_station.mode.extract": "Mode: Extraction",
+  "tiered.magic_station.click_to_extract": "Click a scroll below to extract.",
+  "tiered.magic_station.extracting_slot": "Extracting slot %s",
+  "tiered.magic_station.insert_magic_item": "Insert a magic item in the center slot:",
+  "tiered.magic_station.item.piercer": "- Magic Piercer (Add Slot)",
+  "tiered.magic_station.item.amethyst": "- Amethyst Shard (Insert Scroll)",
+  "tiered.magic_station.item.extractor": "- Magic Extractor (Remove Scroll)",
+  "tiered.magic_station.requires": "Requires: ",
+  "tiered.magic_station.success_chance": "Success Chance: %s%%",
+  "tiered.magic_station.cost_xp": "Cost: %s XP",
+  "tiered.magic_station.empty_slot_selected": "Select a slot with a scroll!",
+  "tiered.magic_station.luck_bonus.title": "Luck Bonus",
+  "tiered.magic_station.luck_bonus.desc": "+%s%% Success Chance"
 }

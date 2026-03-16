@@ -6,6 +6,7 @@ import draylar.tiered.data.TieredDataComponents;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.item.ItemStack;
@@ -15,56 +16,95 @@ import net.minecraft.util.Identifier;
 
 public class ScrollHelper {
 
-    /**
-     * Lê os pergaminhos equipados na arma e injeta os atributos reais no Minecraft.
-     * Deve ser chamado sempre que um pergaminho for inserido ou removido.
-     */
-    public static void updateWeaponScrollAttributes(ItemStack weapon) {
-        ARPGEquipmentData arpgData = weapon.get(TieredDataComponents.ARPG_DATA);
+    public static void updateWeaponScrollAttributes(ItemStack stack) {
+        ARPGEquipmentData arpgData = stack.get(TieredDataComponents.ARPG_DATA);
+        if (arpgData == null || arpgData.slots() == null) return;
 
-        // Se não tem dados de ARPG, não faz nada
-        if (arpgData == null) return;
+        // 🌟 1. A PROTEÇÃO VANILLA E DA AFINIDADE
+        AttributeModifiersComponent currentModifiers = stack.get(DataComponentTypes.ATTRIBUTE_MODIFIERS);
+        if (currentModifiers == null) {
+            currentModifiers = stack.getItem().getComponents().getOrDefault(DataComponentTypes.ATTRIBUTE_MODIFIERS, AttributeModifiersComponent.DEFAULT);
+        }
 
-        // Pega os modificadores atuais da arma (Dano base, Tiers, etc)
-        AttributeModifiersComponent currentModifiers = weapon.getOrDefault(DataComponentTypes.ATTRIBUTE_MODIFIERS, AttributeModifiersComponent.DEFAULT);
         AttributeModifiersComponent.Builder builder = AttributeModifiersComponent.builder();
 
-        // 1. LIMPEZA: Removemos os atributos antigos de pergaminhos para não acumular infinitamente
+        // 🌟 2. LIMPEZA: Mantém tudo que NÃO for do Scroll (Preserva Vanilla e ARPG Affinity)
         for (AttributeModifiersComponent.Entry entry : currentModifiers.modifiers()) {
             if (!entry.modifier().id().getPath().startsWith("scroll_")) {
-                // Mantém tudo que NÃO for pergaminho (Vanilla e Tiers)
                 builder.add(entry.attribute(), entry.modifier(), entry.slot());
             }
         }
 
-        // 2. INJEÇÃO: Adicionamos os atributos dos pergaminhos atualmente equipados
+        // 🌟 3. A MÁGICA DO SLOT INTELIGENTE
+        EquipmentSlot naturalSlot = EquipmentSlot.MAINHAND; // Padrão para espadas/ferramentas
+
+        // Se o item for "vestível" (Armadura, Elytra, Escudo), pega o slot correto!
+        if (stack.contains(DataComponentTypes.EQUIPPABLE)) {
+            naturalSlot = stack.get(DataComponentTypes.EQUIPPABLE).slot();
+        }
+
+        // Converte para o formato que o Builder exige na 1.21.11
+        AttributeModifierSlot modifierSlot = AttributeModifierSlot.forEquipmentSlot(naturalSlot);
+
+        // 🌟 4. INJEÇÃO DOS PERGAMINHOS
         for (int i = 0; i < arpgData.slots().size(); i++) {
             ScrollData scroll = arpgData.slots().get(i);
 
-            // Tenta converter a String do atributo (ex: "attack_damage") para um Identifier
-            Identifier attrId = Identifier.tryParse(scroll.attributeId());
+            // Ignora buracos vazios
+            if (scroll == null || scroll.attributeId().equals("empty")) continue;
+
+            String attrIdStr = scroll.attributeId();
+            double bonusValue = scroll.value();
+
+            Identifier attrId = Identifier.tryParse(attrIdStr);
             if (attrId == null) continue;
 
-            // Busca o atributo real no registro do jogo
             RegistryEntry<EntityAttribute> attribute = Registries.ATTRIBUTE.getEntry(attrId).orElse(null);
-            if (attribute == null) continue;
+            if (attribute != null) {
+                EntityAttributeModifier.Operation operation = EntityAttributeModifier.Operation.ADD_VALUE;
 
-            // 🌟 O SEGREDO DA TOOLTIP: O ID começa com "arpg_scroll_" para ficar invisível na lista padrão!
-            // Usamos o índice 'i' no nome para garantir que dois pergaminhos de Vida não se sobrescrevam.
-            Identifier modifierId = Identifier.of("tiered", "scroll_" + i + "_" + attrId.getPath());
+                // =====================================================================
+                // 🌟 BALANCEAMENTO DOS PERGAMINHOS (Porcentagem vs Fixo)
+                // =====================================================================
+                String path = attrId.getPath();
 
-            EntityAttributeModifier modifier = new EntityAttributeModifier(
-                    modifierId,
-                    scroll.value(),
-                    EntityAttributeModifier.Operation.ADD_VALUE // Pergaminhos dão status FLAT (ex: +2, +5)
-            );
+                switch (path) {
+                    // 🏃 Multiplicadores de Porcentagem (Dividimos por 100)
+                    case "movement_speed":
+                    case "jump_strength":
+                    case "mining_efficiency":
+                        operation = EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL;
+                        bonusValue = bonusValue / 100.0; // Ex: +6 vira +0.06 (6% a mais)
+                        break;
 
-            // Adiciona o bônus para quando o item estiver na Mão Principal
-            // Se você quiser que armaduras recebam pergaminhos no futuro, precisaremos de uma lógica para checar o tipo do item aqui.
-            builder.add(attribute, modifier, AttributeModifierSlot.MAINHAND);
+                    // 🎯 Valores Fixos que representam Porcentagem na UI (Dividimos por 100)
+                    case "critical_chance":
+                    case "knockback_resistance":
+                    case "movement_efficiency":
+                    case "sneaking_speed":
+                        operation = EntityAttributeModifier.Operation.ADD_VALUE;
+                        bonusValue = bonusValue / 100.0;
+                        break;
+
+                    // ⚔️ Valores Fixos Normais (Vida, Dano, Armadura, etc)
+                    default:
+                        operation = EntityAttributeModifier.Operation.ADD_VALUE;
+                        break;
+                }
+
+                // 🌟 CRÍTICO: Cria um ID único usando o índice do slot (i).
+                // Isso permite que o jogador coloque 2 pergaminhos de Vida na mesma arma e os dois funcionem!
+                Identifier modifierId = Identifier.of("tiered", "scroll_slot_" + i + "_" + path);
+                EntityAttributeModifier modifier = new EntityAttributeModifier(modifierId, bonusValue, operation);
+
+                builder.add(attribute, modifier, modifierSlot);
+
+                // Debug no console para você ter certeza de que aplicou certo
+                System.out.println("[SCROLL DEBUG] Injetado +" + bonusValue + " (" + operation.name() + ") de " + path + " no slot " + modifierSlot.asString() + "!");
+            }
         }
 
-        // 3. SALVAMENTO: Aplica os novos modificadores de volta na arma
-        weapon.set(DataComponentTypes.ATTRIBUTE_MODIFIERS, builder.build());
+        // 🌟 5. SALVA na arma
+        stack.set(DataComponentTypes.ATTRIBUTE_MODIFIERS, builder.build());
     }
 }

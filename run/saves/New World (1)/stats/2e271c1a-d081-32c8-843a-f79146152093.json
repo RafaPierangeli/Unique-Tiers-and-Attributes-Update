@@ -1,16 +1,7 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:sprint_one_cm": 282,
-      "minecraft:time_since_rest": 7362,
-      "minecraft:walk_one_cm": 6590,
-      "minecraft:total_world_time": 7425,
-      "minecraft:leave_game": 1,
-      "minecraft:mob_kills": 21,
-      "minecraft:play_time": 7362,
-      "minecraft:damage_dealt": 4200,
-      "minecraft:jump": 1,
-      "minecraft:time_since_death": 7362
+    "minecraft:mined": {
+      "minecraft:spruce_fence": 1
     },
     "minecraft:killed": {
       "minecraft:wither_skeleton": 21
@@ -22,13 +13,28 @@
       "minecraft:spruce_fence": 1,
       "minecraft:bone": 11
     },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 3381,
+      "minecraft:time_since_rest": 12364,
+      "minecraft:walk_one_cm": 15195,
+      "minecraft:total_world_time": 12447,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 9678,
+      "minecraft:mob_kills": 21,
+      "minecraft:play_time": 12364,
+      "minecraft:damage_dealt": 4200,
+      "minecraft:jump": 11,
+      "minecraft:time_since_death": 12364,
+      "minecraft:drop": 1
+    },
     "minecraft:used": {
+      "minecraft:sculk_catalyst": 1,
       "minecraft:spruce_fence": 1,
       "minecraft:golden_sword": 33,
       "minecraft:wither_skeleton_spawn_egg": 21
     },
-    "minecraft:mined": {
-      "minecraft:spruce_fence": 1
+    "minecraft:dropped": {
+      "minecraft:sculk_catalyst": 1
     }
   },
   "DataVersion": 4671

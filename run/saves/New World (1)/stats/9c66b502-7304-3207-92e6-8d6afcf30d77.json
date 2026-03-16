@@ -12,12 +12,12 @@
       "minecraft:traded_with_villager": 4,
       "minecraft:sprint_one_cm": 561,
       "minecraft:talked_to_villager": 5,
-      "minecraft:time_since_rest": 4040,
+      "minecraft:time_since_rest": 4410,
       "minecraft:walk_one_cm": 1342,
-      "minecraft:total_world_time": 4400,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 4040,
-      "minecraft:time_since_death": 4040,
+      "minecraft:total_world_time": 4795,
+      "minecraft:leave_game": 2,
+      "minecraft:play_time": 4410,
+      "minecraft:time_since_death": 4410,
       "minecraft:drop": 6
     }
   },

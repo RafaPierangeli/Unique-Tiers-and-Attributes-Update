@@ -5,6 +5,8 @@ import draylar.tiered.client.ScrollAttributeTintSource;
 import draylar.tiered.client.ScrollTierTintSource;
 import draylar.tiered.client.ScrollTooltipCallback;
 import draylar.tiered.network.TieredClientPacket;
+import draylar.tiered.reforge.MagicStationScreen;
+import draylar.tiered.reforge.MagicStationScreenHandler;
 import draylar.tiered.reforge.ReforgeScreen;
 import draylar.tiered.reforge.ReforgeScreenHandler;
 import net.fabricmc.api.ClientModInitializer;
@@ -32,6 +34,7 @@ public class TieredClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         HandledScreens.<ReforgeScreenHandler, ReforgeScreen>register(Tiered.REFORGE_SCREEN_HANDLER_TYPE, ReforgeScreen::new);
+        HandledScreens.<MagicStationScreenHandler, MagicStationScreen>register(Tiered.MAGIC_STATION_SCREEN_HANDLER_TYPE, MagicStationScreen::new);
         TieredClientPacket.init();
         draylar.tiered.client.TieredTooltipCallback.register();
         // 🌟 Registra o Motor de Partículas

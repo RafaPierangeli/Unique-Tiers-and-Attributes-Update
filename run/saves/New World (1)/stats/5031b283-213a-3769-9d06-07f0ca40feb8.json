@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "tiered:reforge_magic_block": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 1683,
+      "minecraft:open_chest": 1,
+      "minecraft:time_since_rest": 8536,
+      "minecraft:walk_one_cm": 5857,
+      "minecraft:total_world_time": 8579,
+      "minecraft:leave_game": 1,
+      "minecraft:fly_one_cm": 515,
+      "minecraft:play_time": 8536,
+      "minecraft:jump": 3,
+      "minecraft:time_since_death": 8536,
+      "minecraft:open_enderchest": 1
+    }
+  },
+  "DataVersion": 4671
+}

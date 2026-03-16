@@ -1,22 +1,22 @@
 {
   "stats": {
-    "minecraft:used": {
-      "tiered:reforge_block": 3
-    },
     "minecraft:custom": {
       "minecraft:talked_to_villager": 5,
-      "minecraft:time_since_rest": 5493,
+      "minecraft:time_since_rest": 8565,
       "minecraft:walk_one_cm": 14385,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 5493,
+      "minecraft:leave_game": 2,
+      "minecraft:play_time": 8565,
       "minecraft:jump": 16,
-      "minecraft:time_since_death": 5493,
+      "minecraft:time_since_death": 8565,
       "minecraft:sprint_one_cm": 4233,
-      "minecraft:total_world_time": 11375,
+      "minecraft:total_world_time": 14483,
       "minecraft:fly_one_cm": 1183,
       "minecraft:interact_with_anvil": 3,
       "minecraft:crouch_one_cm": 456,
       "minecraft:sneak_time": 195
+    },
+    "minecraft:used": {
+      "tiered:reforge_block": 3
     }
   },
   "DataVersion": 4671

@@ -1,18 +1,22 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 1306,
-      "minecraft:walk_one_cm": 48,
-      "minecraft:total_world_time": 1332,
-      "minecraft:leave_game": 2,
-      "minecraft:mob_kills": 4,
-      "minecraft:play_time": 1306,
-      "minecraft:damage_dealt": 1600,
-      "minecraft:jump": 5,
-      "minecraft:time_since_death": 1306
-    },
     "minecraft:killed": {
       "minecraft:hoglin": 4
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 4888,
+      "minecraft:walk_one_cm": 838,
+      "minecraft:leave_game": 3,
+      "minecraft:mob_kills": 4,
+      "minecraft:play_time": 4888,
+      "minecraft:damage_dealt": 1600,
+      "minecraft:jump": 9,
+      "minecraft:time_since_death": 4888,
+      "minecraft:sprint_one_cm": 3108,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 225,
+      "minecraft:total_world_time": 4937,
+      "minecraft:fly_one_cm": 1288
     },
     "minecraft:used": {
       "minecraft:hoglin_spawn_egg": 4,

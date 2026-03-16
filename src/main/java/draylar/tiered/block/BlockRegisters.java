@@ -27,6 +27,16 @@ public class BlockRegisters {
                     .nonOpaque()
             ));
 
+    public static final Block REFORGE_MAGIC_BLOCK = registerBlock("reforge_magic_block",
+            new MagicReforgeBlock(AbstractBlock.Settings //
+                    .create()
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of("tiered","reforge_magic_block")))
+                    .requiresTool()
+                    .strength(1.0F)
+                    .sounds(BlockSoundGroup.SCULK_CATALYST)
+                    .nonOpaque()
+            ));
+
 
 
 
@@ -50,6 +60,7 @@ public class BlockRegisters {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
 
             entries.add(REFORGE_BLOCK);
+            entries.add(REFORGE_MAGIC_BLOCK);
         });
     }
 
