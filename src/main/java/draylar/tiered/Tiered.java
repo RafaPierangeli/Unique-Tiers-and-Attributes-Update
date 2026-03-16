@@ -71,6 +71,10 @@ public class Tiered implements ModInitializer {
         draylar.tiered.util.AoEMiningHelper.registerToggleEvent();
         AoEMiningHelper.registerTillingEvent();
 
+        // 🌟 Registra a injeção de loot dos pergaminhos
+        draylar.tiered.loot.ScrollLootInjector.register();
+        draylar.tiered.loot.ScrollTradeInjector.register();
+
 
         PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
             if (!world.isClient() && player instanceof ServerPlayerEntity serverPlayer) {

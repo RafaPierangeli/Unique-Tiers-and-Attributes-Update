@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    " N ",
+    " O "
+  ],
+  "key": {
+    "E": { "item": "minecraft:quartz" },
+    "N": { "item": "minecraft:iron_ingot" },
+    "O": { "item": "minecraft:blaze_rod" }
+  },
+  "result": {
+    "id": "tiered:magic_piercer",
+    "count": 1
+  }
+}

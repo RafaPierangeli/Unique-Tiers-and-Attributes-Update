@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "D A D",
+    "O O O"
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "A": { "item": "minecraft:amethyst_shard" },
+    "O": { "item": "minecraft:obsidian" }
+  },
+  "result": {
+    "id": "tiered:magic_station",
+    "count": 1
+  }
+}

@@ -87,7 +87,7 @@ public abstract class AnvilScreenHandlerMixin extends ScreenHandler {
                         this.sendContentUpdates();
 
                         ci.cancel();
-                    
+
                     }
                 }
             }

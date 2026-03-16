@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    " D ",
+    " G "
+  ],
+  "key": {
+    "E": { "item": "minecraft:prismarine_crystals" },
+    "D": { "item": "minecraft:diamond" },
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": {
+    "id": "tiered:magic_extractor",
+    "count": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:grass_block": 1
+    },
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 40,
+      "minecraft:talked_to_villager": 13,
+      "minecraft:time_since_rest": 3870,
+      "minecraft:walk_one_cm": 5047,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 3870,
+      "minecraft:jump": 1,
+      "minecraft:time_since_death": 3870,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 1810,
+      "minecraft:total_world_time": 3894,
+      "minecraft:fly_one_cm": 151,
+      "minecraft:interact_with_anvil": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:grass_block": 1
+    },
+    "minecraft:used": {
+      "minecraft:lectern": 3,
+      "minecraft:villager_spawn_egg": 1
+    },
+    "minecraft:crafted": {
+      "minecraft:enchanted_book": 10,
+      "minecraft:lantern": 12,
+      "tiered:attribute_scroll": 3,
+      "minecraft:glass": 32,
+      "minecraft:clock": 7
+    }
+  },
+  "DataVersion": 4671
+}

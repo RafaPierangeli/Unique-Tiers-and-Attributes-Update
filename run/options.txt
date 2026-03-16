@@ -173,8 +173,8 @@ key_Snap to Descend:key.keyboard.unknown
 key_Snap to Glide:key.keyboard.unknown
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
-key_key.modmenu.open_menu:key.keyboard.unknown
 key_key.healthbars.toggle_health_bars:key.keyboard.unknown
+key_key.modmenu.open_menu:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

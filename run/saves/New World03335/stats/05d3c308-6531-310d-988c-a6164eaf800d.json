@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 10456,
+      "minecraft:walk_one_cm": 31308,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 891,
+      "minecraft:play_time": 10456,
+      "minecraft:jump": 29,
+      "minecraft:time_since_death": 10456,
+      "minecraft:drop": 1,
+      "minecraft:open_barrel": 1,
+      "minecraft:sprint_one_cm": 13561,
+      "minecraft:open_chest": 8,
+      "minecraft:inspect_dispenser": 1,
+      "minecraft:total_world_time": 11667,
+      "minecraft:fly_one_cm": 87866,
+      "minecraft:walk_on_water_one_cm": 103,
+      "minecraft:crouch_one_cm": 740,
+      "minecraft:sneak_time": 617,
+      "minecraft:climb_one_cm": 988
+    },
+    "minecraft:picked_up": {
+      "minecraft:wind_charge": 26,
+      "minecraft:tipped_arrow": 14,
+      "minecraft:enchanted_book": 1,
+      "minecraft:heavy_core": 1,
+      "minecraft:diamond": 4,
+      "tiered:attribute_scroll": 48,
+      "minecraft:bow": 1,
+      "minecraft:emerald": 14,
+      "minecraft:arrow": 4,
+      "minecraft:iron_ingot": 1,
+      "minecraft:honey_bottle": 3,
+      "minecraft:golden_apple": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:iron_ingot": 1
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 1,
+      "minecraft:chest": 1,
+      "minecraft:ominous_trial_key": 1,
+      "minecraft:trial_key": 4
+    }
+  },
+  "DataVersion": 4671
+}

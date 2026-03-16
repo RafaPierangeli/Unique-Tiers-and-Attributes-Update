@@ -1,0 +1,29 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:traded_with_villager": 75,
+      "minecraft:sprint_one_cm": 1930,
+      "minecraft:talked_to_villager": 15,
+      "minecraft:time_since_rest": 6125,
+      "minecraft:walk_one_cm": 5728,
+      "minecraft:total_world_time": 6163,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 6125,
+      "minecraft:time_since_death": 6125
+    },
+    "minecraft:used": {
+      "minecraft:lectern": 2,
+      "minecraft:villager_spawn_egg": 3
+    },
+    "minecraft:crafted": {
+      "minecraft:enchanted_book": 9,
+      "minecraft:lantern": 16,
+      "tiered:attribute_scroll": 2,
+      "minecraft:bookshelf": 8,
+      "minecraft:glass": 32,
+      "minecraft:emerald": 25,
+      "minecraft:clock": 7
+    }
+  },
+  "DataVersion": 4671
+}
