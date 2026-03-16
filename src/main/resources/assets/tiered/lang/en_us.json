@@ -564,7 +564,17 @@
   "tiered.arpg.reforge.cost_xp": "Cost: %s XP",
   "tiered.arpg.reforge.success_chance": "Success Chance: %s%%",
   "tiered.arpg.reforge.prestige_success": "✨ Ascension Complete! ✨",
-  "tiered.arpg.reforge.prestige_fail": "❌ Ascension Failed! ❌"
+  "tiered.arpg.reforge.prestige_fail": "❌ Ascension Failed! ❌",
 
+  "item.tiered.magic_piercer": "Magic Piercer",
+  "item.tiered.magic_extractor": "Magic Extrator",
+  "item.tiered.attribute_scroll": "Attribute Scroll",
 
+  "item.tiered.attribute_scroll.common": "Common Attribute Scroll of %s",
+  "item.tiered.attribute_scroll.uncommon": "Uncommon Attribute Scroll of %s",
+  "item.tiered.attribute_scroll.rare": "Rare Attribute Scroll of %s",
+  "item.tiered.attribute_scroll.epic": "Epic Attribute Scroll of %s",
+  "item.tiered.attribute_scroll.legendary": "Legendary Attribute Scroll of %s",
+  "item.tiered.attribute_scroll.unique": "Unique Attribute Scroll of %s",
+  "item.tiered.attribute_scroll.mythic": "Mythic Attribute Scroll of %s"
 }

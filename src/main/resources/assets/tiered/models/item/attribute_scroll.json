@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+  "layer0": "tiered:item/attribute_scroll",
+    "layer1": "tiered:item/attribute_scroll_tier"
+  }
+}

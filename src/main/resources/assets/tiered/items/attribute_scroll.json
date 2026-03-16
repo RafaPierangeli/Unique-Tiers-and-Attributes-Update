@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tiered:item/attribute_scroll",
+    "tints": [
+      {
+        "type": "tiered:scroll_tier"
+      },
+      {
+        "type": "tiered:scroll_attribute"
+      }
+    ]
+  }
+}

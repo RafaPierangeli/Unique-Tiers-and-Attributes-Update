@@ -7,6 +7,7 @@ import draylar.tiered.config.ConfigInit;
 import draylar.tiered.data.AttributeDataLoader;
 import draylar.tiered.data.ReforgeDataLoader;
 import draylar.tiered.data.TieredDataComponents;
+import draylar.tiered.item.ItemsRegisters;
 import draylar.tiered.network.TieredServerPacket;
 import draylar.tiered.reforge.ReforgeScreenHandler;
 import draylar.tiered.util.AoEMiningHelper;
@@ -67,7 +68,7 @@ public class Tiered implements ModInitializer {
         draylar.tiered.util.AoEMiningHelper.registerToggleEvent();
         AoEMiningHelper.registerTillingEvent();
 
-        // Coloque isso dentro do seu método onInitialize()
+
         PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
             if (!world.isClient() && player instanceof ServerPlayerEntity serverPlayer) {
                 AoEMiningHelper.processAoEMining((ServerWorld) world, serverPlayer, pos, state);
@@ -75,10 +76,13 @@ public class Tiered implements ModInitializer {
         });
 
         BlockRegisters.registerModBlocks();
+        ItemsRegisters.registerModItems();
+
+
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.ATTRIBUTE_DATA_LOADER);
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(Tiered.REFORGE_DATA_LOADER);
 
-        // Coloque isso DENTRO do seu método onInitialize()
+
         ServerPlayerEvents.COPY_FROM.register((oldPlayer, newPlayer, alive) -> {
             // alive = false significa que o jogador morreu (não é só uma viagem pelo portal do The End)
             if (!alive) {

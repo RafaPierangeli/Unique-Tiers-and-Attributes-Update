@@ -570,6 +570,18 @@
 	"tiered.arpg.reforge.cost_xp": "Custo: %s XP",
 	"tiered.arpg.reforge.success_chance": "Chance de Sucesso: %s%%",
 	"tiered.arpg.reforge.prestige_success": "✨ Ascensão Concluída! ✨",
-	"tiered.arpg.reforge.prestige_fail": "❌ Falha na Ascensão! ❌"
+	"tiered.arpg.reforge.prestige_fail": "❌ Falha na Ascensão! ❌",
 
+	"item.tiered.magic_piercer": "Furador Magico",
+	"item.tiered.magic_extractor": "Extrator Magico",
+
+
+	"item.tiered.attribute_scroll": "Pergaminho de Atributo",
+	"item.tiered.attribute_scroll.common": "Pergaminho de Atributo Comum de %s",
+	"item.tiered.attribute_scroll.uncommon": "Pergaminho de Atributo Incomum de %s",
+	"item.tiered.attribute_scroll.rare": "Pergaminho de Atributo Raro de %s",
+	"item.tiered.attribute_scroll.epic": "Pergaminho de Atributo Épico de %s",
+	"item.tiered.attribute_scroll.legendary": "Pergaminho de Atributo Lendário de %s",
+	"item.tiered.attribute_scroll.unique": "Pergaminho de Atributo Único de %s",
+	"item.tiered.attribute_scroll.mythic": "Pergaminho de Atributo Mítico de %s"
 }

@@ -2,6 +2,7 @@ package draylar.tiered.data;
 
 
 import draylar.tiered.api.ARPGEquipmentData;
+import draylar.tiered.api.ScrollData;
 import net.minecraft.component.ComponentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,6 +18,12 @@ public class TieredDataComponents {
                     .codec(ARPGEquipmentData.CODEC)
                     .packetCodec(ARPGEquipmentData.PACKET_CODEC)
                     .build()
+    );
+
+    public static final ComponentType<ScrollData> SCROLL_DATA = Registry.register(
+            Registries.DATA_COMPONENT_TYPE,
+            Identifier.of("tiered", "scroll_data"),
+            ComponentType.<ScrollData>builder().codec(ScrollData.CODEC).packetCodec(ScrollData.PACKET_CODEC).build()
     );
 
     // 🌟 Salva o raio atual escolhido pelo jogador (0 = 1x1, 1 = 3x3, 2 = 5x5, etc)

@@ -1,20 +1,27 @@
 {
   "stats": {
-    "minecraft:crafted": {
-      "minecraft:iron_trapdoor": 1,
-      "minecraft:iron_boots": 7
+    "minecraft:picked_up": {
+      "tiered:attribute_scroll": 2
+    },
+    "minecraft:dropped": {
+      "tiered:attribute_scroll": 2
     },
     "minecraft:custom": {
       "minecraft:interact_with_crafting_table": 5,
       "minecraft:sprint_one_cm": 132,
-      "minecraft:time_since_rest": 3858,
+      "minecraft:time_since_rest": 4687,
       "minecraft:fall_one_cm": 225,
-      "minecraft:walk_one_cm": 1645,
-      "minecraft:total_world_time": 4546,
-      "minecraft:leave_game": 3,
-      "minecraft:play_time": 3858,
+      "minecraft:walk_one_cm": 2935,
+      "minecraft:total_world_time": 5405,
+      "minecraft:leave_game": 4,
+      "minecraft:play_time": 4687,
       "minecraft:jump": 3,
-      "minecraft:time_since_death": 3858
+      "minecraft:time_since_death": 4687,
+      "minecraft:drop": 2
+    },
+    "minecraft:crafted": {
+      "minecraft:iron_trapdoor": 1,
+      "minecraft:iron_boots": 7
     }
   },
   "DataVersion": 4671

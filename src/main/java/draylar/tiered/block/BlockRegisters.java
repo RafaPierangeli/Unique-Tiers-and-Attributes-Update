@@ -1,5 +1,6 @@
 package draylar.tiered.block;
 
+import draylar.tiered.item.ScrollItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -15,8 +16,6 @@ import net.minecraft.util.Identifier;
 import draylar.tiered.block.ReforgeBlock;
 
 public class BlockRegisters {
-
-
 
     public static final Block REFORGE_BLOCK = registerBlock("reforge_block",
             new ReforgeBlock(AbstractBlock.Settings //
@@ -44,6 +43,7 @@ public class BlockRegisters {
                         .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of("tiered", name)))
                         .useBlockPrefixedTranslationKey()));
     }
+
 
     public static void registerModBlocks(){
 

@@ -3,6 +3,8 @@ package draylar.tiered.client;
 import draylar.tiered.Tiered;
 import draylar.tiered.api.PotentialAttribute;
 import draylar.tiered.api.ARPGEquipmentData;
+import draylar.tiered.api.ScrollData; // 🌟 NOVO IMPORT
+import draylar.tiered.item.ScrollItem; // 🌟 NOVO IMPORT
 import draylar.tiered.data.TieredDataComponents;
 import draylar.tiered.util.ARPGAffinityLogic;
 import draylar.tiered.util.ARPGLevelingLogic;
@@ -77,7 +79,6 @@ public class TieredTooltipCallback {
                         return;
                     }
 
-                    // Verifica os mods carregados no início
                     boolean hasDynamicTooltip = net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("dynamictooltips");
                     boolean isBetterCombatLoaded = net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("bettercombat");
 
@@ -89,7 +90,6 @@ public class TieredTooltipCallback {
                         boolean isCtrlDown = InputUtil.isKeyPressed(window, GLFW.GLFW_KEY_LEFT_CONTROL) ||
                                 InputUtil.isKeyPressed(window, GLFW.GLFW_KEY_RIGHT_CONTROL);
 
-                        // Lógica de compatibilidade: Se Dynamic Tooltips estiver presente, exige CTRL. Senão, exige SHIFT.
                         boolean shouldShow = hasDynamicTooltip ? isCtrlDown : isShiftDown;
 
                         if (!shouldShow) {
@@ -103,7 +103,6 @@ public class TieredTooltipCallback {
                         }
                     }
 
-                    // 1. Preservar Nome, Lore e Encantamentos
                     List<Text> preservedLines = new ArrayList<>();
                     for (Text line : lines) {
                         if (line.getContent() instanceof TranslatableTextContent translatable) {
@@ -114,8 +113,6 @@ public class TieredTooltipCallback {
                         preservedLines.add(line);
                     }
 
-                    // 🧹 LIMPEZA DE ESPAÇOS: Remove as linhas em branco que o Vanilla deixa sobrando no final
-                    // Isso mata o bug dos "dois espaços" depois do nome!
                     while (!preservedLines.isEmpty() && preservedLines.get(preservedLines.size() - 1).getString().trim().isEmpty()) {
                         preservedLines.remove(preservedLines.size() - 1);
                     }
@@ -123,7 +120,6 @@ public class TieredTooltipCallback {
                     lines.clear();
                     lines.addAll(preservedLines);
 
-                    // 🌟 PASSO 1.5: A ALMA DA ARMA (ARPG Data)
                     ARPGEquipmentData arpgData = stack.get(TieredDataComponents.ARPG_DATA);
 
                     if (arpgData != null) {
@@ -132,23 +128,17 @@ public class TieredTooltipCallback {
                         int requiredXp = ARPGLevelingLogic.getRequiredXpForNextLevel(arpgData.level(),arpgData.prestige());
 
                         if (arpgData.level() == 0) {
-                            // 💤 ARMA ADORMECIDA (Nível 0)
                             lines.add(Text.translatable("tiered.arpg.level").formatted(Formatting.GRAY)
                                     .append(Text.translatable("tiered.arpg.level.0").formatted(Formatting.DARK_GRAY)));
 
-                            // 🌟 LÓGICA DINÂMICA DE XP
                             int totalXp = 0;
                             String tendencyKey = "tiered.arpg.tendency.none";
                             int max = 0;
 
-                            // Varre o mapa de treinamento
                             for (Map.Entry<String, Integer> entry : arpgData.trainingXp().entrySet()) {
-                                totalXp += entry.getValue(); // Soma o XP total
-
-                                // Descobre qual é o maior XP para definir a tendência
+                                totalXp += entry.getValue();
                                 if (entry.getValue() > max) {
                                     max = entry.getValue();
-                                    // A chave do mapa (ex: "mining") vira a chave de tradução!
                                     tendencyKey = "tiered.arpg.tendency." + entry.getKey();
                                 }
                             }
@@ -162,44 +152,30 @@ public class TieredTooltipCallback {
                             }
 
                         } else {
-                            // 🔥 ARMA DESPERTA (Nível 1 a 10)
                             lines.add(Text.translatable("tiered.arpg.level").formatted(Formatting.GRAY)
                                     .append(Text.literal(String.valueOf(arpgData.level())).formatted(Formatting.YELLOW)));
 
-                            // 🌟 Puxa a cor psicológica da afinidade
                             Formatting affinityColor = ARPGAffinityLogic.getAffinityColor(arpgData.affinity());
-
-                            // 🌟 Cria a chave de tradução dinamicamente (ex: "tiered.arpg.affinity.damage")
                             String affinityKey = "tiered.arpg.affinity." + arpgData.affinity();
 
-                            // 🌟 Linha 1: Afinidade: [Nome Colorido]
                             lines.add(Text.translatable("tiered.arpg.affinity").formatted(Formatting.GRAY)
                                     .append(Text.translatable(affinityKey).formatted(affinityColor)));
 
-                            // 🌟 Linha 2: Bônus: +[Valor] [Atributo]
                             lines.add(Text.translatable("tiered.arpg.bonus.label").formatted(Formatting.GRAY)
                                     .append(ARPGAffinityLogic.getAffinityBonusText(arpgData.affinity(), arpgData.level(), arpgData.prestige())));
 
-                            // 🌟 NOVO: Linha de Prestígio (Só aparece se o jogador já resetou a arma pelo menos 1 vez)
                             if (arpgData.prestige() > 0) {
                                 lines.add(Text.translatable("tiered.arpg.prestige").formatted(Formatting.GRAY)
-                                        // Usa o getStyle() do potentialAttribute para herdar EXATAMENTE a cor do Tier!
                                         .append(Text.literal(String.valueOf(arpgData.prestige())).setStyle(potentialAttribute.getStyle())));
                             }
-                            // =================================================================
-                            // 🌟 INJEÇÃO DE PRESTÍGIO (SOULBOUND E ETERNAL)
-                            // =================================================================
-                            // Inserimos na ordem inversa para que o Eternal fique em cima do Soulbound
+
                             if (arpgData.prestige() >= 2) {
                                 lines.add(Text.translatable("tiered.arpg.tooltip.eternal").formatted(Formatting.AQUA, Formatting.ITALIC));
-                                }
+                            }
 
                             if (arpgData.prestige() >= 1) {
-                                    lines.add(Text.translatable("tiered.arpg.tooltip.soulbound").formatted(Formatting.AQUA, Formatting.ITALIC));
-                                }
-
-
-                            // Pinta o bônus
+                                lines.add(Text.translatable("tiered.arpg.tooltip.soulbound").formatted(Formatting.AQUA, Formatting.ITALIC));
+                            }
 
                             if (arpgData.level() < ARPGLevelingLogic.getMaxLevel()) {
                                 lines.add(Text.translatable("tiered.arpg.xp").formatted(Formatting.GRAY)
@@ -212,19 +188,29 @@ public class TieredTooltipCallback {
 
                         lines.add(Text.empty());
 
-                        // Lógica dos Slots (Buracos)
+                        // =================================================================
+                        // 🌟 LÓGICA DOS SLOTS (ATUALIZADA PARA SCROLLDATA)
+                        // =================================================================
                         if (arpgData.maxSlots() > 0) {
-                            // Usamos formatação dinâmica para injetar os números direto na tradução!
                             lines.add(Text.translatable("tiered.arpg.sockets.count", arpgData.slots().size(), arpgData.maxSlots()).formatted(Formatting.GRAY));
 
                             for (int i = 0; i < arpgData.maxSlots(); i++) {
                                 if (i < arpgData.slots().size()) {
-                                    // Slot Cheio
-                                    String scrollId = arpgData.slots().get(i);
-                                    lines.add(Text.literal(" [✦] ").formatted(Formatting.GOLD)
-                                            .append(Text.translatable("tiered.arpg.sockets.filled").formatted(Formatting.YELLOW)));
+                                    // 🌟 Slot Cheio: Lê o ScrollData
+                                    ScrollData scroll = arpgData.slots().get(i);
+
+                                    // Formata o valor (tira o .0 se for inteiro)
+                                    String valueStr = (scroll.value() % 1 == 0) ? String.valueOf((int)scroll.value()) : String.valueOf(scroll.value());
+
+                                    // Pega a cor baseada no tier do pergaminho
+                                    Formatting tierColor = ScrollItem.getTierColor(scroll.tier());
+
+                                    // Monta a linha: [✦] +X NomeDoAtributo (Tudo na cor do Tier)
+                                    lines.add(Text.literal(" [✦] +" + valueStr + " ")
+                                            .append(Text.translatable("attribute.name." + scroll.attributeId().replace(":", ".")))
+                                            .formatted(tierColor));
                                 } else {
-                                    // Slot Vazio
+                                    // 🌟 Slot Vazio
                                     lines.add(Text.literal(" [  ] ").formatted(Formatting.DARK_GRAY)
                                             .append(Text.translatable("tiered.arpg.sockets.empty").formatted(Formatting.DARK_GRAY)));
                                 }
@@ -234,10 +220,10 @@ public class TieredTooltipCallback {
                                     .append(Text.translatable("tiered.arpg.sockets.none").formatted(Formatting.DARK_GRAY)));
                         }
                     }
+
                     String attrMargin = "";
                     AttributeModifiersComponent modifiers = stack.get(DataComponentTypes.ATTRIBUTE_MODIFIERS);
 
-                    // 🌟 PASSO 2: CÁLCULO DOS TOTAIS (Matemática exata do Minecraft)
                     double baseDamage = 1.0;
                     double baseSpeed = 4.0;
 
@@ -282,7 +268,6 @@ public class TieredTooltipCallback {
                     double totalDamage = (baseDamage + damageAdd) * (1.0 + damageMultBase) * damageMultTotal;
                     double totalSpeed = (baseSpeed + speedAdd) * (1.0 + speedMultBase) * speedMultTotal;
 
-                    // 🌟 PASSO 3: O DISFARCE VANILLA
                     if (modifiers != null) {
                         Map<AttributeModifierSlot, List<AttributeModifiersComponent.Entry>> vanillaModifiers = new HashMap<>();
 
@@ -292,13 +277,9 @@ public class TieredTooltipCallback {
                             }
                         }
 
-                        // Removemos a variável "isFirstVanillaGroup" que estava causando o texto colado!
                         for (Map.Entry<AttributeModifierSlot, List<AttributeModifiersComponent.Entry>> group : vanillaModifiers.entrySet()) {
 
-                            // 🧹 LIMPEZA DE ESPAÇOS: Sempre pula uma linha antes de escrever "Quando na mão principal"
-                            // Isso garante que nunca vai ficar colado nos Sockets!
                             lines.add(Text.empty());
-
                             lines.add(Text.translatable("item.modifiers." + group.getKey().asString()).formatted(Formatting.GRAY));
 
                             for (AttributeModifiersComponent.Entry entry : group.getValue()) {
@@ -346,7 +327,6 @@ public class TieredTooltipCallback {
                             }
                         }
 
-                        // 🌟 PASSO 4: ATRIBUTOS ARPG
                         boolean addedHeader = false;
                         Set<Identifier> drawnModifiers = new HashSet<>();
 
@@ -355,7 +335,6 @@ public class TieredTooltipCallback {
                             Identifier modId = modifier.id();
                             RegistryEntry<EntityAttribute> attributeEntry = entry.attribute();
 
-                            // 🌟 Ignora os modificadores do ARPG para não duplicar o texto na tela!
                             if (modId.getNamespace().equals("tiered") && !modId.getPath().startsWith("arpg_") && !drawnModifiers.contains(modId)) {
 
                                 if (!addedHeader) {
@@ -423,7 +402,6 @@ public class TieredTooltipCallback {
                         }
                     }
 
-                    // 🌟 PASSO 5: DURABILIDADE DA ARMA
                     if (stack.isDamageable()) {
                         int maxDamage = stack.getMaxDamage();
                         int currentDamage = stack.getDamage();
