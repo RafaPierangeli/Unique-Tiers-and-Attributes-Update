@@ -42,6 +42,9 @@ public class MagicStationScreenHandler extends ScreenHandler {
     public MagicStationScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
+    public int getBookshelfCount() {
+        return this.propertyDelegate.get(2);
+    }
 
     public MagicStationScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
         super(Tiered.MAGIC_STATION_SCREEN_HANDLER_TYPE, syncId);
@@ -49,10 +52,10 @@ public class MagicStationScreenHandler extends ScreenHandler {
         this.player = playerInventory.player;
 
         this.propertyDelegate = new PropertyDelegate() {
-            private final int[] values = new int[2];
+            private final int[] values = new int[3]; // 🌟 Agora são 3 valores!
             @Override public int get(int index) { return values[index]; }
             @Override public void set(int index, int value) { values[index] = value; }
-            @Override public int size() { return 2; }
+            @Override public int size() { return 3; }
         };
         this.addProperties(this.propertyDelegate);
 
@@ -140,9 +143,27 @@ public class MagicStationScreenHandler extends ScreenHandler {
     }
 
     private void updateResult() {
-        // 🌟 PROTEÇÃO CRÍTICA: O Cliente não pode sobrescrever as propriedades!
-        // Ele deve apenas receber os valores calculados pelo Servidor.
         if (this.player.getEntityWorld().isClient()) return;
+
+        // 🌟 1. O RADAR DE ESTANTES (Anel 5x5, 2 de altura)
+        this.context.run((world, pos) -> {
+            int count = 0;
+            for (int x = -2; x <= 2; ++x) {
+                for (int z = -2; z <= 2; ++z) {
+                    if (Math.abs(x) == 2 || Math.abs(z) == 2) {
+                        for (int y = 0; y <= 1; ++y) {
+                            // Usa a Tag nativa do Minecraft (suporta estantes de outros mods!)
+                            if (world.getBlockState(pos.add(x, y, z)).isIn(net.minecraft.registry.tag.BlockTags.ENCHANTMENT_POWER_PROVIDER)) {
+                                count++;
+                            }
+                        }
+                    }
+                }
+            }
+            this.propertyDelegate.set(2, count); // Salva para o Cliente ler
+        });
+
+        // ... resto do código (boolean isReady = false; ...)
 
         boolean isReady = false;
         ItemStack equipment = this.getSlot(0).getStack();
@@ -203,10 +224,12 @@ public class MagicStationScreenHandler extends ScreenHandler {
         ARPGEquipmentData data = equipment.get(TieredDataComponents.ARPG_DATA);
         if (data == null) return;
 
-        // 🌟 O MOTOR DE RNG (50% Base + Sorte)
+        // 🌟 O MOTOR DE RNG (50% Base + Sorte + 0.5% por Estante)
         int luck = (int) this.player.getAttributeValue(EntityAttributes.LUCK);
-        int chance = Math.max(0, Math.min(100, 50 + luck));
-        boolean success = this.player.getRandom().nextInt(100) < chance;
+        int bookshelves = this.propertyDelegate.get(2);
+
+        double chance = Math.max(0, Math.min(100, 50.0 + luck + (bookshelves * 0.5)));
+        boolean success = this.player.getRandom().nextDouble() * 100.0 < chance;
 
         if (isPiercingMode()) {
             // 🌟 Trava de segurança do servidor

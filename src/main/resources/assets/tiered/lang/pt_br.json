@@ -614,5 +614,7 @@
 	"tiered.magic_station.cost_xp": "Custo: %s XP",
 	"tiered.magic_station.empty_slot_selected": "Selecione um slot com pergaminho!",
 	"tiered.magic_station.luck_bonus.title": "Bônus de Sorte",
-	"tiered.magic_station.luck_bonus.desc": "+%s%% de Chance de Sucesso"
+	"tiered.magic_station.luck_bonus.desc": "+%s%% de Chance de Sucesso",
+	"tiered.magic_station.bookshelf_bonus.title": "Poder da Biblioteca",
+	"tiered.magic_station.bookshelf_bonus.desc": "+%s%% de Chance de Sucesso"
 }

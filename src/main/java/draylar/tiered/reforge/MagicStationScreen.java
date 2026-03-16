@@ -296,7 +296,6 @@ public class MagicStationScreen extends HandledScreen<MagicStationScreenHandler>
         }
     }
 
-    // 🌟 Método Auxiliar Traduzido
     private void checkRequirements(List<Text> tooltip, int xpCost, Item catalyst) {
         ItemStack catStack = this.handler.getSlot(2).getStack();
         if (catStack.isEmpty() || !catStack.isOf(catalyst)) {
@@ -305,10 +304,16 @@ public class MagicStationScreen extends HandledScreen<MagicStationScreenHandler>
         }
 
         if (this.client != null && this.client.player != null) {
+            // 🌟 LÊ AS ESTANTES E CALCULA A CHANCE TOTAL PARA A TELA
             int luck = (int) this.client.player.getAttributeValue(net.minecraft.entity.attribute.EntityAttributes.LUCK);
-            int chance = Math.max(0, Math.min(100, 50 + luck));
+            int bookshelves = this.handler.getBookshelfCount();
 
-            tooltip.add(Text.translatable("tiered.magic_station.success_chance", chance).formatted(chance >= 50 ? Formatting.GREEN : Formatting.YELLOW));
+            double chance = Math.max(0, Math.min(100, 50.0 + luck + (bookshelves * 0.5)));
+
+            // Formata para não mostrar ".0" se for número inteiro (ex: 57.5% vs 58%)
+            String chanceStr = (chance % 1 == 0) ? String.valueOf((int)chance) : String.valueOf(chance);
+
+            tooltip.add(Text.translatable("tiered.magic_station.success_chance", chanceStr).formatted(chance >= 50 ? Formatting.GREEN : Formatting.YELLOW));
 
             if (this.client.player.totalExperience < xpCost && !this.client.player.isCreative()) {
                 tooltip.add(Text.translatable("tiered.magic_station.cost_xp", xpCost).formatted(Formatting.RED));
@@ -380,39 +385,54 @@ public class MagicStationScreen extends HandledScreen<MagicStationScreenHandler>
         }
     }
 
-    // 🌟 O SISTEMA DE SORTE DA MESA MÁGICA
+    // 🌟 O SISTEMA DE SORTE E ESTANTES
     private void renderLuckAndChances(DrawContext context, int mouseX, int mouseY) {
         if (this.client == null || this.client.player == null) return;
 
         double luck = this.client.player.getAttributeValue(net.minecraft.entity.attribute.EntityAttributes.LUCK);
+        int bookshelves = this.handler.getBookshelfCount();
+
         String luckText = "🍀 " + PERCENT_FORMAT.format(luck);
+        String bookText = "📚 " + bookshelves;
 
-        // Posição no canto superior direito (igual à Reforja)
-        int textX = this.x + 150;
-        int textY = this.y + 10;
-        int textWidth = this.textRenderer.getWidth(luckText);
-        int textHeight = this.textRenderer.fontHeight;
-
+        int textX = this.x + 142;
+        int textY = this.y + 8;
         float scale = 0.7f;
 
         context.getMatrices().pushMatrix();
         context.getMatrices().translate(textX, textY);
         context.getMatrices().scale(scale, scale);
+
+        // Desenha a Sorte
         context.drawText(this.textRenderer, luckText, 0, 0, 0xFF55FF55, true);
+        // Desenha as Estantes (12 pixels abaixo)
+        context.drawText(this.textRenderer, bookText, 0, 12, 0xFFFFD700, true);
+
         context.getMatrices().popMatrix();
 
-        int scaledWidth = (int) (textWidth * scale);
-        int scaledHeight = (int) (textHeight * scale);
+        int scaledWidth = (int) (this.textRenderer.getWidth(luckText) * scale);
+        int scaledHeight = (int) (this.textRenderer.fontHeight * scale);
 
-        // Se o mouse estiver em cima do texto da Sorte
+        // Tooltip da Sorte
         if (mouseX >= textX && mouseX <= textX + scaledWidth && mouseY >= textY && mouseY <= textY + scaledHeight) {
             List<Text> tooltip = new ArrayList<>();
             tooltip.add(Text.translatable("tiered.magic_station.luck_bonus.title").formatted(Formatting.GOLD, Formatting.ITALIC));
+            tooltip.add(Text.translatable("tiered.magic_station.luck_bonus.desc", (int)luck).formatted(Formatting.GRAY));
+            context.drawTooltip(this.textRenderer, tooltip, mouseX, mouseY);
+        }
 
-            // Como cada 1 ponto de sorte = 1% de chance, mostramos o valor direto
-            int extraChance = (int) luck;
-            tooltip.add(Text.translatable("tiered.magic_station.luck_bonus.desc", extraChance).formatted(Formatting.GRAY));
+        // Tooltip das Estantes
+        int bookScaledWidth = (int) (this.textRenderer.getWidth(bookText) * scale);
+        int bookY = textY + 9; // Posição Y aproximada após o scale
 
+        if (mouseX >= textX && mouseX <= textX + bookScaledWidth && mouseY >= bookY && mouseY <= bookY + scaledHeight) {
+            List<Text> tooltip = new ArrayList<>();
+            tooltip.add(Text.translatable("tiered.magic_station.bookshelf_bonus.title").formatted(Formatting.GOLD, Formatting.ITALIC));
+
+            double extraChance = bookshelves * 0.5;
+            String chanceStr = (extraChance % 1 == 0) ? String.valueOf((int)extraChance) : String.valueOf(extraChance);
+
+            tooltip.add(Text.translatable("tiered.magic_station.bookshelf_bonus.desc", chanceStr).formatted(Formatting.GRAY));
             context.drawTooltip(this.textRenderer, tooltip, mouseX, mouseY);
         }
     }

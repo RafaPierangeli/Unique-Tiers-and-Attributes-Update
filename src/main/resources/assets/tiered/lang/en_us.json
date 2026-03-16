@@ -607,5 +607,7 @@
   "tiered.magic_station.cost_xp": "Cost: %s XP",
   "tiered.magic_station.empty_slot_selected": "Select a slot with a scroll!",
   "tiered.magic_station.luck_bonus.title": "Luck Bonus",
-  "tiered.magic_station.luck_bonus.desc": "+%s%% Success Chance"
+  "tiered.magic_station.luck_bonus.desc": "+%s%% Success Chance",
+  "tiered.magic_station.bookshelf_bonus.title": "Library Power",
+  "tiered.magic_station.bookshelf_bonus.desc": "+%s%% Success Chance"
 }
