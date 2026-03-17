@@ -1,14 +1,54 @@
 {
   "stats": {
+    "minecraft:picked_up": {
+      "minecraft:dirt": 22,
+      "minecraft:cobblestone": 10,
+      "minecraft:sand": 3,
+      "minecraft:flint": 2,
+      "minecraft:granite": 4,
+      "minecraft:gravel": 12,
+      "minecraft:diamond_pickaxe": 2,
+      "minecraft:andesite": 6
+    },
+    "minecraft:mined": {
+      "minecraft:gravel": 17,
+      "minecraft:sand": 7,
+      "minecraft:granite": 2,
+      "minecraft:dirt": 21,
+      "minecraft:andesite": 13,
+      "minecraft:stone": 22
+    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 5997,
-      "minecraft:walk_one_cm": 1031,
-      "minecraft:total_world_time": 7098,
-      "minecraft:leave_game": 2,
-      "minecraft:fly_one_cm": 59,
-      "minecraft:play_time": 5997,
-      "minecraft:jump": 2,
-      "minecraft:time_since_death": 5997
+      "minecraft:time_since_rest": 18166,
+      "minecraft:walk_one_cm": 11825,
+      "minecraft:leave_game": 3,
+      "minecraft:walk_under_water_one_cm": 5309,
+      "minecraft:play_time": 18166,
+      "minecraft:jump": 38,
+      "minecraft:time_since_death": 18166,
+      "minecraft:aviate_one_cm": 2154,
+      "minecraft:drop": 11,
+      "minecraft:sprint_one_cm": 7988,
+      "minecraft:fall_one_cm": 475,
+      "minecraft:swim_one_cm": 1313,
+      "minecraft:total_world_time": 38752,
+      "minecraft:fly_one_cm": 5178,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 1632,
+      "minecraft:sneak_time": 137,
+      "minecraft:climb_one_cm": 16
+    },
+    "minecraft:used": {
+      "minecraft:diamond_pickaxe": 82
+    },
+    "minecraft:dropped": {
+      "minecraft:cobblestone": 10,
+      "minecraft:andesite": 6,
+      "minecraft:sand": 3,
+      "minecraft:granite": 4,
+      "minecraft:diamond_pickaxe": 2,
+      "minecraft:gravel": 12,
+      "minecraft:dirt": 22
     }
   },
   "DataVersion": 4671

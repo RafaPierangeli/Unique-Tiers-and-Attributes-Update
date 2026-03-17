@@ -29,7 +29,7 @@
 	"enableTierColorBorder": true,
 	// Draws custom textures (corners and top icon) around the tooltip
 	"enableTierOrnaments": true,
-	"uniqueTooltipMode": "ALWAYS",
+	"uniqueTooltipMode": "ON_SHIFT",
 	"maxLevelEquipment": 100,
 	"globalXpMultiplier": 1.0,
 	"xpBaseKillEntity": 2,

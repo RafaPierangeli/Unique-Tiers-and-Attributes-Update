@@ -4,15 +4,17 @@
       "minecraft:firework_rocket": 7
     },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 3736,
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:open_chest": 1,
+      "minecraft:time_since_rest": 8043,
       "minecraft:walk_one_cm": 1188,
-      "minecraft:total_world_time": 3778,
-      "minecraft:leave_game": 1,
+      "minecraft:total_world_time": 8122,
+      "minecraft:leave_game": 2,
       "minecraft:fly_one_cm": 318,
       "minecraft:damage_taken": 34,
-      "minecraft:play_time": 3736,
+      "minecraft:play_time": 8043,
       "minecraft:jump": 6,
-      "minecraft:time_since_death": 3736,
+      "minecraft:time_since_death": 8043,
       "minecraft:aviate_one_cm": 835367
     }
   },

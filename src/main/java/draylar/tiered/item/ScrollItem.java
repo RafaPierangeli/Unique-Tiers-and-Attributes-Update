@@ -4,7 +4,6 @@ import draylar.tiered.api.ScrollData;
 import draylar.tiered.data.TieredDataComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
@@ -70,7 +69,7 @@ public class ScrollItem extends Item {
             case "max_health" -> 0xFFFF5555; // Red
             case "attack_speed" -> 0xFF00AAAA; // Dark Aqua
             case "tiered:critical_chance" -> 0xFF555555; // Dark Gray
-            case "armor" -> 0xFFAAAAAA; // Gray
+            case "armor" -> 0xFFFFFFFF; // Weith
             case "movement_speed" -> 0xFFFFFF55; // Yellow
             default -> 0xFFFFFFFF; // Branco (Fallback)
         };

@@ -564,8 +564,8 @@
 	"tiered.arpg.reforge.prestige_mode.line2": "mas retornará ao Nível 1 com +1 de Prestígio.",
 
 	"tiered.arpg.reforge.awakened.title": "Arma Despertada!",
-	"tiered.arpg.reforge.awakened.line1": "Não é possível alterar a raridade",
-	"tiered.arpg.reforge.awakened.line2": "de uma arma que já possui afinidade.",
+	"tiered.arpg.reforge.awakened.line1": "Mantém: Nível, Afinidade e Pergaminhos.",
+	"tiered.arpg.reforge.awakened.line2": "custo de reforja de acordo com o nivel de prestígio",
 
 	"tiered.arpg.reforge.prestige_ascension.title": "✨ Ascensão de Prestígio ✨",
 	"tiered.arpg.reforge.requires": "Requer: ",

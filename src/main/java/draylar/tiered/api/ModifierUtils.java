@@ -176,45 +176,76 @@ public class ModifierUtils {
         setItemStackAttribute(playerEntity, stack, reforge, 0);
     }
 
+    // 🌟 2. REFORJA INTELIGENTE (PRESERVAÇÃO DE DADOS)
     public static void setItemStackAttribute(@Nullable PlayerEntity playerEntity, ItemStack stack, boolean reforge, int merchantLevel) {
         if (!stack.isIn(TieredItemTags.MODIFIER_RESTRICTED)) {
+
+            // Captura os dados ARPG antes da reforja
+            ARPGEquipmentData oldData = stack.get(TieredDataComponents.ARPG_DATA);
+            boolean wasAwakened = oldData != null && !"unawakened".equals(oldData.affinity());
+
             Identifier potentialAttributeID = getRandomAttributeIDFor(playerEntity, stack.getItem(), reforge, merchantLevel);
 
             if (potentialAttributeID != null) {
                 PotentialAttribute potentialAttribute = Tiered.ATTRIBUTE_DATA_LOADER.getItemAttributes().get(potentialAttributeID);
 
                 if (potentialAttribute != null) {
-                    // 🎰 RODA O CASSINO ARPG PRIMEIRO!
-                    // Passamos o ID do tier para ele salvar no RG da arma depois
+                    // 🎰 Aplica os novos modificadores do Tier (Raridade)
                     applyARPGModifiers(stack, potentialAttribute);
 
-                    initializeARPGData(stack);
+                    // Se a arma era desperta, restauramos o progresso!
+                    if (wasAwakened && oldData != null) {
+                        ARPGEquipmentData restoredData = new ARPGEquipmentData(
+                                oldData.level(),
+                                oldData.currentXp(),
+                                oldData.prestige(),
+                                oldData.affinity(),
+                                oldData.trainingXp(),
+                                oldData.maxSlots(),
+                                oldData.slots(),
+                                oldData.isBroken()
+                        );
+                        stack.set(TieredDataComponents.ARPG_DATA, restoredData);
+
+                        // 🌟 CRUCIAL: Recalcula os bônus de nível e pergaminhos sobre o novo Tier!
+                        draylar.tiered.util.ARPGAttributeHelper.updateModifiers(stack);
+                        draylar.tiered.util.ScrollHelper.updateWeaponScrollAttributes(stack);
+                    } else {
+                        // Se não era desperta, apenas inicializa normalmente (respeitando a trava de slots)
+                        initializeARPGData(stack);
+                    }
                 }
             }
         }
     }
 
+    // 🌟 1. TRAVA DE SLOTS DEFINITIVA
     public static void initializeARPGData(ItemStack stack) {
-        if (stack.get(TieredDataComponents.ARPG_DATA) == null) {
+        ARPGEquipmentData existingData = stack.get(TieredDataComponents.ARPG_DATA);
 
-            double roll = Math.random();
-            int maxSlots = 0;
-            if (roll >= 0.85 && roll < 0.95) {
-                maxSlots = 1;
-            } else if (roll >= 0.95) {
-                maxSlots = 2;
-            }
-
-            ARPGEquipmentData newData = new ARPGEquipmentData(
-                    0, 0, 0, "unawakened",
-                    new java.util.HashMap<>(), // 🌟 Mapa de XP vazio, pronto para aprender!
-                    maxSlots,
-                    new java.util.ArrayList<>(),
-                    false
-            );
-
-            stack.set(TieredDataComponents.ARPG_DATA, newData);
+        // Se já existe e já tem slots definidos, não fazemos nada (Trava de Slot!)
+        if (existingData != null && existingData.maxSlots() > 0) {
+            return;
         }
+
+        // Se for a primeira vez ou não tiver slots, roda a roleta original
+        double roll = Math.random();
+        int maxSlots = 0;
+        if (roll >= 0.65 && roll < 0.85) {
+            maxSlots = 1;
+        } else if (roll >= 0.85) {
+            maxSlots = 2;
+        }
+
+        ARPGEquipmentData newData = new ARPGEquipmentData(
+                0, 0, 0, "unawakened",
+                new java.util.HashMap<>(),
+                maxSlots,
+                new java.util.ArrayList<>(),
+                false
+        );
+
+        stack.set(TieredDataComponents.ARPG_DATA, newData);
     }
 
     // ========================================================================

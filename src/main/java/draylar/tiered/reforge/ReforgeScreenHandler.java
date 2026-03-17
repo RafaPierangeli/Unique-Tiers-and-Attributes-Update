@@ -90,7 +90,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
         }
     }
 
-    // 🌟 NOVO: Verifica se o item no slot central está pronto para o Prestígio
+    // 🌟 Verifica se o item no slot central está pronto para o Prestígio
     public boolean isPrestigeMode() {
         ItemStack stack = this.getSlot(1).getStack();
         if (stack.contains(draylar.tiered.data.TieredDataComponents.ARPG_DATA)) {
@@ -100,7 +100,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
         return false;
     }
 
-    // 🌟 NOVO: Calcula o custo de XP baseado no Prestígio atual
+    // 🌟 Calcula o custo de XP baseado no Prestígio atual (Para UPAR o Prestígio)
     public int getPrestigeXpCost(int currentPrestige) {
         return switch (currentPrestige) {
             case 0 -> 500;
@@ -110,7 +110,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
         };
     }
 
-    // 🌟 NOVO: Calcula a chance de sucesso baseada no Prestígio e na Sorte do jogador
+    // 🌟 Calcula a chance de sucesso baseada no Prestígio e na Sorte do jogador
     public int getPrestigeSuccessChance(int currentPrestige, PlayerEntity player) {
         int baseChance = switch (currentPrestige) {
             case 0 -> 75;
@@ -120,23 +120,44 @@ public class ReforgeScreenHandler extends ScreenHandler {
         };
 
         if (player != null) {
-            // Puxa o atributo de Sorte do jogador (Cada 1 ponto = +1%)
             int luck = (int) player.getAttributeValue(net.minecraft.entity.attribute.EntityAttributes.LUCK);
-
-            // Soma a sorte e garante que o valor fique entre 0% e 100%
             return Math.max(0, Math.min(100, baseChance + luck));
         }
 
         return baseChance;
     }
 
-    // 🌟 NOVO: Verifica se a arma já possui uma afinidade despertada
+    // 🌟 Verifica se a arma já possui uma afinidade despertada
     public boolean isAwakened(ItemStack stack) {
         if (stack.contains(draylar.tiered.data.TieredDataComponents.ARPG_DATA)) {
             draylar.tiered.api.ARPGEquipmentData data = stack.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
             return data != null && !"unawakened".equals(data.affinity());
         }
         return false;
+    }
+
+    // 🌟 NOVO: Calcula o custo de XP para REFORJAR O TIER (Raridade)
+    public int getReforgeXpCost(ItemStack stack) {
+        int baseCost = ConfigInit.CONFIG.reforgeXpCost;
+
+        // Se a arma for desperta, aplica a tabela de preços punitiva!
+        if (isAwakened(stack)) {
+            draylar.tiered.api.ARPGEquipmentData data = stack.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
+            if (data != null) {
+                int prestige = data.prestige();
+                int level = data.level();
+                int maxLevel = 100; // Ajuste se o seu level máximo for diferente
+
+                if (prestige == 0) return 200;
+                if (prestige == 1) return 250;
+                if (prestige == 2) return 300;
+                if (prestige >= 3) {
+                    if (level >= maxLevel) return 500; // Arma perfeita = Custo máximo
+                    return 350;
+                }
+            }
+        }
+        return baseCost; // Retorna o custo normal se não for desperta
     }
 
     private void updateResult() {
@@ -151,7 +172,6 @@ public class ReforgeScreenHandler extends ScreenHandler {
                 isReady = true;
             }
 
-            // 🌟 LÓGICA DINÂMICA DE CUSTO
             draylar.tiered.api.ARPGEquipmentData data = stack.get(draylar.tiered.data.TieredDataComponents.ARPG_DATA);
             int currentPrestige = data != null ? data.prestige() : 0;
 
@@ -159,7 +179,7 @@ public class ReforgeScreenHandler extends ScreenHandler {
                 isReady = false;
             }
         } else {
-            // 🌟 LÓGICA NORMAL DE REFORJA
+            // 🌟 LÓGICA NORMAL DE REFORJA (Trocando a Raridade)
             if (this.getSlot(0).hasStack() && this.getSlot(1).hasStack() && this.getSlot(2).hasStack()) {
                 Item item = stack.getItem();
                 if (!stack.isIn(TieredItemTags.MODIFIER_RESTRICTED) && ModifierUtils.getRandomAttributeIDFor(null, item, false) != null && !stack.isDamaged()) {
@@ -187,12 +207,10 @@ public class ReforgeScreenHandler extends ScreenHandler {
                 isReady = false;
             }
 
-            // 🌟 TRAVA DE AFINIDADE: Se já despertou, não pode reforjar a raridade!
-            if (isReady && isAwakened(stack)) {
-                isReady = false;
-            }
+            // 🌟 REMOVIDA A TRAVA DE AFINIDADE AQUI! Agora armas despertas podem ser reforjadas.
 
-            int xpCost = ConfigInit.CONFIG.reforgeXpCost;
+            // 🌟 APLICA O CUSTO DINÂMICO
+            int xpCost = getReforgeXpCost(stack);
             if (isReady && this.player.totalExperience < xpCost && !this.player.isCreative()) {
                 isReady = false;
             }
@@ -236,7 +254,6 @@ public class ReforgeScreenHandler extends ScreenHandler {
                     return ItemStack.EMPTY;
                 }
             } else if (index >= 3 && index < 39) {
-                // 🌟 PERMITE SHIFT-CLICK DO ECHO SHARD
                 if ((itemStack.isIn(TieredItemTags.REFORGE_ADDITION) || itemStack.isOf(net.minecraft.item.Items.ECHO_SHARD)) && !this.insertItem(itemStack2, 2, 3, false)) {
                     return ItemStack.EMPTY;
                 }
@@ -250,7 +267,6 @@ public class ReforgeScreenHandler extends ScreenHandler {
                         if (!this.insertItem(itemStack2, 0, 1, false)) {
                             return ItemStack.EMPTY;
                         }
-                        // 🌟 PERMITE SHIFT-CLICK DA NETHER STAR
                     } else if ((itemStack.isIn(TieredItemTags.REFORGE_BASE_ITEM) || itemStack.isOf(net.minecraft.item.Items.NETHER_STAR)) && !this.insertItem(itemStack2, 0, 1, false)) {
                         return ItemStack.EMPTY;
                     }
@@ -291,38 +307,30 @@ public class ReforgeScreenHandler extends ScreenHandler {
             int xpCost = getPrestigeXpCost(currentPrestige);
             int chance = getPrestigeSuccessChance(currentPrestige,this.player);
 
-            // 1. Cobra o XP
             if (!this.player.isCreative()) {
                 this.player.addExperience(-xpCost);
             }
 
-            // 2. Consome a Nether Star e o Echo Shard
             this.decrementStack(0);
             this.decrementStack(2);
 
-            // 3. Rola os dados da Sorte (0 a 99)
             boolean success = this.player.getRandom().nextInt(100) < chance;
 
             if (success) {
                 int newPrestige = currentPrestige + 1;
                 int newMaxSlots = data.maxSlots();
 
-                // 🌟 PRESTÍGIO 3: O Despertar do Slot Adicional!
-                // Se a arma acabou de atingir o Prestígio 3, ela ganha +1 espaço para gema/runa.
                 if (newPrestige == 3) {
                     newMaxSlots += 1;
                 }
 
-                // ✨ SUCESSO: Reseta a arma, sobe o prestígio e aplica o novo limite de slots
                 draylar.tiered.api.ARPGEquipmentData newData = new draylar.tiered.api.ARPGEquipmentData(
                         1, 0, newPrestige, data.affinity(),
                         java.util.Map.of(), newMaxSlots, data.slots(), data.isBroken()
                 );
                 itemStack.set(draylar.tiered.data.TieredDataComponents.ARPG_DATA, newData);
-                // 🌟 ATUALIZA OS ATRIBUTOS FÍSICOS DA ARMA APÓS O PRESTÍGIO
                 draylar.tiered.util.ARPGAttributeHelper.updateModifiers(itemStack);
 
-                // Força o inventário a sincronizar o slot da arma com o Cliente!
                 this.inventory.setStack(1, itemStack);
 
                 this.context.run((world, pos) -> {
@@ -330,20 +338,17 @@ public class ReforgeScreenHandler extends ScreenHandler {
                     world.syncWorldEvent(net.minecraft.world.WorldEvents.ANVIL_USED, pos, 0);
                 });
             } else {
-                // ❌ FALHA: A arma continua igual, mas os itens e XP já foram gastos
                 this.context.run((world, pos) -> {
-                    // Toca som de bigorna quebrando para dar o feedback negativo
                     world.playSound(null, pos, net.minecraft.sound.SoundEvents.BLOCK_ANVIL_DESTROY, net.minecraft.sound.SoundCategory.BLOCKS, 1.0f, 0.5f);
                 });
             }
-            return; // Aborta a reforja normal
-        }
-
-        // 🌟 REFORJA NORMAL
-        // 🌟 TRAVA DE SEGURANÇA: Impede a execução se estiver despertada
-        if (isAwakened(itemStack)) {
             return;
         }
+
+        // 🌟 REFORJA NORMAL (Trocando a Raridade)
+
+        // 🌟 REMOVIDA A TRAVA DE SEGURANÇA AQUI TAMBÉM!
+
         net.minecraft.util.Identifier attrId = ModifierUtils.getAttributeId(itemStack);
 
         if (attrId != null) {
@@ -356,7 +361,8 @@ public class ReforgeScreenHandler extends ScreenHandler {
             }
         }
 
-        int xpCost = ConfigInit.CONFIG.reforgeXpCost;
+        // 🌟 APLICA O CUSTO DINÂMICO NA HORA DE COBRAR
+        int xpCost = getReforgeXpCost(itemStack);
         if (!this.player.isCreative()) {
             this.player.addExperience(-xpCost);
         }

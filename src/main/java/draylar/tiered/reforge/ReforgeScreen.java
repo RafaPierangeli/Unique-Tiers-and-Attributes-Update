@@ -212,9 +212,64 @@ public class ReforgeScreen extends HandledScreen<ReforgeScreenHandler> {
                 // ESTADO 4: ITEM MITICO BLOQUEADO!
                 tooltip.add(Text.translatable("screen.tiered.reforge_mythic_locked").formatted(Formatting.AQUA, Formatting.BOLD));
             }
-            // 🌟 NOVO ESTADO: ARMA DESPERTADA BLOQUEADA!
+            // 🌟 NOVO ESTADO: ARMA DESPERTADA!
             else if (this.getScreenHandler().isAwakened(itemStack) && !this.getScreenHandler().isPrestigeMode()) {
-                tooltip.add(Text.translatable("tiered.arpg.reforge.awakened.title").formatted(Formatting.RED, Formatting.BOLD));
+
+                int xpCost = this.getScreenHandler().getReforgeXpCost(itemStack);
+
+                tooltip.add(Text.translatable("tiered.arpg.reforge.awakened.title").formatted(Formatting.AQUA, Formatting.ITALIC));
+
+                if (itemStack != last) {
+                    last = itemStack;
+                    baseItems = new ArrayList<Item>();
+                    List<Item> items = Tiered.REFORGE_DATA_LOADER.getReforgeBaseItems(itemStack.getItem());
+
+                    if (!items.isEmpty()) {
+                        baseItems.addAll(items);
+                    } else {
+                        var repairable = itemStack.get(DataComponentTypes.REPAIRABLE);
+                        if (repairable != null && repairable.items() != null) {
+                            for (RegistryEntry<Item> entry : repairable.items()) {
+                                baseItems.add(entry.value());
+                            }
+                        } else {
+                            for (RegistryEntry<Item> itemRegistryEntry : Registries.ITEM.getOrThrow(TieredItemTags.REFORGE_BASE_ITEM)) {
+                                baseItems.add(itemRegistryEntry.value());
+                            }
+                        }
+                    }
+                }
+
+                // Checa Ingrediente Base
+                if (!baseItems.isEmpty()) {
+                    ItemStack ingredient = this.getScreenHandler().getSlot(0).getStack();
+                    if (ingredient.isEmpty() || !baseItems.contains(ingredient.getItem())) {
+                        tooltip.add(Text.translatable("screen.tiered.reforge_ingredient").formatted(Formatting.RED));
+                        for (Item item : baseItems) {
+                            tooltip.add(Text.literal(" - ").append(item.getName()).formatted(Formatting.GRAY));
+                        }
+                    }
+                }
+
+                // Checa Catalisador
+                ItemStack addition = this.getScreenHandler().getSlot(2).getStack();
+                if (addition.isEmpty() || !addition.isIn(TieredItemTags.REFORGE_ADDITION)) {
+                    tooltip.add(Text.translatable("screen.tiered.reforge_addition").formatted(Formatting.RED));
+                }
+
+                // Checa Dano
+                if (itemStack.isDamageable() && itemStack.isDamaged()) {
+                    tooltip.add(Text.translatable("screen.tiered.reforge_damaged").formatted(Formatting.RED));
+                }
+
+                // Checa XP
+                if (this.client != null && this.client.player != null) {
+                    if (this.client.player.totalExperience < xpCost && !this.client.player.isCreative()) {
+                        tooltip.add(Text.translatable("screen.tiered.reforge_xp_missing", xpCost).formatted(Formatting.RED));
+                    } else {
+                        tooltip.add(Text.translatable("screen.tiered.reforge_xp_cost", xpCost).formatted(Formatting.GREEN));
+                    }
+                }
                 tooltip.add(Text.translatable("tiered.arpg.reforge.awakened.line1").formatted(Formatting.GRAY));
                 tooltip.add(Text.translatable("tiered.arpg.reforge.awakened.line2").formatted(Formatting.GRAY));
             }

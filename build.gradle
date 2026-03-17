@@ -46,14 +46,10 @@ dependencies {
     modCompileOnly ('maven.modrinth:levelz:2.0.0+1.21.1') {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
-	// // TooltipFix
-	// modCompileOnly ("maven.modrinth:tooltipfix:1.1.1-1.19.3"),{
-    // 	exclude(group: "net.fabricmc.fabric-api")
-  	// }
-	// EasyAnvils
-	modCompileOnly ("curse.maven:easy-anvils-682567:4556543"),{
-    	exclude(group: "net.fabricmc.fabric-api")
-  	}
+	//EasyAnvils
+	//modCompileOnly ("curse.maven:easy-anvils-682567:4556543"){
+    //	exclude(group: "net.fabricmc.fabric-api")
+  	//}
 }
 
 processResources {

@@ -1,31 +1,7 @@
 {
-  "minecraft:recipes/decorations/ladder": {
-    "criteria": {
-      "has_stick": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/combat/iron_leggings": {
     "criteria": {
       "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_leggings": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/fletching_table": {
-    "criteria": {
-      "has_flint": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_nugget_from_smelting": {
-    "criteria": {
-      "has_iron_sword": "2026-02-25 10:51:47 -0300"
     },
     "done": true
   },
@@ -41,18 +17,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/combat/diamond_sword": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/jukebox": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/bucket": {
     "criteria": {
       "has_iron_ingot": "2026-02-25 10:51:46 -0300"
@@ -62,12 +26,6 @@
   "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
       "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_chestplate": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
     },
     "done": true
   },
@@ -83,33 +41,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/tools/wooden_axe": {
-    "criteria": {
-      "has_stick": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/wooden_spear": {
-    "criteria": {
-      "has_stick": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/arrow": {
-    "criteria": {
-      "has_flint": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/crafting_table": {
-    "criteria": {
-      "unlock_right_away": "2026-02-25 10:51:47 -0300"
     },
     "done": true
   },
@@ -131,30 +65,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/emerald_block": {
-    "criteria": {
-      "has_emerald": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/spyglass": {
-    "criteria": {
-      "has_amethyst_shard": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_pickaxe": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_spear": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/iron_block": {
     "criteria": {
       "has_iron_ingot": "2026-02-25 10:51:46 -0300"
@@ -167,27 +77,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/tools/diamond_hoe": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/diamond_shovel": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/lodestone": {
     "criteria": {
       "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/diamond_boots": {
-    "criteria": {
-      "has_diamond": "2026-02-25 10:51:47 -0300"
     },
     "done": true
   },
@@ -215,21 +107,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/calibrated_sculk_sensor": {
-    "criteria": {
-      "has_amethyst_shard": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/iron_bars": {
     "criteria": {
       "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/tinted_glass": {
-    "criteria": {
-      "has_amethyst_shard": "2026-02-25 10:51:47 -0300"
     },
     "done": true
   },
@@ -242,6 +122,174 @@
   "minecraft:recipes/decorations/lantern": {
     "criteria": {
       "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/iron_chain": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_axe": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_spear": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_door": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+    "criteria": {
+      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/fletching_table": {
+    "criteria": {
+      "has_flint": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_sword": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_spear": {
+    "criteria": {
+      "has_stick": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_flint": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_spear": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/calibrated_sculk_sensor": {
+    "criteria": {
+      "has_amethyst_shard": "2026-02-25 10:51:47 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-02-25 10:51:47 -0300"
     },
     "done": true
   },
@@ -263,21 +311,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/iron_chain": {
-    "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/wooden_pickaxe": {
     "criteria": {
       "has_stick": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/iron_shovel": {
-    "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
     },
     "done": true
   },
@@ -299,12 +335,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/iron_trapdoor": {
-    "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/amethyst_block": {
     "criteria": {
       "has_amethyst_shard": "2026-02-25 10:51:47 -0300"
@@ -314,18 +344,6 @@
   "minecraft:recipes/combat/wooden_sword": {
     "criteria": {
       "has_stick": "2026-02-25 10:51:47 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/iron_axe": {
-    "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/crossbow": {
-    "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
     },
     "done": true
   },
@@ -348,12 +366,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/combat/iron_spear": {
-    "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
-    },
-    "done": true
-  },
   "minecraft:story/mine_diamond": {
     "criteria": {
       "diamond": "2026-02-25 10:51:47 -0300"
@@ -366,15 +378,75 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/iron_door": {
+  "minecraft:recipes/building_blocks/quartz_slab": {
     "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+  "minecraft:recipes/building_blocks/quartz_bricks": {
     "criteria": {
-      "has_iron_ingot": "2026-02-25 10:51:46 -0300"
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_stairs": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_quartz": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2026-03-17 13:09:44 -0300"
     },
     "done": true
   },
