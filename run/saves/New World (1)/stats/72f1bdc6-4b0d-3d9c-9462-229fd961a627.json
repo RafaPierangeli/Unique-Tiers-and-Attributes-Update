@@ -1,16 +1,32 @@
 {
   "stats": {
+    "minecraft:crafted": {
+      "tiered:magic_piercer": 1,
+      "tiered:magic_extractor": 1
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 1,
+      "minecraft:skeleton": 1
+    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 2020,
-      "minecraft:walk_one_cm": 3974,
-      "minecraft:total_world_time": 2042,
-      "minecraft:leave_game": 1,
-      "minecraft:play_time": 2020,
-      "minecraft:jump": 2,
-      "minecraft:time_since_death": 2020
+      "minecraft:interact_with_crafting_table": 1,
+      "minecraft:time_since_rest": 4378,
+      "minecraft:walk_one_cm": 8151,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 2,
+      "minecraft:play_time": 4378,
+      "minecraft:damage_dealt": 270,
+      "minecraft:jump": 20,
+      "minecraft:time_since_death": 4378,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 10017,
+      "minecraft:open_chest": 1,
+      "minecraft:total_world_time": 4428,
+      "minecraft:fly_one_cm": 5384
     },
     "minecraft:used": {
-      "tiered:reforge_block": 7
+      "tiered:reforge_block": 7,
+      "minecraft:netherite_sword": 2
     }
   },
   "DataVersion": 4671

@@ -6,9 +6,9 @@
     " G "
   ],
   "key": {
-    "E": { "item": "minecraft:prismarine_crystals" },
-    "D": { "item": "minecraft:diamond" },
-    "G": { "item": "minecraft:gold_ingot" }
+    "E": "minecraft:prismarine_crystals",
+    "D": "minecraft:diamond",
+    "G": "minecraft:gold_ingot"
   },
   "result": {
     "id": "tiered:magic_extractor",

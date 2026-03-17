@@ -1,0 +1,40 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:wind_charge": 12,
+      "minecraft:tipped_arrow": 26,
+      "minecraft:enchanted_book": 1,
+      "minecraft:crossbow": 1,
+      "minecraft:music_disc_precipice": 1,
+      "minecraft:heavy_core": 1,
+      "minecraft:shield": 1,
+      "tiered:attribute_scroll": 10,
+      "minecraft:emerald": 9,
+      "minecraft:arrow": 12,
+      "minecraft:honey_bottle": 2
+    },
+    "minecraft:used": {
+      "minecraft:wandering_trader_spawn_egg": 9,
+      "minecraft:ominous_trial_key": 1,
+      "minecraft:trial_key": 4
+    },
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 10,
+      "minecraft:time_since_rest": 10919,
+      "minecraft:walk_one_cm": 7745,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 4344,
+      "minecraft:damage_dealt": 10,
+      "minecraft:play_time": 10919,
+      "minecraft:jump": 18,
+      "minecraft:time_since_death": 10919,
+      "minecraft:sprint_one_cm": 17016,
+      "minecraft:open_chest": 11,
+      "minecraft:total_world_time": 11000,
+      "minecraft:fly_one_cm": 93425,
+      "minecraft:walk_on_water_one_cm": 1565,
+      "minecraft:sneak_time": 699
+    }
+  },
+  "DataVersion": 4671
+}

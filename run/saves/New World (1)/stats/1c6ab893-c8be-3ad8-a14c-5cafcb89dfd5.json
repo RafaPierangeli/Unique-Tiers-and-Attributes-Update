@@ -1,16 +1,23 @@
 {
   "stats": {
+    "minecraft:crafted": {
+      "tiered:reforge_magic_block": 1
+    },
+    "minecraft:used": {
+      "tiered:reforge_magic_block": 1
+    },
     "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 1,
       "minecraft:sprint_one_cm": 1866,
-      "minecraft:time_since_rest": 2570,
+      "minecraft:time_since_rest": 3577,
       "minecraft:walk_one_cm": 12847,
-      "minecraft:total_world_time": 2600,
-      "minecraft:leave_game": 1,
+      "minecraft:total_world_time": 3628,
+      "minecraft:leave_game": 2,
       "minecraft:fly_one_cm": 1888,
       "minecraft:walk_on_water_one_cm": 6819,
-      "minecraft:play_time": 2570,
+      "minecraft:play_time": 3577,
       "minecraft:jump": 3,
-      "minecraft:time_since_death": 2570
+      "minecraft:time_since_death": 3577
     }
   },
   "DataVersion": 4671

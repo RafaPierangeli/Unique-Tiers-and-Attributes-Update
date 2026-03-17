@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "tiered:attribute_scroll": 2,
+      "minecraft:lectern": 1,
+      "tiered:magic_piercer": 1,
+      "tiered:magic_extractor": 1,
+      "minecraft:enchanted_book": 1,
+      "minecraft:clock": 7,
+      "minecraft:villager_spawn_egg": 1,
+      "minecraft:grass_block": 1,
+      "minecraft:book": 54,
+      "minecraft:lantern": 28,
+      "minecraft:glass": 64
+    },
+    "minecraft:picked_up": {
+      "tiered:magic_extractor": 1,
+      "tiered:magic_piercer": 1
+    },
+    "minecraft:custom": {
+      "minecraft:interact_with_crafting_table": 3,
+      "minecraft:time_since_rest": 5895,
+      "minecraft:walk_one_cm": 1729,
+      "minecraft:total_world_time": 6602,
+      "minecraft:leave_game": 1,
+      "minecraft:play_time": 5895,
+      "minecraft:time_since_death": 5895,
+      "minecraft:drop": 12
+    }
+  },
+  "DataVersion": 4671
+}

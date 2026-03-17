@@ -4,10 +4,12 @@ import draylar.tiered.api.ScrollData;
 import draylar.tiered.data.TieredDataComponents;
 import draylar.tiered.item.ItemsRegisters;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.minecraft.entity.passive.WanderingTraderEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.village.TradeOffer;
+import net.minecraft.village.TradeOffers;
 import net.minecraft.village.TradedItem;
 import net.minecraft.village.VillagerProfession;
 
@@ -25,6 +27,30 @@ public class ScrollTradeInjector {
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN, 5, factories -> {
             factories.add((entity, level, random) -> createScrollTrade(random, 5));
         });
+
+        // =================================================================
+        // 🌟 ADICIONA NO VENDEDOR AMBULANTE (WANDERING TRADER)
+        // O nível 2 representa as trocas "Raras" dele (ele sempre escolhe 1 troca rara por visita)
+        // Passamos o número '6' apenas para a nossa lógica interna saber que é ele.
+        // =================================================================
+        // =================================================================
+        // 🌟 ADICIONA NO VENDEDOR AMBULANTE (WANDERING TRADER)
+        // Como ele usa a mesma interface TradeOffers.Factory, a lambda
+        // OBRIGATORIAMENTE precisa dos 3 parâmetros: (entity, level, random)
+        // =================================================================
+        // =================================================================
+        // 🌟 ADICIONA NO VENDEDOR AMBULANTE (WANDERING TRADER)
+        // Na 1.21.11, o Vendedor usa um sistema de "Pools" (Piscinas de Trocas).
+        // Criamos uma piscina exclusiva para o nosso mod!
+        // =================================================================
+        TradeOfferHelper.registerWanderingTraderOffers(builder -> {
+            builder.pool(
+                    net.minecraft.util.Identifier.of("tiered", "wandering_scrolls"), // ID único da nossa piscina
+                    1, // Quantas trocas ele vai "pescar" dessa piscina (1 = 100% de chance de trazer)
+                    (entity, level, random) -> createScrollTrade(random, 6) // A nossa fábrica de trocas
+            );
+        });
+
     }
 
     private static TradeOffer createScrollTrade(Random random, int villagerLevel) {
@@ -59,14 +85,22 @@ public class ScrollTradeInjector {
             if (roll < 80) return "uncommon";
             if (roll < 95) return "rare";
             return "epic";
-        } else {
+        } else if (level == 5) {
             // Nível 5: Incomum a Lendário (Pequena chance de Único)
             if (roll < 40) return "uncommon";
             if (roll < 70) return "rare";
             if (roll < 90) return "epic";
             if (roll < 98) return "legendary";
             return "unique";
-        }
+        } else {
+        // 🌟 Vendedor Ambulante (level == 6): Uma roleta mais caótica e aventureira!
+        // Ele pode trazer desde lixo até coisas muito boas.
+        if (roll < 30) return "rare";
+        if (roll < 60) return "epic";
+        if (roll < 85) return "legendary";
+        if (roll < 98) return "unique";
+        return "mythic"; // 2% de chance de trazer um Mitico!
+    }
     }
 
     private static String rollAttribute(Random random) {

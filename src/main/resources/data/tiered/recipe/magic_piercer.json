@@ -6,9 +6,9 @@
     " O "
   ],
   "key": {
-    "E": { "item": "minecraft:quartz" },
-    "N": { "item": "minecraft:iron_ingot" },
-    "O": { "item": "minecraft:blaze_rod" }
+    "E": "minecraft:quartz",
+    "N": "minecraft:iron_ingot",
+    "O": "minecraft:blaze_rod"
   },
   "result": {
     "id": "tiered:magic_piercer",
